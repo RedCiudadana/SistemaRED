@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/RedCiudadana/SistemaRED/issues"
   },
-  "homepage": "https://github.com/RedCiudadana/SistemaRED#readme"
+  "homepage": "https://github.com/RedCiudadana/SistemaRED#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
 }
