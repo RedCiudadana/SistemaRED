@@ -22,5 +22,13 @@ module.exports = function (eleventyConfig) {
         return collectionApi.getFilteredByTag('proyectos');
     });
 
+    eleventyConfig.addCollection("monitoreos", function(collectionApi) {
+        return collectionApi.getFilteredByTag('monitoreos');
+    });
+
+    eleventyConfig.addCollection("finan", function(collectionApi) {
+        return collectionApi.getFilteredByTag('finan');
+    });
+
 }
 
