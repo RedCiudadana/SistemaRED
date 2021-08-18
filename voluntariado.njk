@@ -145,24 +145,8 @@ permalink: "voluntariado/index.html"
 															<!--begin::Row-->
 															<div class="row row-paddingless">
 																<div class="col mr-8">
-																	<div class="font-size-sm text-muted font-weight-bold">Average Sale</div>
-																	<div class="font-size-h4 font-weight-bolder">$650</div>
-																</div>
-																<div class="col">
-																	<div class="font-size-sm text-muted font-weight-bold">Commission</div>
-																	<div class="font-size-h4 font-weight-bolder">$233,600</div>
-																</div>
-															</div>
-															<!--end::Row-->
-															<!--begin::Row-->
-															<div class="row row-paddingless mt-8">
-																<div class="col mr-8">
-																	<div class="font-size-sm text-muted font-weight-bold">Annual Taxes 2019</div>
-																	<div class="font-size-h4 font-weight-bolder">$29,004</div>
-																</div>
-																<div class="col">
-																	<div class="font-size-sm text-muted font-weight-bold">Annual Income</div>
-																	<div class="font-size-h4 font-weight-bolder">$1,480,00</div>
+																	<div class="font-size-sm text-muted font-weight-bold">Total de Voluntarios</div>
+																	<div id="voluntariosT" class="font-size-h4 font-weight-bolder"></div>
 																</div>
 															</div>
 															<!--end::Row-->
@@ -456,7 +440,7 @@ permalink: "voluntariado/index.html"
 																</thead>
 																<tbody>
 																	{% for item in collections.voluntariados %}
-																	<tr>
+																	<tr id="voluntarios">
 																		<td class="pl-0 py-8">
 																			<div class="d-flex align-items-center">
 																				<div class="symbol symbol-50 flex-shrink-0 mr-4">
@@ -2111,5 +2095,14 @@ permalink: "voluntariado/index.html"
     <!--begin::Page Scripts(used by this page)-->
     <script src="/assets/js/pages/widgets.js"></script>
     <!--end::Page Scripts-->
+
+	<script>
+	
+    var inputs = document.querySelectorAll("[id='voluntarios']");
+    sumar = inputs.length;            
+
+    document.getElementById('voluntariosT').innerHTML = sumar.toString();
+	
+	</script>
 
 {% endblock %}
