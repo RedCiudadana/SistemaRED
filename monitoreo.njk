@@ -59,83 +59,7 @@ permalink: "monitoreo/index.html"
 												<div class="card card-custom gutter-b">
 													<!--begin::Beader-->
 													<div class="card-header border-0 py-5">
-														<h3 class="card-title font-weight-bolder">Sales Progress</h3>
-														<div class="card-toolbar">
-															<div class="dropdown dropdown-inline">
-																<a href="#" class="btn btn-clean btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																	<i class="ki ki-bold-more-hor"></i>
-																</a>
-																<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																	<!--begin::Navigation-->
-																	<ul class="navi navi-hover py-5">
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-drop"></i>
-																				</span>
-																				<span class="navi-text">New Group</span>
-																			</a>
-																		</li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-list-3"></i>
-																				</span>
-																				<span class="navi-text">Contacts</span>
-																			</a>
-																		</li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-rocket-1"></i>
-																				</span>
-																				<span class="navi-text">Groups</span>
-																				<span class="navi-link-badge">
-																					<span class="label label-light-primary label-inline font-weight-bold">new</span>
-																				</span>
-																			</a>
-																		</li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-bell-2"></i>
-																				</span>
-																				<span class="navi-text">Calls</span>
-																			</a>
-																		</li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-gear"></i>
-																				</span>
-																				<span class="navi-text">Settings</span>
-																			</a>
-																		</li>
-																		<li class="navi-separator my-3"></li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-magnifier-tool"></i>
-																				</span>
-																				<span class="navi-text">Help</span>
-																			</a>
-																		</li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-bell-2"></i>
-																				</span>
-																				<span class="navi-text">Privacy</span>
-																				<span class="navi-link-badge">
-																					<span class="label label-light-danger label-rounded font-weight-bold">5</span>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																	<!--end::Navigation-->
-																</div>
-															</div>
-														</div>
+														<h3 class="card-title font-weight-bolder">Datos Generales</h3>
 													</div>
 													<!--end::Header-->
 													<!--begin::Body-->
@@ -145,24 +69,21 @@ permalink: "monitoreo/index.html"
 															<!--begin::Row-->
 															<div class="row row-paddingless">
 																<div class="col mr-8">
-																	<div class="font-size-sm text-muted font-weight-bold">Average Sale</div>
-																	<div class="font-size-h4 font-weight-bolder">$650</div>
-																</div>
-																<div class="col">
-																	<div class="font-size-sm text-muted font-weight-bold">Commission</div>
-																	<div class="font-size-h4 font-weight-bolder">$233,600</div>
+																	<div class="font-size-sm text-muted font-weight-bold">Personas Totales</div>
+																	<div class="font-size-h4 font-weight-bolder" id="PerTot"></div>
+																	<a href="javascript:sumP()">Sumar</a>
 																</div>
 															</div>
 															<!--end::Row-->
 															<!--begin::Row-->
 															<div class="row row-paddingless mt-8">
 																<div class="col mr-8">
-																	<div class="font-size-sm text-muted font-weight-bold">Annual Taxes 2019</div>
-																	<div class="font-size-h4 font-weight-bolder">$29,004</div>
+																	<div class="font-size-sm text-muted font-weight-bold">Hombres</div>
+																	<div class="font-size-h4 font-weight-bolder" id="HomTot"></div>
 																</div>
 																<div class="col">
-																	<div class="font-size-sm text-muted font-weight-bold">Annual Income</div>
-																	<div class="font-size-h4 font-weight-bolder">$1,480,00</div>
+																	<div class="font-size-sm text-muted font-weight-bold">Mujeres</div>
+																	<div class="font-size-h4 font-weight-bolder" id="MujTot"></div>
 																</div>
 															</div>
 															<!--end::Row-->
@@ -460,7 +381,7 @@ permalink: "monitoreo/index.html"
 																		<td class="pl-0 py-8">
 																			<div class="d-flex align-items-center">
 																				<div class="symbol symbol-50 flex-shrink-0 mr-4">
-																					<div class="symbol-label" style="background-image: url('assets/media/stock-600x400/img-26.jpg')"></div>
+																					<div class="symbol-label" style="background-image: url('/assets/media/stock-600x400/img-26.jpg')"></div>
 																				</div>
 																				<div>
 																					<a href="#" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">{{item.data.monitoreos.Proyecto}}</a>
@@ -473,13 +394,13 @@ permalink: "monitoreo/index.html"
 																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Ano}}</span>
 																		</td>
 																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Personas}}</span>
+																			<span id="personas" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Personas}}</span>
 																		</td>
 																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Hombres}}</span>
+																			<span id="hombres" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Hombres}}</span>
 																		</td>
 																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Mujeres}}</span>
+																			<span id="mujeres" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Mujeres}}</span>
 																		</td>
 																		
 																	</tr>
@@ -2111,5 +2032,26 @@ permalink: "monitoreo/index.html"
     <!--begin::Page Scripts(used by this page)-->
     <script src="/assets/js/pages/widgets.js"></script>
     <!--end::Page Scripts-->
+
+	<script>
+	
+	window.sumP = function() {
+    var inputs = document.getElementById('personas'),
+        result = document.getElementById('PerTot'),
+        sumar = 0;            
+
+    for(var i=0; i<inputs.length; i++) {
+        var ip = inputs[i];
+
+        if (ip.name && ip.name.indexOf("PerTot") < 0) {
+            sumar += parseInt(ip.value) || 0;
+        }
+    }
+
+    result.value = sumar;
+	}
+	
+	</script>
+
 
 {% endblock %}
