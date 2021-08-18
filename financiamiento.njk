@@ -381,24 +381,8 @@ permalink: "financiamiento/index.html"
 															<!--begin::Row-->
 															<div class="row m-0">
 																<div class="col px-8 py-6 mr-8">
-																	<div class="font-size-sm text-muted font-weight-bold">Average Sale</div>
-																	<div class="font-size-h4 font-weight-bolder">$650</div>
-																</div>
-																<div class="col px-8 py-6">
-																	<div class="font-size-sm text-muted font-weight-bold">Commission</div>
-																	<div class="font-size-h4 font-weight-bolder">$233,600</div>
-																</div>
-															</div>
-															<!--end::Row-->
-															<!--begin::Row-->
-															<div class="row m-0">
-																<div class="col px-8 py-6 mr-8">
-																	<div class="font-size-sm text-muted font-weight-bold">Annual Taxes</div>
-																	<div class="font-size-h4 font-weight-bolder">$29,004</div>
-																</div>
-																<div class="col px-8 py-6">
-																	<div class="font-size-sm text-muted font-weight-bold">Annual Income</div>
-																	<div class="font-size-h4 font-weight-bolder">$1,480,00</div>
+																	<div class="font-size-sm text-muted font-weight-bold">Financiamiento Total</div>
+																	<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>$ </p><p id="finanT"></p></div>
 																</div>
 															</div>
 															<!--end::Row-->
@@ -453,7 +437,7 @@ permalink: "financiamiento/index.html"
 																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.Donante}}</span>
 																		</td>
 																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.monto}}</span>
+																			<span id="montos" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.monto}}</span>
 																		</td>
 																		<td>
 																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.Ano}}</span>
@@ -2104,5 +2088,19 @@ permalink: "financiamiento/index.html"
     <!--begin::Page Scripts(used by this page)-->
     <script src="/assets/js/pages/widgets.js"></script>
     <!--end::Page Scripts-->
+
+	<script>
+	
+    var inputs = document.querySelectorAll("[id='montos']");
+    sumar = 0;            
+
+    for(var i=0; i<inputs.length; i++) {
+		console.log(inputs[i]);
+        sumar += parseInt((inputs[i]).innerHTML);
+    }
+
+    document.getElementById('finanT').innerHTML = sumar.toString();
+	
+	</script>
 
 {% endblock %}

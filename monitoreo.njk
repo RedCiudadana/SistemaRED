@@ -71,7 +71,6 @@ permalink: "monitoreo/index.html"
 																<div class="col mr-8">
 																	<div class="font-size-sm text-muted font-weight-bold">Personas Totales</div>
 																	<div class="font-size-h4 font-weight-bolder" id="PerTot"></div>
-																	<a href="javascript:sumP()">Sumar</a>
 																</div>
 															</div>
 															<!--end::Row-->
@@ -2035,21 +2034,57 @@ permalink: "monitoreo/index.html"
 
 	<script>
 	
-	window.sumP = function() {
-    var inputs = document.getElementById('personas'),
-        result = document.getElementById('PerTot'),
-        sumar = 0;            
+    var inputs = document.querySelectorAll("[id='personas']");
+    sumar = 0;            
 
     for(var i=0; i<inputs.length; i++) {
-        var ip = inputs[i];
-
-        if (ip.name && ip.name.indexOf("PerTot") < 0) {
-            sumar += parseInt(ip.value) || 0;
-        }
+		console.log(inputs[i]);
+        sumar += parseInt((inputs[i]).innerHTML);
     }
 
-    result.value = sumar;
-	}
+    document.getElementById('PerTot').innerHTML = sumar.toString();
+	
+	</script>
+
+	<script>
+	
+    var inputs = document.querySelectorAll("[id='personas']");
+    sumar = 0;            
+
+    for(var i=0; i<inputs.length; i++) {
+		console.log(inputs[i]);
+        sumar += parseInt((inputs[i]).innerHTML);
+    }
+
+    document.getElementById('PerTot').innerHTML = sumar.toString();
+	
+	</script>
+
+	<script>
+	
+    var inputs = document.querySelectorAll("[id='hombres']");
+    sumar = 0;            
+
+    for(var i=0; i<inputs.length; i++) {
+		console.log(inputs[i]);
+        sumar += parseInt((inputs[i]).innerHTML);
+    }
+
+    document.getElementById('HomTot').innerHTML = sumar.toString();
+	
+	</script>
+
+	<script>
+	
+    var inputs = document.querySelectorAll("[id='mujeres']");
+    sumar = 0;            
+
+    for(var i=0; i<inputs.length; i++) {
+		console.log(inputs[i]);
+        sumar += parseInt((inputs[i]).innerHTML);
+    }
+
+    document.getElementById('MujTot').innerHTML = sumar.toString();
 	
 	</script>
 
