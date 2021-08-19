@@ -2035,53 +2035,32 @@ permalink: "monitoreo/index.html"
 	<script>
 	
     var inputs = document.querySelectorAll("[id='personas']");
-    sumar = 0;            
+    sumarP = 0;            
 
     for(var i=0; i<inputs.length; i++) {
 		console.log(inputs[i]);
-        sumar += parseInt((inputs[i]).innerHTML);
+        sumarP += parseInt((inputs[i]).innerHTML);
     }
 
-    document.getElementById('PerTot').innerHTML = sumar.toString();
-	
-	</script>
-
-	<script>
-	
-    var inputs = document.querySelectorAll("[id='personas']");
-    sumar = 0;            
-
-    for(var i=0; i<inputs.length; i++) {
-        sumar += parseInt((inputs[i]).innerHTML);
-    }
-
-    document.getElementById('PerTot').innerHTML = sumar.toString();
-	
-	</script>
-
-	<script>
+    document.getElementById('PerTot').innerHTML = sumarP.toString();
 	
     var inputs = document.querySelectorAll("[id='hombres']");
-    sumar = 0;            
+    sumarH = 0;            
 
     for(var i=0; i<inputs.length; i++) {
-        sumar += parseInt((inputs[i]).innerHTML);
+        sumarH += parseInt((inputs[i]).innerHTML);
     }
 
-    document.getElementById('HomTot').innerHTML = sumar.toString();
-	
-	</script>
-
-	<script>
+    document.getElementById('HomTot').innerHTML = sumarH.toString();
 	
     var inputs = document.querySelectorAll("[id='mujeres']");
-    sumar = 0;            
+    sumarM = 0;            
 
     for(var i=0; i<inputs.length; i++) {
-        sumar += parseInt((inputs[i]).innerHTML);
+        sumarM += parseInt((inputs[i]).innerHTML);
     }
 
-    document.getElementById('MujTot').innerHTML = sumar.toString();
+    document.getElementById('MujTot').innerHTML = sumarM.toString();
 	
 	</script>
 
