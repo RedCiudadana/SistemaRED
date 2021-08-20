@@ -3,7 +3,7 @@
 // Class definition
 var KTWidgets = function () {
     // Private properties
-
+    
     // General Controls
     var _initDaterangepicker = function () {
         if ($('#kt_dashboard_daterangepicker').length == 0) {
@@ -863,11 +863,8 @@ var KTWidgets = function () {
 
         var options = {
             series: [{
-                name: 'Net Profit',
-                data: [44, 55, 57, 56, 61, 58]
-            }, {
-                name: 'Revenue',
-                data: [76, 85, 101, 98, 87, 105]
+                name: 'Personas',
+                data: [20000, 4000]
             }],
             chart: {
                 type: 'bar',
@@ -895,7 +892,7 @@ var KTWidgets = function () {
                 colors: ['transparent']
             },
             xaxis: {
-                categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                categories: ['18-25', '26-35'],
                 axisBorder: {
                     show: false,
                 },
@@ -950,7 +947,7 @@ var KTWidgets = function () {
                 },
                 y: {
                     formatter: function (val) {
-                        return "$" + val + " thousands"
+                        return val + " personas"
                     }
                 }
             },
