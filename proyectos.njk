@@ -187,7 +187,7 @@ permalink: "proyectos/index.html"
 							<div class="container">
 								<!--begin::Row-->
 								<div class="row">
-									{% for item in collections.proyectos %}	
+									{% for item in collections.proyecto %}	
 									<div class="col-xl-4">
 										<!--begin::Card-->
 										<div class="card card-custom gutter-b card-stretch">
@@ -204,8 +204,8 @@ permalink: "proyectos/index.html"
 													<div class="d-flex flex-column mr-auto">
 														<!--begin: Title-->
 														<div class="d-flex flex-column mr-auto">
-															<a href="{{item.url}}" class="text-dark text-hover-primary font-size-h4 font-weight-bolder mb-1">{{item.data.proyectos.id_proyecto}} {{item.data.proyectos.Programa}}</a>
-															<span class="text-muted font-weight-bold">{{item.data.proyectos.Proyecto}}</span>
+															<a href="{{item.url}}" class="text-dark text-hover-primary font-size-h4 font-weight-bolder mb-1"> {{item.data.proyecto.Proyecto}}</a>
+															<span class="text-muted font-weight-bold"></span>
 														</div>
 														<!--end::Title-->
 													</div>

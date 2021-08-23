@@ -1,8 +1,8 @@
 
 const proyectos = [
-    1,
-    2,
-    3
+    "ImpactaLatam",
+    "ImpactaLatam2",
+    "ImpactaLatam3"
 ];
 
 
@@ -17,7 +17,7 @@ module.exports = function (eleventyConfig) {
         eleventyConfig.addCollection(proyecto, function (collectionApi) {
 
             let collection = collectionApi.getFilteredByTags('proyectos').filter(function (item) {
-                return item.data.proyectos.id_proyecto === proyecto;
+                return item.data.proyectos.Proyecto === proyecto;
             });
 
             return collection;
