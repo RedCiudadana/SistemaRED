@@ -10,8 +10,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Publico"
     },
     {
@@ -27,8 +27,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Privado"
     },
     {
@@ -44,8 +44,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "OSC"
     },
     {
@@ -61,8 +61,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Academia"
     },
     {
@@ -78,8 +78,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Publico"
     },
     {
@@ -95,8 +95,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Privado"
     },
     {
@@ -112,8 +112,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "OSC"
     },
     {
@@ -129,8 +129,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Academia"
     },
     {
@@ -146,8 +146,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Publico"
     },
     {
@@ -163,8 +163,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Privado"
     },
     {
@@ -180,8 +180,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "OSC"
     },
     {
@@ -197,8 +197,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Academia"
     },
     {
@@ -214,8 +214,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Publico"
     },
     {
@@ -231,8 +231,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Privado"
     },
     {
@@ -248,8 +248,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "OSC"
     },
     {
@@ -265,8 +265,8 @@
         "Personas": "5000",
         "Hombres": "2500",
         "Mujeres": "2500",
-        "Edad18-25": "4000",
-        "Edad26-35": "1000",
+        "Edad18a25": "4000",
+        "Edad26a35": "1000",
         "sector": "Academia"
     }
 ]

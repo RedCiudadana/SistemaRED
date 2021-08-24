@@ -135,12 +135,12 @@ permalink: "monitoreo/index.html"
 													<!--begin::Body-->
 													<div class="card-body">
 														<!--begin::Chart-->
-														<div id="kt_charts_widget_1_chart"></div>
+														<div id="kt_charts_widget_1_chart2"></div>
 														<!--end::Chart-->
 														{% for item in collections.monitoreos %}
 
-															<div id="edad18" style="display:none">{{item.data.monitoreos.Edad18-25}}</div>
-															<div id="edad26" style="display:none">{{item.data.monitoreos.Edad26-35}}</div>
+															<div id="edad18" style="display:none">{{item.data.monitoreos.Edad18a25}}</div>
+															<div id="edad26" style="display:none">{{item.data.monitoreos.Edad26a35}}</div>
 
 														{% endfor %}
 													</div>
@@ -1832,7 +1832,9 @@ permalink: "monitoreo/index.html"
     <!--begin::Page Scripts(used by this page)-->
     <script src="/assets/js/pages/widgets.js"></script>
     <!--end::Page Scripts-->
-
+	<!--begin::Page Scripts(used by this page)-->
+    <script src="/assets/js/pages/widgets2.js"></script>
+    <!--end::Page Scripts-->
 	<!--begin::Page Vendors(used by this page)-->
 	<script src="/assets/plugins/custom/flot/flot.bundle.js"></script>
 	<!--end::Page Vendors-->

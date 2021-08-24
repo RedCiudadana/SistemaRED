@@ -1,9 +1,31 @@
+
+
+
+
 "use strict";
 
 // Class definition
 var KTWidgets = function () {
     // Private properties
-    
+    var inputs = document.querySelectorAll("[id='edad18']");
+    var sumar18 = 0;            
+
+    for(var i=0; i<inputs.length; i++) {
+        sumar18 += parseInt((inputs[i]).innerHTML);
+    }
+
+
+    var inputs = document.querySelectorAll("[id='edad26']");
+    var sumar26 = 0;            
+
+    for(var i=0; i<inputs.length; i++) {
+        sumar26 += parseInt((inputs[i]).innerHTML);
+    }
+
+    console.log(sumar18);
+    console.log(sumar26);
+
+
     // General Controls
     var _initDaterangepicker = function () {
         if ($('#kt_dashboard_daterangepicker').length == 0) {
@@ -855,7 +877,7 @@ var KTWidgets = function () {
 
     // Charts widgets
     var _initChartsWidget1 = function () {
-        var element = document.getElementById("kt_charts_widget_1_chart");
+        var element = document.getElementById("kt_charts_widget_1_chart2");
 
         if (!element) {
             return;
@@ -864,7 +886,7 @@ var KTWidgets = function () {
         var options = {
             series: [{
                 name: 'Personas',
-                data: [20000, 4000]
+                data: [sumar18, sumar26]
             }],
             chart: {
                 type: 'bar',
