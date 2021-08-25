@@ -1845,7 +1845,7 @@ permalink: "monitoreo/index.html"
 	<script>
 	
     var inputs = document.querySelectorAll("[id='personas']");
-    sumarP = 0;            
+    var sumarP = 0;            
 
     for(var i=0; i<inputs.length; i++) {
 		console.log(inputs[i]);
@@ -1856,7 +1856,7 @@ permalink: "monitoreo/index.html"
 	document.getElementById('PerTot2').innerHTML = sumarP.toString();
 	
     var inputs = document.querySelectorAll("[id='hombres']");
-    sumarH = 0;            
+    var sumarH = 0;            
 
     for(var i=0; i<inputs.length; i++) {
         sumarH += parseInt((inputs[i]).innerHTML);
@@ -1865,7 +1865,7 @@ permalink: "monitoreo/index.html"
     document.getElementById('HomTot').innerHTML = sumarH.toString();
 	
     var inputs = document.querySelectorAll("[id='mujeres']");
-    sumarM = 0;            
+    var sumarM = 0;            
 
     for(var i=0; i<inputs.length; i++) {
         sumarM += parseInt((inputs[i]).innerHTML);
@@ -1873,17 +1873,17 @@ permalink: "monitoreo/index.html"
 
     document.getElementById('MujTot').innerHTML = sumarM.toString();
 
-	/*DIAGRAMA DE PIE*/	
+	/*DIAGRAMA DE PIE*/	/*
 	var data = [ 
 		["Hombres",sumarH], 
 		["Mujeres",sumarM], 
-	] 
-	/*
+	] */
+	
 	var data = [ 
 		{label: "Hombres", data: sumaH}, 
 		{label: "Mujeres", data: sumaM},
-	]; */
-
+	]; 
+	
 	$.plot('#piechart', data, {
 		series: {
 			pie: {
@@ -1894,7 +1894,6 @@ permalink: "monitoreo/index.html"
 			show: !1
 		}
 	});
-
 	</script>
 
 
