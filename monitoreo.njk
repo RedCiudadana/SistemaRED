@@ -1829,9 +1829,7 @@ permalink: "monitoreo/index.html"
     <script src="/assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
     <script src="/assets/js/scripts.bundle.js"></script>
     <!--end::Global Theme Bundle-->
-    <!--begin::Page Scripts(used by this page)-->
-    <script src="/assets/js/pages/widgets.js"></script>
-    <!--end::Page Scripts-->
+
 	<!--begin::Page Scripts(used by this page)-->
     <script src="/assets/js/pages/widgets2.js"></script>
     <!--end::Page Scripts-->
@@ -1873,16 +1871,16 @@ permalink: "monitoreo/index.html"
 
     document.getElementById('MujTot').innerHTML = sumarM.toString();
 
-	/*DIAGRAMA DE PIE*/	/*
+	/*DIAGRAMA DE PIE*/	
 	var data = [ 
 		["Hombres",sumarH], 
 		["Mujeres",sumarM], 
-	] */
-	
+	] 
+	/*
 	var data = [ 
 		{label: "Hombres", data: sumaH}, 
 		{label: "Mujeres", data: sumaM},
-	]; 
+	]; */
 	
 	$.plot('#piechart', data, {
 		series: {
