@@ -22,16 +22,6 @@ permalink: "voluntariado/index.html"
 										<!--begin::Page Title-->
 										<h5 class="text-dark font-weight-bold my-1 mr-5" >Monitoreo</h5>
 										<!--end::Page Title-->
-										<!--begin::Breadcrumb-->
-										<ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
-											<li class="breadcrumb-item text-muted">
-												<a href="/index.html" class="text-muted">Inicio</a>
-											</li>
-											<li class="breadcrumb-item text-muted">
-												<a href="/monitoreo/index.html" class="text-muted">Monitoreo</a>
-											</li>
-										</ul>
-										<!--end::Breadcrumb-->
 									</div>
 									<!--end::Page Heading-->
 								</div>
@@ -59,83 +49,8 @@ permalink: "voluntariado/index.html"
 												<div class="card card-custom gutter-b">
 													<!--begin::Beader-->
 													<div class="card-header border-0 py-5">
-														<h3 class="card-title font-weight-bolder">Sales Progress</h3>
-														<div class="card-toolbar">
-															<div class="dropdown dropdown-inline">
-																<a href="#" class="btn btn-clean btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																	<i class="ki ki-bold-more-hor"></i>
-																</a>
-																<div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-																	<!--begin::Navigation-->
-																	<ul class="navi navi-hover py-5">
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-drop"></i>
-																				</span>
-																				<span class="navi-text">New Group</span>
-																			</a>
-																		</li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-list-3"></i>
-																				</span>
-																				<span class="navi-text">Contacts</span>
-																			</a>
-																		</li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-rocket-1"></i>
-																				</span>
-																				<span class="navi-text">Groups</span>
-																				<span class="navi-link-badge">
-																					<span class="label label-light-primary label-inline font-weight-bold">new</span>
-																				</span>
-																			</a>
-																		</li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-bell-2"></i>
-																				</span>
-																				<span class="navi-text">Calls</span>
-																			</a>
-																		</li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-gear"></i>
-																				</span>
-																				<span class="navi-text">Settings</span>
-																			</a>
-																		</li>
-																		<li class="navi-separator my-3"></li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-magnifier-tool"></i>
-																				</span>
-																				<span class="navi-text">Help</span>
-																			</a>
-																		</li>
-																		<li class="navi-item">
-																			<a href="#" class="navi-link">
-																				<span class="navi-icon">
-																					<i class="flaticon2-bell-2"></i>
-																				</span>
-																				<span class="navi-text">Privacy</span>
-																				<span class="navi-link-badge">
-																					<span class="label label-light-danger label-rounded font-weight-bold">5</span>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																	<!--end::Navigation-->
-																</div>
-															</div>
-														</div>
+														<h3 class="card-title font-weight-bolder">Voluntarios Red Ciudadana</h3>
+														
 													</div>
 													<!--end::Header-->
 													<!--begin::Body-->
@@ -146,6 +61,10 @@ permalink: "voluntariado/index.html"
 															<div class="row row-paddingless">
 																<div class="col mr-8">
 																	<div class="font-size-sm text-muted font-weight-bold">Total de Voluntarios</div>
+																	<div id="voluntariosT" class="font-size-h4 font-weight-bolder"></div>
+																</div>
+																<div class="col mr-8">
+																	<div class="font-size-sm text-muted font-weight-bold">Voluntariado Mensual</div>
 																	<div id="voluntariosT" class="font-size-h4 font-weight-bolder"></div>
 																</div>
 															</div>
@@ -247,7 +166,7 @@ permalink: "voluntariado/index.html"
 														<!--begin::Title-->
 														<div class="card-title py-5">
 															<h3 class="card-label">
-																<span class="d-block text-dark font-weight-bolder">Recent Stats</span>
+																<span class="d-block text-dark font-weight-bolder">Rangos de Edades</span>
 																<span class="d-block text-muted mt-2 font-size-sm">More than 400+ new members</span>
 															</h3>
 														</div>
@@ -346,10 +265,11 @@ permalink: "voluntariado/index.html"
 																		<th style="min-width: 250px" class="pl-7">
 																			<span class="text-dark-75">Proyecto</span>
 																		</th>
-																		<th style="min-width: 100px">Año</th>
-																		<th style="min-width: 100px">Nombre</th>
+																		
 																		<th style="min-width: 100px">Género</th>
 																		<th style="min-width: 100px">Edad</th>
+																		<th style="min-width: 100px">Nivel Académico</th>
+																		<th style="min-width: 100px">Sectór</th>
 																	</tr>
 																</thead>
 																<tbody>
@@ -368,17 +288,18 @@ permalink: "voluntariado/index.html"
 																			</div>
 																		</td>
 																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.voluntariados.Ano}}</span>
-																		</td>
-																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.voluntariados.nombre}}</span>
-																		</td>
-																		<td>
 																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.voluntariados.Genero}}</span>
 																		</td>
 																		<td>
 																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.voluntariados.Edad}}</span>
 																		</td>
+																		<td>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.voluntariados.academico}}</span>
+																		</td>
+																		<td>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.voluntariados.sector}}</span>
+																		</td>
+																		
 																		
 																	</tr>
 																	{% endfor %}

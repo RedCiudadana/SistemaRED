@@ -22,16 +22,7 @@ permalink: "monitoreo/index.html"
 										<!--begin::Page Title-->
 										<h5 class="text-dark font-weight-bold my-1 mr-5" >Monitoreo</h5>
 										<!--end::Page Title-->
-										<!--begin::Breadcrumb-->
-										<ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
-											<li class="breadcrumb-item text-muted">
-												<a href="/index.html" class="text-muted">Inicio</a>
-											</li>
-											<li class="breadcrumb-item text-muted">
-												<a href="/monitoreo/index.html" class="text-muted">Monitoreo</a>
-											</li>
-										</ul>
-										<!--end::Breadcrumb-->
+
 									</div>
 									<!--end::Page Heading-->
 								</div>
@@ -69,23 +60,12 @@ permalink: "monitoreo/index.html"
 															<!--begin::Row-->
 															<div class="row row-paddingless">
 																<div class="col mr-8">
-																	<div class="font-size-sm text-muted font-weight-bold">Personas Totales</div>
+																	<div class="font-size-sm text-muted font-weight-bold">Número de Personas impactadas</div>
 																	<div class="font-size-h4 font-weight-bolder" id="PerTot"></div>
 																</div>
 															</div>
 															<!--end::Row-->
-															<!--begin::Row-->
-															<div class="row row-paddingless mt-8">
-																<div class="col mr-8">
-																	<div class="font-size-sm text-muted font-weight-bold">Hombres</div>
-																	<div class="font-size-h4 font-weight-bolder" id="HomTot"></div>
-																</div>
-																<div class="col">
-																	<div class="font-size-sm text-muted font-weight-bold">Mujeres</div>
-																	<div class="font-size-h4 font-weight-bolder" id="MujTot"></div>
-																</div>
-															</div>
-															<!--end::Row-->
+
 														</div>
 														<!--end::Stats-->
 														<!--begin::Chart-->
@@ -103,7 +83,7 @@ permalink: "monitoreo/index.html"
 													<!--begin::Header-->
 													<div class="card-header border-0 pt-5">
 														<div class="card-title font-weight-bolder">
-															<div class="card-label">Hombres y Mujeres
+															<div class="card-label">Masculino y Femenino
 															<div class="font-size-sm text-muted mt-2" style="display:flex"><p>Personas totales: &nbsp</p><p id="PerTot2"></p></div></div>
 														</div>
 														
@@ -170,9 +150,10 @@ permalink: "monitoreo/index.html"
 																			<span class="text-dark-75">Proyecto</span>
 																		</th>
 																		<th style="min-width: 100px">Año</th>
+																		
+																		<th style="min-width: 100px">Masculino</th>
+																		<th style="min-width: 100px">Femenino</th>
 																		<th style="min-width: 100px">Personas</th>
-																		<th style="min-width: 100px">Hombres</th>
-																		<th style="min-width: 100px">Mujeres</th>
 																	</tr>
 																</thead>
 																<tbody>
@@ -193,14 +174,15 @@ permalink: "monitoreo/index.html"
 																		<td>
 																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Ano}}</span>
 																		</td>
-																		<td>
-																			<span id="personas" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Personas}}</span>
-																		</td>
+																		
 																		<td>
 																			<span id="hombres" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Hombres}}</span>
 																		</td>
 																		<td>
 																			<span id="mujeres" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Mujeres}}</span>
+																		</td>
+																		<td>
+																			<span id="personas" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Personas}}</span>
 																		</td>
 																		
 																	</tr>
