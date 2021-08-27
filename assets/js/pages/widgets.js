@@ -2738,11 +2738,11 @@ var KTWidgets = function () {
 
         var options = {
             series: [{
-                name: 'Net Profit',
-                data: [35, 65, 75, 55, 45, 60, 55]
+                name: '',
+                data: []
             }, {
-                name: 'Revenue',
-                data: [40, 70, 80, 60, 50, 65, 60]
+                name: 'Monto',
+                data: [10, 30, 50, 70, 90, 110, 130, 150, 170, 190, 90]
             }],
             chart: {
                 type: 'bar',
@@ -2773,7 +2773,7 @@ var KTWidgets = function () {
                 colors: ['transparent']
             },
             xaxis: {
-                categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                categories: ['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
                 axisBorder: {
                     show: false,
                 },
@@ -2831,7 +2831,7 @@ var KTWidgets = function () {
                 },
                 y: {
                     formatter: function (val) {
-                        return "$" + val + " thousands"
+                        return "Q " + val + " mil"
                     }
                 },
                 marker: {
