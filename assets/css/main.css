@@ -1,3 +1,415 @@
+/* 02. header */
+/* 2 header */
+.header-transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+  
+.sticky {
+left: 0;
+margin: auto;
+position: fixed;
+top: 0;
+width: 100%;
+-webkit-box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+z-index: 9999;
+-webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+-webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+background: #03b664; }
+
+.default-header .sticky {
+background: #ffffff; 
+}
+
+.menu-3.sticky {
+border: 0; }
+
+.pos-rel {
+position: relative; }
+
+.header-top-area {
+padding: 12px 0 14px; }
+
+.header-info span {
+color: #a8bcc6;
+font-size: 14px;
+font-weight: 400;
+margin-right: 30px; }
+.header-info span i {
+    font-size: 14px;
+    color: #03b664;
+    margin-right: 6px; }
+.header-info span:last-child {
+    margin-right: 0; }
+
+.header-icon {
+margin-right: 24px; }
+.header-icon a {
+    color: #a8bcc6;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 12px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .header-icon a:last-child {
+    margin-right: 0; }
+    .header-icon a:hover {
+    color: #03b664; }
+
+.header-login a {
+background: #ffc226;
+color: #233f4d;
+font-weight: 500;
+font-size: 13px;
+padding: 5px 9px;
+font-family: "Barlow", sans-serif;
+text-transform: uppercase;
+border-radius: 5px; }
+
+.header-login i {
+padding-right: 3px; }
+
+.header-right {
+margin-top: 26px; }
+
+.header-right-text {
+overflow: hidden;
+margin-right: 15px; }
+.header-right-text h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: #ffffff; }
+.header-right-text span {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500; }
+
+.header-02-wrapper {
+margin-top: 9px; }
+
+.header-lang {
+padding: 3px 0 17px;
+display: inline-block; }
+
+.lang-icon > a {
+font-size: 18px;
+color: #233f4d;
+margin-left: 5px;
+font-weight: 600;
+font-family: "Barlow", sans-serif; }
+
+.lang-icon i {
+font-size: 15px;
+position: relative;
+top: 2px;
+left: 3px; }
+
+.header-lang-list {
+position: absolute;
+width: 120px;
+opacity: 0;
+visibility: hidden;
+padding: 20px 15px;
+border-top: 3px solid #ffc226;
+-webkit-transition: .4s;
+-o-transition: .4s;
+transition: .4s;
+z-index: 999;
+background: #ffffff;
+padding-bottom: 5px;
+padding-top: 4px;
+top: 100%;
+-webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+-webkit-transition: .3s;
+-o-transition: .3s;
+transition: .3s; }
+
+.header-lang:hover .header-lang-list {
+opacity: 1;
+visibility: visible; }
+
+.header-lang-list li {
+display: block;
+margin-bottom: 0;
+padding: 5px 0; }
+.header-lang-list li a {
+    display: block;
+    color: #647589;
+    font-size: 13px; }
+    .header-lang-list li a:hover {
+    color: #ffc226; }
+
+.header-02-info a {
+color: #233f4d;
+background: #ffffff;
+font-size: 16px;
+border: 2px solid #f0f0f0;
+display: inline-block;
+line-height: 1;
+padding: 9px 17px;
+border-radius: 5px;
+font-family: "Barlow", sans-serif; }
+.header-02-info a i {
+    padding-right: 5px;
+    color: #03b664; }
+
+.header-02-icon {
+margin-top: 5px; }
+.header-02-icon a {
+    color: #a0aeb8;
+    font-size: 16px;
+    margin-right: 18px; }
+
+.search-icon {
+margin-top: 50px;
+margin-left: 39px; }
+.search-icon a {
+    font-size: 16x;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    color: #ffffff; }
+    .search-icon a:hover {
+    color: #ffc226; }
+
+.header-02 {
+padding-left: 55px;
+border-bottom: 2px solid #37576b;
+padding-bottom: 0;
+padding-top: 0; }
+
+.header-02 .header-info span {
+color: #ffffff;
+font-size: 18px;
+margin-right: 64px;
+border-right: 2px solid #37576b;
+padding-right: 64px;
+padding-top: 15px;
+display: inline-block;
+padding-bottom: 15px; }
+
+.header-02 .header-info span i {
+font-size: 20px;
+color: #ffffff; }
+
+.header-03-icon a {
+font-size: 16px;
+-webkit-transition: .3s;
+-o-transition: .3s;
+transition: .3s;
+padding: 20px 23px;
+border-right: 2px solid #37576b;
+transition: .3s;
+margin: 0;
+line-height: 1;
+float: right; }
+.header-03-icon a:hover {
+    color: #ffffff;
+    background: #4661c5;
+    border-color: #4661c5; }
+.header-03-icon a:first-child {
+    border-right: 0; }
+
+.fb {
+color: #4661c5; }
+
+.twit {
+color: #1ab2e8; }
+
+.google {
+color: #ea4335; }
+
+.dribbble {
+color: #4661c5; }
+
+.logo-2 a {
+background: #ffc226;
+padding: 28px 70px;
+line-height: 1;
+display: inline-block; }
+
+.header-02-login a {
+background: #e25a44;
+color: #ffffff;
+font-weight: 600;
+font-size: 16px;
+padding: 34px 69px;
+text-transform: capitalize;
+display: inline-block;
+line-height: 1;
+font-family: "Barlow", sans-serif; }
+
+.header-02-login i {
+padding-right: 6px;
+font-size: 22px; }
+
+.default-header .header-info span {
+color: #748188;
+border-right: 2px solid #ebebeb; }
+
+.default-header .header-02 {
+border-bottom: 2px solid #ebebeb; }
+
+.fb-1 {
+background: #4661c5; }
+
+.twit-1 {
+background: #1ab2e8; }
+
+.google-1 {
+background: #ea4335; }
+
+.dribbble-1 {
+background: #d03086; }
+
+.default-header .header-03-icon a {
+padding: 20px 23px;
+border-right: none;
+color: #ffffff;
+margin-right: 5px; }
+.default-header .header-03-icon a:first-child {
+    margin-right: 0; }
+
+.default-header .header-info span i {
+color: #03b664; }
+
+.default-header .header-02-login a {
+background: none;
+color: #748188;
+padding: 34px 69px;
+border-left: 2px solid #ebebeb; }
+
+.default-header .header-03-icon .fb-1:hover {
+background: #4661c5; }
+
+.default-header .header-03-icon .twit-1:hover {
+background: #1ab2e8; }
+
+.default-header .header-03-icon .google-1:hover {
+background: #ea4335; }
+
+.default-header .header-03-icon .dribbble-1:hover {
+background: #d03086; }
+
+.default-header .header-02-login a i {
+color: #ffc226; }
+
+/* menu */
+.main-menu nav > ul > li {
+display: inline-block;
+position: relative;
+margin-left: 26px; }
+
+.main-menu nav > ul > li:first-child {
+margin-left: 0; }
+
+.main-menu nav > ul > li > a {
+display: block;
+font-size: 16px;
+padding: 37px 0;
+-webkit-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+background: transparent;
+line-height: 1;
+position: relative;
+text-transform: capitalize;
+color: #fff;
+font-weight: 600;
+font-family: "Barlow", sans-serif; }
+
+.main-menu nav > ul > li > a i {
+font-size: 14px;
+position: relative;
+top: 1px;
+left: 2px; }
+
+.main-menu nav > ul > li:hover > a, .main-menu nav > ul > li.active > a {
+color: #ffc226; }
+
+.main-menu > nav > ul > li > a::before {
+background: #ffc226;
+content: "";
+height: 3px;
+position: absolute;
+top: 0;
+width: 0;
+-webkit-transition: .5s;
+-o-transition: .5s;
+transition: .5s; }
+
+.main-menu > nav > ul > li:hover > a::before, .main-menu > nav > ul > li.active > a::before {
+width: 100%; }
+
+/* sub-menu */
+.main-menu nav > ul > li .sub-menu {
+background: #ffffff none repeat scroll 0 0;
+-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+left: 0;
+opacity: 0;
+position: absolute;
+top: 120%;
+-webkit-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+visibility: hidden;
+width: 220px;
+z-index: 9;
+border-top: 3px solid #ffc226;
+text-align: left; }
+
+.main-menu nav > ul > li:hover .sub-menu {
+opacity: 1;
+top: 100%;
+visibility: visible; }
+
+.main-menu nav > ul > li .sub-menu li {
+display: block; }
+
+.main-menu nav > ul > li .sub-menu li a {
+color: #666666;
+font-size: 14px;
+margin: 0;
+padding: 13px 20px;
+text-transform: capitalize;
+display: block;
+font-size: 400; }
+
+.main-menu nav > ul > li:hover > .sub-menu li > a:hover {
+color: #fff;
+background: #ffc226; }
+
+.menu-2 {
+padding-top: 30px; }
+
+.menu-2 .main-menu > nav > ul > li > a::before {
+display: none; }
+
+.menu-2 .main-menu nav > ul > li > a {
+padding: 51px 0; }
+
+.menu-3 {
+border-bottom: 2px solid #37576b; }
+
+.default-header .menu-3 {
+border-bottom: none;
+padding-left: 55px; }
+
+.default-header .main-menu nav > ul > li > a {
+color: #748188; }
+
 /* 15. footer */
 .footer-icon {
     margin-left: 30px; }
@@ -209,3 +621,190 @@
     .contact-link li{
        list-style: none!important; 
     }
+
+
+    /*MEANUMENU*/
+
+/*! #######################################################################
+
+	MeanMenu 2.0.7
+	--------
+
+	To be used with jquery.meanmenu.js by Chris Wharton (http://www.meanthemes.com/plugins/meanmenu/)
+
+####################################################################### */
+
+/* hide the link until viewport size is reached */
+a.meanmenu-reveal {
+	display: none;
+}
+
+/* when under viewport size, .mean-container is added to body */
+.mean-container .mean-bar {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  float: left;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+}
+.mean-container a.meanmenu-reveal {
+	border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 1px;
+	font-weight: 700;
+	height: 22px;
+	line-height: 22px;
+	margin-top: -37px;
+	padding: 8px 9px;
+	position: absolute;
+	right: 0;
+	text-decoration: none;
+	top: 0;
+	width: 22px;
+}
+.mean-container a.meanmenu-reveal span {
+  background: #fff none repeat scroll 0 0;
+  display: block;
+  height: 3px;
+  margin-top: 3px;
+}
+
+.mean-container .mean-nav {
+	background: #0c1923 none repeat scroll 0 0;
+	float: left;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.mean-container .mean-nav ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+}
+
+.mean-container .mean-nav ul li {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.mean-container .mean-nav ul li a {
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	color: #fff;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 10px 5%;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 90%;
+	font-size: 12px;
+}
+
+.mean-container .mean-nav ul li li a {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  opacity: 0.75;
+  padding: 10px 10%;
+  text-shadow: none;
+  visibility: visible;
+  width: 80%;
+}
+
+.mean-container .mean-nav ul li.mean-last a {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.mean-container .mean-nav ul li li li a {
+	width: 70%;
+	padding: 1em 15%;
+}
+
+.mean-container .mean-nav ul li li li li a {
+	width: 60%;
+	padding: 1em 20%;
+}
+
+.mean-container .mean-nav ul li li li li li a {
+	width: 50%;
+	padding: 1em 25%;
+}
+
+.mean-container .mean-nav ul li a:hover {
+	background: #252525;
+	background: rgba(255,255,255,0.1);
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+	border-color: currentcolor currentcolor rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.4);
+	border-image: none;
+	border-style: none none solid solid;
+	border-width: medium medium 1px 1px;
+	font-weight: 700;
+	height: 27px;
+	margin-top: 1px;
+	padding: 5px 12px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 26px;
+	z-index: 2;
+}
+
+.mean-container .mean-nav ul li a.mean-expand:hover {
+	background: rgba(0,0,0,0.9);
+}
+
+.mean-container .mean-push {
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+
+.mean-nav .wrapper {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* Fix for box sizing on Foundation Framework etc. */
+.mean-container .mean-bar, .mean-container .mean-bar * {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+
+.mean-remove {
+	display: none !important;
+}
+
+
+.transparent-header .mean-container a.meanmenu-reveal {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.transparent-header .mean-container a.meanmenu-reveal span {
+	background: #fff;
+}
+
+.header-2 .mean-container a.meanmenu-reveal {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.header-2 .mean-container a.meanmenu-reveal span {
+	background: #fff;
+}
