@@ -20,6 +20,7 @@
 <link href="/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 <link href="/assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
 <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+<link href="/assets/css/main.css" rel="stylesheet" >
 <!--end::Global Theme Styles-->
 <!--begin::Layout Themes(used by all pages)-->
 <!--end::Layout Themes-->
@@ -131,39 +132,119 @@
 {% block content %}
 {% endblock %} 
             
-        <!--begin::Chat Panel-->
-		<div class="modal modal-sticky modal-sticky-bottom-right" id="kt_chat_modal" role="dialog" data-backdrop="false">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<!--begin::Card-->
-					<div class="card card-custom">
-						
-						<!--begin::Footer-->
-						<div class="card-footer align-items-center">
-							<!--begin::Compose-->
-							<textarea class="form-control border-0 p-0" rows="2" placeholder="Type a message"></textarea>
-							<div class="d-flex align-items-center justify-content-between mt-5">
-								<div class="mr-3">
-									<a href="#" class="btn btn-clean btn-icon btn-md mr-1">
-										<i class="flaticon2-photograph icon-lg"></i>
-									</a>
-									<a href="#" class="btn btn-clean btn-icon btn-md">
-										<i class="flaticon2-photo-camera icon-lg"></i>
-									</a>
-								</div>
-								<div>
-									<button type="button" class="btn btn-primary btn-md text-uppercase font-weight-bold chat-send py-2 px-6">Send</button>
-								</div>
-							</div>
-							<!--begin::Compose-->
-						</div>
-						<!--end::Footer-->
-					</div>
-					<!--end::Card-->
-				</div>
-			</div>
-		</div>
-		<!--end::Chat Panel-->
+        <!-- footer-area-start -->
+        <footer>
+            <div class="footer-middle-area pt-80 pb-25" style="background-image:url(/assets/bg-05.jpeg);    padding-bottom: 10%">
+                <div class="container">
+                    <div class="row" style="padding-top: 5rem;">
+                        <div class="col-xl-2 col-lg-2 col-md-2" style="margin-bottom: -80px;"> 
+                            <div class="footer-wrapper mb-30">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="/assets/LOGO-EN-BLANCO.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-4 col-md-6">
+                            <div class="footer-wrapper mb-30">
+                                
+                                <div class="footer-text">
+                                    <p>Somos una organización sin fines de lucro, creada con la misión de incentivar la participación y la auditoría ciudadana. Nuestros proyectos están orientados a eliminar los obstáculos más comunes que interfieren con el ejercicio de la ciudadanía y con el fortalecimiento de la institucionalidad a través del uso innovador de la tecnología y de la comunicación.</p>
+                                </div>
+                                <div class="footer-icon footer-02-icon">
+                                    <a href="https://www.facebook.com/Redciudadanagt"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/redxguate"><i class="fab fa-twitter"></i></a>
+                                    <!--a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a-->
+                                    <a href="https://www.instagram.com/redxguate/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCQwc62j7beStZYFzwPxBEQg"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-3 col-md-6">
+                            <div class="footer-wrapper mt-25 mb-30">
+                                <h3 class="footer-title">¿Te gusta lo que hacemos?</h3>
+                                <ul class="contact-link">
+                                    <li>
+                                        <div class="contact-address-icon">
+                                            <i class="fa fa-heart " style="color:#FFF!important"></i>
+
+                                        </div>
+                                        <div class="contact-address-text">
+                                            <!--span>26 Simpson Avenue <br> Harrisburg,  USA</span-->
+                                            <a href="http://donacion.redciudadana.org/"><span>Donaciones</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-address-icon">
+                                            <i class="fa fa-users " style="color:#FFF!important"></i>
+                                        </div>
+                                        <div class="contact-address-text">
+                                            <!--span>support@gmail.com</span-->
+                                            <a href="http://voluntarios.redciudadana.org/"><span>Voluntariado</span></a>
+                                        </div>
+                                    </li>
+                                    <!--li>
+                                        <div class="contact-address-icon">
+                                            <i class="far fa-phone"></i>
+                                        </div>
+                                        <div class="contact-address-text">
+                                            <span>+012 (3456) 7788</span>
+                                        </div>
+                                    </li-->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="footer-wrapper mt-25 mb-30">
+                                <h3 class="footer-title">Contáctanos</h3>
+                                <!--div class="footer-link"-->
+                                <ul class="contact-link">
+                                    <li>
+                                        <div class="contact-address-icon">
+                                            <i class="fa fa-envelope " style="color:#FFF!important"></i>
+
+                                        </div>
+                                        <div class="contact-address-text">
+                                            <!--span>26 Simpson Avenue <br> Harrisburg,  USA</span-->
+                                            <a href="mailto:info@redciudadana.org.gt"><span>info@redciudadana.org.gt</span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-address-icon">
+                                            <i class="fa fa-map-marker " style="color:#FFF!important"></i>
+
+                                        </div>
+                                        <div class="contact-address-text">
+                                            <!--span>26 Simpson Avenue <br> Harrisburg,  USA</span-->
+                                            <a href="https://goo.gl/maps/PWTeqy6qRpNQ8foC7"><span>Guatemala, Guatemala</span></a>
+                                        </div>
+                                    </li>
+                                    <!--li><a href="#">Need A Job ?</a></li>
+                                    <li><a href="#">Become A Menber ?</a></li>
+                                    <li><a href="#">Appointment</a></li>
+                                    <li><a href="#">Our Store</a></li>
+                                    <li><a href="#">Setting & Privacy</a></li-->
+                                </ul>
+                                <!--/div-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-area pt-25 mt-45">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="copyright text-center">
+                                    <p style="color:#FFF!important"><!--i class="far fa-copyright"></i> 2020 <a href="#">Fundee.</a--> Asociación Civil Red Ciudadana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
         
 
 </main>
