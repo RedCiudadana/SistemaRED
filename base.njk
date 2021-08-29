@@ -37,20 +37,20 @@
 <main>
 
 <!-- header-start -->
-<header class="default-header" style="border-bottom: #748188 1px solid;"><!--header-transparent-->
+<header class="default-header" style="border-bottom: #a0aeb8 1px solid;"><!--header-transparent-->
     <div class="main-menu-area menu-2 pl-155 pr-115">
         <div class="container-fluid">
             <div class="row d-flex align-items-center padmen " id="menu">
                 <div class="col-xl-2 col-lg-3 p0">
                     <div class="logo">
-                        <a href="index.html"><img src="/assets/ELEMENTOS/LOGOTIPO_RC.png" alt="Logo Red Ciudadana" style="margin-left: 5%;height:70px; margin-bottom:20px" /></a>
+                        <a href="/index.html"><img src="/assets/ELEMENTOS/LOGOTIPO_RC.png" alt="Logo Red Ciudadana" style="margin-left: 5%;height:70px; margin-bottom:20px" /></a>
                     </div>
                 </div>
                 
                 <div class="col-xl-7 col-lg-9" >
                     <div class="main-menu f-left ">
-                        <nav id="mobile-menu">
-                            <ul>
+                        <nav id="mobile-menu" class="mobile-menu" >
+                            <ul class="nav-menu">
                                 <li class="nav-item">
                                     <!--data-target="#kt_header_tab_1"-->
                                     <a href="/index.html" class="nav-link py-4 " >Inicio</a>
@@ -80,14 +80,26 @@
                                     <a href="/voluntariado/index.html" class="nav-link py-4 " >Voluntariado</a>
                                 </li>
                                 <!--end::Item-->
+                                
+                            </ul>
+                            <ul class="icon">
+                                <li >
+                                    <a href="javascript:void(0);"  onclick="myFunction()">
+                                        <i class="fa fa-bars " style="font-size: 4rem"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
+                        
+                        
+                        
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 d-none d-xl-block ">
                     <div class="header-02-wrapper">
                         
-                        <div class="header-icon header-02-icon  f-right" style="margin-bottom:1rem">
+                        <div id="redes" class="header-icon header-02-icon  f-right" style="margin-bottom:1rem">
+                            
                             <a href="https://www.facebook.com/Redciudadanagt"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://twitter.com/redxguate"><i class="fab fa-twitter"></i></a>
                             <a href="https://www.instagram.com/redxguate/"><i class="fab fa-instagram"></i></a>
@@ -246,7 +258,19 @@
 <script src="assets/js/scripts.bundle.js"></script>
 <!--end::Global Theme Bundle-->
 
+<script >
 
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("mobile-menu");
+  if (x.className === "mobile-menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "mobile-menu";
+  }
+}
+
+</script>
 
 {% endblock %}
 
