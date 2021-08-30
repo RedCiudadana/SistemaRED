@@ -1,13 +1,13 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
 
-    var y = document.getElementById("nav-menu");
+    var y = document.getElementById("verm");
     if(y.style.display == "none"){
-        y.style.display = "block";    
+        y.style.display = "block";  
+        console.log("display");  
     }
     else{
-        y.style.display = "none";    
+        y.style.display = "none";
+        console.log("oculto");    
     }
-    
-    console.log("funcion menu");
 }
