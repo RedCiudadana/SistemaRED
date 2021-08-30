@@ -729,7 +729,8 @@ color: #748188; }
 }
 
 .vertical-menu a {
-  background-color: #eee; /* Grey background color */
+  background-color: rgb(255, 255, 255); /* Grey background color */
+  border: #ccc 0.5px solid;
   color: black; /* Black text color */
   display: block; /* Make the links appear below each other */
   padding: 12px; /* Add some padding */

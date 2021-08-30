@@ -3,11 +3,9 @@ function myFunction() {
 
     var y = document.getElementById("verm");
     if(y.style.display == "none"){
-        y.style.display = "block";  
-        console.log("display");  
+        y.style.display = "block";   
     }
     else{
-        y.style.display = "none";
-        console.log("oculto");    
+        y.style.display = "none";  
     }
 }
