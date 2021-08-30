@@ -277,7 +277,7 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" class="btn btn-light-primary font-w
 	<script>
 	
     var inputs = document.querySelectorAll("[id='montos']");
-	var outputs = document.querySelectorAll("[id='montosm']");
+	
 	
     var sumar = 0;            
 
@@ -303,6 +303,14 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" class="btn btn-light-primary font-w
     totalcomsA=totalA.innerHTML;
 	totalcomsA = parseInt(totalcomsA);
     document.getElementById('finanA').innerHTML = totalcomsA.toLocaleString('en-US');
+
+	var meses = document.querySelectorAll("[id='montosm']");
+	meses.forEach((mes) => {
+		var mescoms;            
+		mescoms=mes.innerHTML;
+		mescoms = parseInt(mescoms);
+		mes.innerHTML = mescoms.toLocaleString('en-US');
+	});
 
 
 	</script>
