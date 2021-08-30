@@ -650,6 +650,10 @@ color: #748188; }
         .icon{
             display: none;
         }
+
+        .vertical-menu{
+            display: none;
+        }
     
     }
 
