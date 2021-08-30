@@ -10,6 +10,10 @@
     -o-transition: .4s;
     transition: .4s; }
   
+.padmen{
+  padding: 0px 10%;
+}
+
 .sticky {
 left: 0;
 margin: auto;
@@ -740,3 +744,4 @@ color: #748188; }
   background-color: #04AA6D; /* Add a green color to the "active/current" link */
   color: white;
 }
+

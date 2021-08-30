@@ -87413,3 +87413,19 @@ body {
     padding-top: 0;
   }
 }
+
+.font-size-h1-sm2{
+  font-size: 1.8rem!important;
+}
+
+@media (min-width: 992px) {
+  .font-size-h4-lg2 {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .font-size-h4-lg2 {
+    font-size: 1.32rem !important;
+  }
+}
