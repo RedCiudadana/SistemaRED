@@ -1,7 +1,7 @@
 [
     {
         "id_voluntariado": "1",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Innovación en Gobierno",
         "Proyecto": "Proyecto 1",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -10,12 +10,13 @@
         "nombre": "Julio",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "17",
+        "Edad": "18-23 años",
+        "academico": "Diversificado",
         "sector": "Publico"
     },
     {
         "id_voluntariado": "2",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Innovación Social",
         "Proyecto": "Proyecto 2",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -26,12 +27,13 @@
         "nombre": "Jose",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "18",
+        "Edad": "23-30 años",
+        "academico": "Licenciatura",
         "sector": "Privado"
     },
     {
         "id_voluntariado": "3",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Fortalecimiento de espacios cívicos",
         "Proyecto": "Proyecto 3",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -42,12 +44,13 @@
         "nombre": "Luis",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "19",
-        "sector": "OSC"
+        "Edad": "31-40 años",
+        "academico": "Maestría",
+        "sector": "Organización de sociedad civil"
     },
     {
         "id_voluntariado": "4",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Auditoria Social",
         "Proyecto": "Proyecto 4",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -58,12 +61,13 @@
         "nombre": "agosto",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "20",
-        "sector": "Academia"
+        "Edad": "40 años en adelante",
+        "academico": "Doctorado",
+        "sector": "Académico"
     },
     {
         "id_voluntariado": "5",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Innovación en Gobierno",
         "Proyecto": "Proyecto 5",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -74,12 +78,13 @@
         "nombre": "Jose",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "21",
-        "sector": "Publico"
+        "Edad": "18-23 años",
+        "academico": "Diversificado",
+        "sector": "Otro"
     },
     {
         "id_voluntariado": "6",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Innovación Social",
         "Proyecto": "Proyecto 6",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -90,12 +95,13 @@
         "nombre": "Luis",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "22",
-        "sector": "Privado"
+        "Edad": "23-30 años",
+        "academico": "Licenciatura",
+        "sector": "Publico"
     },
     {
         "id_voluntariado": "7",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Fortalecimiento de espacios cívicos",
         "Proyecto": "Proyecto 7",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -106,12 +112,13 @@
         "nombre": "septiembre",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "23",
-        "sector": "OSC"
+        "Edad": "31-40 años",
+        "academico": "Maestría",
+        "sector": "Privado"
     },
     {
         "id_voluntariado": "8",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Auditoria Social",
         "Proyecto": "Proyecto 8",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -122,12 +129,13 @@
         "nombre": "Jose",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "24",
-        "sector": "Academia"
+        "Edad": "40 años en adelante",
+        "academico": "Doctorado",
+        "sector": "Organización de sociedad civil"
     },
     {
         "id_voluntariado": "9",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Innovación en Gobierno",
         "Proyecto": "Proyecto 9",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -138,12 +146,13 @@
         "nombre": "Luis",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "25",
-        "sector": "Publico"
+        "Edad": "18-23 años",
+        "academico": "Diversificado",
+        "sector": "Académico"
     },
     {
         "id_voluntariado": "10",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Innovación Social",
         "Proyecto": "Proyecto 10",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -154,12 +163,13 @@
         "nombre": "octubre",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "26",
-        "sector": "Privado"
+        "Edad": "23-30 años",
+        "academico": "Licenciatura",
+        "sector": "Otro"
     },
     {
         "id_voluntariado": "11",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Fortalecimiento de espacios cívicos",
         "Proyecto": "Proyecto 11",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -170,12 +180,13 @@
         "nombre": "Jose",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "27",
-        "sector": "OSC"
+        "Edad": "31-40 años",
+        "academico": "Maestría",
+        "sector": "Publico"
     },
     {
         "id_voluntariado": "12",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Auditoria Social",
         "Proyecto": "Proyecto 12",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -186,12 +197,13 @@
         "nombre": "Luis",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "28",
-        "sector": "Academia"
+        "Edad": "40 años en adelante",
+        "academico": "Doctorado",
+        "sector": "Privado"
     },
     {
         "id_voluntariado": "13",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Innovación en Gobierno",
         "Proyecto": "Proyecto 13",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -202,12 +214,13 @@
         "nombre": "noviembre",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "29",
-        "sector": "Publico"
+        "Edad": "18-23 años",
+        "academico": "Diversificado",
+        "sector": "Organización de sociedad civil"
     },
     {
         "id_voluntariado": "14",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Innovación Social",
         "Proyecto": "Proyecto 14",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -218,12 +231,13 @@
         "nombre": "Jose",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "30",
-        "sector": "Privado"
+        "Edad": "23-30 años",
+        "academico": "Licenciatura",
+        "sector": "Académico"
     },
     {
         "id_voluntariado": "15",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Fortalecimiento de espacios cívicos",
         "Proyecto": "Proyecto 15",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -234,12 +248,13 @@
         "nombre": "Luis",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "31",
-        "sector": "OSC"
+        "Edad": "31-40 años",
+        "academico": "Maestría",
+        "sector": "Otro"
     },
     {
         "id_voluntariado": "16",
-        "Programa": "Innovacion en Gobierno",
+        "Programa": "Auditoria Social",
         "Proyecto": "Proyecto 16",
         "Descripcion": "El proyecto ImpactaLatam es",
         "Fase": "1",
@@ -250,7 +265,8 @@
         "nombre": "diciembre",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "32",
-        "sector": "Academia"
+        "Edad": "40 años en adelante",
+        "academico": "Doctorado",
+        "sector": "Publico"
     }
 ]
