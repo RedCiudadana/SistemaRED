@@ -6,6 +6,10 @@ permalink: "monitoreo/index.html"
 
 {% block head %}
 <title>Monitoreo</title>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
 {% endblock %}
 
 {% block content %}
@@ -73,7 +77,12 @@ permalink: "monitoreo/index.html"
 															<div class="row row-paddingless">
 																<div class="col mr-8">
 																	<div class="font-size-sm text-muted font-weight-bold">Número de Personas impactadas</div>
-																	<div class="font-size-h4 font-weight-bolder" id="PerTot"></div>
+																	{% for item in collections.monitoreos %}
+																		{% if loop.length==loop.index %}
+																			<div class="font-size-h4 font-weight-bolder" >{{loop.length}}</div>
+																		{% endif %}
+																	
+																	{% endfor %}
 																</div>
 															</div>
 															<!--end::Row-->
@@ -103,8 +112,14 @@ permalink: "monitoreo/index.html"
 													<!--end::Header-->
 													<!--begin::Body-->
 													<div class="card-body">
+														{% for item in collections.monitoreos %}
+															
+														<div class="font-size-h4 font-weight-bolder" id="genero" style="display:none">{{item.data.monitoreos.Genero}}</div>
+															
+														{% endfor %}
+
 														<!--begin::Chart-->
-														<div id="piechart" style="height: 250px"></div>
+														<div id="piechart1" style="height: 250px"></div>
 														<!--end::Chart-->
 														
 													</div>
@@ -350,27 +365,47 @@ permalink: "monitoreo/index.html"
     document.getElementById('MujTot').innerHTML = sumarM.toString();
 
 	/*DIAGRAMA DE PIE*/	
-	var data = [ 
-		["Hombres",sumarH], 
-		["Mujeres",sumarM], 
-	] 
-	/*
-	var data = [ 
-		{label: "Hombres", data: sumaH}, 
-		{label: "Mujeres", data: sumaM},
-	]; */
-	
-	$.plot('#piechart', data, {
-		series: {
-			pie: {
-				show: !0
-			}
-		},
-		legend: {
-			show: !1
-		}
-	});
+
 	</script>
 
+	<script type="text/javascript">
+
+		var genero = document.querySelectorAll("[id='genero']");
+		var hombres = 0;
+		var mujeres = 0;
+
+		for(var i=0; i<genero.length; i++) {
+			var x = genero[i].innerHTML;
+			console.log(x);
+			if(x=="Masculino"){
+				hombres = hombres + 1 ;
+			}
+			else if (x=="Femenino"){
+				mujeres = mujeres + 1 ;
+			}
+			console.log(hombres);
+			console.log(mujeres);
+		}
+
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+
+		function drawChart() {
+
+		var data = google.visualization.arrayToDataTable([
+			['Género', ''],
+			['Masculino', hombres],
+			['Femenino', mujeres],
+		]);
+
+		var options = {
+			colors: ['#4d4dff', '#ff6666'],
+		};
+
+		var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+
+		chart.draw(data, options);
+		}
+	</script>
 
 {% endblock %}
