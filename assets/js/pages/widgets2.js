@@ -7,23 +7,31 @@
 // Class definition
 var KTWidgets = function () {
     // Private properties
-    var inputs = document.querySelectorAll("[id='edad18']");
-    var sumar18 = 0;            
+    var edad = document.querySelectorAll("[id='edad']");
+    var de18a23 = 0;
+    var de23a30 = 0; 
+    var de31a40 = 0;  
+    var de40ade = 0;   
 
-    for(var i=0; i<inputs.length; i++) {
-        sumar18 += parseInt((inputs[i]).innerHTML);
+    for(var i=0; i<edad.length; i++) {
+        var x = edad[i].innerHTML;
+
+        if(x=="18-23 años"){
+            de18a23 = de18a23 + 1 ;
+        }
+        else if (x=="23-30 años"){
+            de23a30 = de23a30 + 1 ;
+        }
+        else if (x=="31-40 años"){
+            de31a40 = de31a40 + 1 ;
+        }
+        else {
+            de40ade = de40ade + 1 ;
+        }
     }
 
 
-    var inputs = document.querySelectorAll("[id='edad26']");
-    var sumar26 = 0;            
 
-    for(var i=0; i<inputs.length; i++) {
-        sumar26 += parseInt((inputs[i]).innerHTML);
-    }
-
-    console.log(sumar18);
-    console.log(sumar26);
 
 
     // General Controls
@@ -886,7 +894,7 @@ var KTWidgets = function () {
         var options = {
             series: [{
                 name: 'Personas',
-                data: [sumar18, sumar26]
+                data: [de18a23, de23a30,de31a40, de40ade]
             }],
             chart: {
                 type: 'bar',
@@ -914,7 +922,7 @@ var KTWidgets = function () {
                 colors: ['transparent']
             },
             xaxis: {
-                categories: ['18-25', '26-35'],
+                categories: ['18-23', '23-30', '31-40', '40 en adelante'],
                 axisBorder: {
                     show: false,
                 },
@@ -969,7 +977,7 @@ var KTWidgets = function () {
                 },
                 y: {
                     formatter: function (val) {
-                        return val + " personas"
+                        return val 
                     }
                 }
             },

@@ -97,6 +97,8 @@ permalink: "monitoreo/index.html"
 												</div>
 												<!--end::Mixed Widget 13-->
 											</div>
+										</div>
+										<div class="row">
 											<div class="col-xxl-6">
 												
 												<!--begin::Mixed Widget 18-->
@@ -104,8 +106,7 @@ permalink: "monitoreo/index.html"
 													<!--begin::Header-->
 													<div class="card-header border-0 pt-5">
 														<div class="card-title font-weight-bolder">
-															<div class="card-label">Género
-															<div class="font-size-sm text-muted mt-2" style="display:flex"><p>Personas totales: &nbsp</p><p id="PerTot2"></p></div></div>
+															<div class="card-label">Monitoreo por Género</div>
 														</div>
 														
 													</div>
@@ -119,7 +120,7 @@ permalink: "monitoreo/index.html"
 														{% endfor %}
 
 														<!--begin::Chart-->
-														<div id="piechart1" style="height: 250px"></div>
+														<div id="piechart1" ></div>
 														<!--end::Chart-->
 														
 													</div>
@@ -143,20 +144,22 @@ permalink: "monitoreo/index.html"
 													<!--end::Header-->
 													<!--begin::Body-->
 													<div class="card-body">
+														{% for item in collections.monitoreos %}
+
+															<div id="edad" style="display:none">{{item.data.monitoreos.Edad}}</div>
+
+														{% endfor %}
 														<!--begin::Chart-->
 														<div id="kt_charts_widget_1_chart2"></div>
 														<!--end::Chart-->
-														{% for item in collections.monitoreos %}
-
-															<div id="edad18" style="display:none">{{item.data.monitoreos.Edad18a25}}</div>
-															<div id="edad26" style="display:none">{{item.data.monitoreos.Edad26a35}}</div>
-
-														{% endfor %}
+														
 													</div>
 													<!--end::Body-->
 												</div>
 												<!--end::Charts Widget 1-->
 											</div>
+										</div>
+										<div class="row">
 											<div class="col-xxl-6">
 												
 												<!--begin::Mixed Widget 18-->
@@ -164,16 +167,21 @@ permalink: "monitoreo/index.html"
 													<!--begin::Header-->
 													<div class="card-header border-0 pt-5">
 														<div class="card-title font-weight-bolder">
-															<div class="card-label">Nivel Académico
-															<div class="font-size-sm text-muted mt-2" style="display:flex"><p>Personas totales: &nbsp</p><p id="PerTot2"></p></div></div>
+															<div class="card-label">Monitoreo por Nivel Académico</div>
+															
 														</div>
 														
 													</div>
 													<!--end::Header-->
 													<!--begin::Body-->
 													<div class="card-body">
+														{% for item in collections.monitoreos %}
+															
+														<div class="font-size-h4 font-weight-bolder" id="nivel" style="display:none">{{item.data.monitoreos.academico}}</div>
+															
+														{% endfor %}
 														<!--begin::Chart-->
-														<div id="piechart" style="height: 250px"></div>
+														<div id="piechart2" ></div>
 														<!--end::Chart-->
 														
 													</div>
@@ -188,16 +196,21 @@ permalink: "monitoreo/index.html"
 													<!--begin::Header-->
 													<div class="card-header border-0 pt-5">
 														<div class="card-title font-weight-bolder">
-															<div class="card-label">Sector
-															<div class="font-size-sm text-muted mt-2" style="display:flex"><p>Personas totales: &nbsp</p><p id="PerTot2"></p></div></div>
+															<div class="card-label">Monitoreo por Sector</div>
+															
 														</div>
 														
 													</div>
 													<!--end::Header-->
 													<!--begin::Body-->
 													<div class="card-body">
+														{% for item in collections.monitoreos %}
+															
+														<div class="font-size-h4 font-weight-bolder" id="sector" style="display:none">{{item.data.monitoreos.sector}}</div>
+															
+														{% endfor %}
 														<!--begin::Chart-->
-														<div id="piechart" style="height: 250px"></div>
+														<div id="piechart3" ></div>
 														<!--end::Chart-->
 														
 													</div>
@@ -205,7 +218,9 @@ permalink: "monitoreo/index.html"
 												</div>
 												<!--end::Mixed Widget 18-->
 											</div>
-											<div class="col-xxl-12">
+										</div>
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-xxl-12">
 												<!--begin::Advance Table Widget 3-->
 												<div class="card card-custom gutter-b">
 													<!--begin::Header-->
@@ -326,47 +341,8 @@ permalink: "monitoreo/index.html"
 	<!--begin::Page Scripts(used by this page)-->
     <script src="/assets/js/pages/widgets2.js"></script>
     <!--end::Page Scripts-->
-	<!--begin::Page Vendors(used by this page)-->
-	<script src="/assets/plugins/custom/flot/flot.bundle.js"></script>
-	<!--end::Page Vendors-->
-	<!--begin::Page Scripts(used by this page)-->
-	<script src="/assets/js/pages/features/charts/flotcharts.js"></script>
-	<!--end::Page Scripts-->
 
-	<script>
-	
-    var inputs = document.querySelectorAll("[id='personas']");
-    var sumarP = 0;            
 
-    for(var i=0; i<inputs.length; i++) {
-		console.log(inputs[i]);
-        sumarP += parseInt((inputs[i]).innerHTML);
-    }
-
-    document.getElementById('PerTot').innerHTML = sumarP.toString();
-	document.getElementById('PerTot2').innerHTML = sumarP.toString();
-	
-    var inputs = document.querySelectorAll("[id='hombres']");
-    var sumarH = 0;            
-
-    for(var i=0; i<inputs.length; i++) {
-        sumarH += parseInt((inputs[i]).innerHTML);
-    }
-
-    document.getElementById('HomTot').innerHTML = sumarH.toString();
-	
-    var inputs = document.querySelectorAll("[id='mujeres']");
-    var sumarM = 0;            
-
-    for(var i=0; i<inputs.length; i++) {
-        sumarM += parseInt((inputs[i]).innerHTML);
-    }
-
-    document.getElementById('MujTot').innerHTML = sumarM.toString();
-
-	/*DIAGRAMA DE PIE*/	
-
-	</script>
 
 	<script type="text/javascript">
 
@@ -376,15 +352,13 @@ permalink: "monitoreo/index.html"
 
 		for(var i=0; i<genero.length; i++) {
 			var x = genero[i].innerHTML;
-			console.log(x);
+
 			if(x=="Masculino"){
 				hombres = hombres + 1 ;
 			}
 			else if (x=="Femenino"){
 				mujeres = mujeres + 1 ;
 			}
-			console.log(hombres);
-			console.log(mujeres);
 		}
 
 		google.charts.load('current', {'packages':['corechart']});
@@ -403,6 +377,107 @@ permalink: "monitoreo/index.html"
 		};
 
 		var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+
+		chart.draw(data, options);
+		}
+	</script>
+
+	<script type="text/javascript">
+
+		var nivel = document.querySelectorAll("[id='nivel']");
+		var lic = 0;
+		var div = 0;
+		var mas = 0;
+		var doc = 0;
+
+		for(var i=0; i<nivel.length; i++) {
+			var x = nivel[i].innerHTML;
+
+			if(x=="Licenciatura"){
+				lic = lic + 1 ;
+			}
+			else if (x=="Diversificado"){
+				div = div + 1 ;
+			}
+			else if (x=="Maestría"){
+				mas = mas + 1 ;
+			}
+			else if (x=="Doctorado"){
+				doc = doc + 1 ;
+			}
+		}
+
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+
+		function drawChart() {
+
+		var data = google.visualization.arrayToDataTable([
+			['Nivel Académico', ''],
+			['Licenciatura', lic],
+			['Diversificado', div],
+			['Maestría', mas],
+			['Doctorado', doc],
+		]);
+
+		var options = {
+
+		};
+
+		var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+		chart.draw(data, options);
+		}
+	</script>
+
+	<script type="text/javascript">
+
+		var nivel = document.querySelectorAll("[id='sector']");
+		var pub = 0;
+		var priv = 0;
+		var aca = 0;
+		var otro = 0;
+		var osc = 0;
+
+		for(var i=0; i<nivel.length; i++) {
+			var x = nivel[i].innerHTML;
+
+			if(x=="Publico"){
+				pub = pub + 1 ;
+			}
+			else if (x=="Privado"){
+				priv = priv + 1 ;
+			}
+			else if (x=="Académico"){
+				aca = aca + 1 ;
+			}
+			else if(x=="Otro"){
+				otro = otro + 1 ;
+			}
+			else{
+				osc = osc + 1 ;
+			}
+		}
+
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+
+		function drawChart() {
+
+		var data = google.visualization.arrayToDataTable([
+			['Sector', ''],
+			['Público', pub],
+			['Privado', priv],
+			['Académico', aca],
+			['Organización de sociedad civil', osc],
+			['Otro', otro]
+		]);
+
+		var options = {
+
+		};
+
+		var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
 
 		chart.draw(data, options);
 		}
