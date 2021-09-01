@@ -1,8 +1,8 @@
 
 const proyectos = [
     "ImpactaLatam",
-    "ImpactaLatam2",
-    "ImpactaLatam3"
+    "Servicios Públicos",
+    "LabMunicipal"
 ];
 
 
