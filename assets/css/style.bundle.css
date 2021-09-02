@@ -87428,4 +87428,14 @@ body {
   .font-size-h4-lg2 {
     font-size: 1.32rem !important;
   }
+
+  .nav-link{
+    font-size: 1.1rem !important
+  }
+}
+
+@media (max-width: 1060px) {
+  .nav-link{
+    font-size: 1rem !important
+  }
 }

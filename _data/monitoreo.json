@@ -8,6 +8,8 @@
         "Fase": "1",
         "Ano": "2021",
         "Estado": "Por Iniciar",
+        "FechaInicio": "2020",
+        "FechaCierre": "2021",
         "nombre": "Julio",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
@@ -29,8 +31,8 @@
         "nombre": "Jose",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "23-30 años",
-        "academico": "Licenciatura",
+        "Edad": "18-23 años",
+        "academico": "Diversificado",
         "sector": "Privado"
     },
     {
@@ -47,8 +49,8 @@
         "nombre": "Luis",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "31-40 años",
-        "academico": "Maestría",
+        "Edad": "18-23 años",
+        "academico": "Diversificado",
         "sector": "Organización de sociedad civil"
     },
     {
@@ -65,8 +67,8 @@
         "nombre": "agosto",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "40 años en adelante",
-        "academico": "Doctorado",
+        "Edad": "18-23 años",
+        "academico": "Diversificado",
         "sector": "Académico"
     },
     {
@@ -101,7 +103,7 @@
         "nombre": "Luis",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "23-30 años",
+        "Edad": "18-23 años",
         "academico": "Licenciatura",
         "sector": "Publico"
     },
@@ -119,7 +121,7 @@
         "nombre": "septiembre",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "31-40 años",
+        "Edad": "18-23 años",
         "academico": "Maestría",
         "sector": "Privado"
     },
@@ -137,7 +139,7 @@
         "nombre": "Jose",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "40 años en adelante",
+        "Edad": "18-23 años",
         "academico": "Doctorado",
         "sector": "Organización de sociedad civil"
     },
@@ -227,7 +229,7 @@
         "nombre": "noviembre",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "18-23 años",
+        "Edad": "41 años en adelante",
         "academico": "Diversificado",
         "sector": "Organización de sociedad civil"
     },
@@ -294,6 +296,8 @@
         "Fase": "1",
         "Ano": "2021",
         "Estado": "Por Iniciar",
+        "FechaInicio": "2020",
+        "FechaCierre": "2021",
         "nombre": "Julio",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
@@ -315,7 +319,7 @@
         "nombre": "Jose",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Femenino",
-        "Edad": "23-30 años",
+        "Edad": "18-23 años",
         "academico": "Licenciatura",
         "sector": "Privado"
     },
@@ -405,7 +409,7 @@
         "nombre": "septiembre",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
-        "Edad": "31-40 años",
+        "Edad": "23-30 años",
         "academico": "Maestría",
         "sector": "Privado"
     },
@@ -580,6 +584,8 @@
         "Fase": "1",
         "Ano": "2021",
         "Estado": "Por Iniciar",
+        "FechaInicio": "2020",
+        "FechaCierre": "2021",
         "nombre": "Julio",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
@@ -866,6 +872,8 @@
         "Fase": "1",
         "Ano": "2021",
         "Estado": "Por Iniciar",
+        "FechaInicio": "2020",
+        "FechaCierre": "2021",
         "nombre": "Julio",
         "correo": "jherrera@redciudadana.org.gt",
         "Genero": "Masculino",
