@@ -2898,8 +2898,8 @@ var KTWidgets = function () {
 
         var options = {
             series: [{
-                name: 'Net Profit',
-                data: [30, 25, 45, 30, 55, 55]
+                name: 'Personas',
+                data: [35,36,37,38,39,40,41,42,43,44,45]
             }],
             chart: {
                 type: 'area',
@@ -2932,7 +2932,7 @@ var KTWidgets = function () {
                 colors: [KTApp.getSettings()['colors']['theme']['base']['info']]
             },
             xaxis: {
-                categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                categories: ['Ene','Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
                 axisBorder: {
                     show: false,
                 },
@@ -3006,7 +3006,7 @@ var KTWidgets = function () {
                 },
                 y: {
                     formatter: function (val) {
-                        return "$" + val + " thousands"
+                        return  val 
                     }
                 }
             },
