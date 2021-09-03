@@ -75,11 +75,24 @@ permalink: "voluntariado/index.html"
 																	<div id="voluntariosT" class="font-size-h4 font-weight-bolder"></div>
 																</div>
 																<div class="col mr-8">
-																	<div class="font-size-sm text-muted font-weight-bold">Voluntariado Mensual</div>
-																	<div id="voluntariosT" class="font-size-h4 font-weight-bolder"></div>
+																	{% for item in collections.resvol%}
+																		{% if item.data.resvol.ano == 2021 %}
+																			{% if item.data.resvol.Mes == "Agosto" %}
+																			<div class="font-size-sm text-muted font-weight-bold">Voluntariado Mensual</div>
+																			<div id="voluntariosT" class="font-size-h4 font-weight-bolder">{{item.data.resvol.voluntariado}}</div>
+																			{% endif %}
+																		{% endif %}
+																	{% endfor %}
+																	
 																</div>
 															</div>
 															<!--end::Row-->
+															{% for item in collections.resvol%}
+																{% if item.data.resvol.ano == 2021 %}
+																	<div id="meses" style="display:none">{{item.data.resvol.Mes}}</div>
+																	<div id="personas" style="display:none">{{item.data.resvol.voluntariado}}</div>
+																{% endif %}
+															{% endfor %}
 														</div>
 														<!--end::Stats-->
 														<!--begin::Chart-->

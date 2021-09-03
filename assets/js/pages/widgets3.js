@@ -30,7 +30,63 @@ var KTWidgets = function () {
         }
     }
 
+    var mes = document.querySelectorAll("[id='meses']");
+    var per = document.querySelectorAll("[id='personas']");
+    var ene=0;
+    var feb=0;
+    var mar=0;
+    var abr=0;
+    var may=0;
+    var jun=0;
+    var jul=0;
+    var ago=0;
+    var sep=0;
+    var oct=0;
+    var nov=0;
+    var dic=0;
+    
+    let mapa=new Map();
+    for(var i=0; i<mes.length; i++){
+        mapa.set(mes[i].innerHTML,per[i].innerHTML);
+    }
+    
 
+    if(mapa.has("Enero")){
+        ene = mapa.get("Enero");
+    }
+    if (mapa.has("Febrero")){
+        feb = mapa.get("Febrero");
+    }
+    if (mapa.has("Marzo")){
+        mar = mapa.get("Marzo");
+    }
+    if(mapa.has("Abril")){
+        abr = mapa.get("Abril");
+    }
+    if (mapa.has("Mayo")){
+        may = mapa.get("Mayo");
+    }
+    if (mapa.has("Junio")){
+        jun = mapa.get("Junio");
+    }
+    if(mapa.has("Julio")){
+        jul = mapa.get("Julio");
+    }
+    if (mapa.has("Agosto")){
+        ago = mapa.get("Agosto");
+    }
+    if (mapa.has("Septiembre")){
+        sep = mapa.get("Septiembre");
+    }
+    if(mapa.has("Octubre")){
+        oct = mapa.get("Octubre");
+    }
+    if (mapa.has("Noviembre")){
+        nov = mapa.get("Noviembre");
+    }
+    if (mapa.has("Diciembre")){
+        dic = mapa.get("Diciembre");
+    }
 
 
 
@@ -2899,7 +2955,7 @@ var KTWidgets = function () {
         var options = {
             series: [{
                 name: 'Personas',
-                data: [35,36,37,38,39,40,41,42,43,44,45]
+                data: [ene,feb,mar,abr,may,jun,jul,ago,sep,oct,nov,dic]
             }],
             chart: {
                 type: 'area',
