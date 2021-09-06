@@ -2,7 +2,16 @@
 const proyectos = [
     "ImpactaLatam",
     "Servicios Públicos",
-    "LabMunicipal"
+    "LabMunicipal",
+    "Auditoria Social",
+    "Monitor Legislativo",
+    "Alianza por la Democracia",
+    "Partidos Públicos",
+    "Semaforo Electoral",
+    "CandiDatos",
+    "Nuestra Elección",
+    "Guatemala Leaks",
+    "Mochila Electoral",
 ];
 
 
