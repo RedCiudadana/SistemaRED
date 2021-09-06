@@ -26,7 +26,7 @@ permalink: "proyecto/{{proyecto.id_proyecto}}/{{proyecto.Proyecto}}/index.html"
 								<!--begin::Details-->
 								<div class="d-flex align-items-center flex-wrap mr-2">
 									<!--begin::Title-->
-									<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Projectos</h5>
+									<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Proyectos</h5>
 									<!--end::Title-->
 									<!--begin::Separator-->
 									<div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-5 bg-gray-200"></div>
@@ -213,11 +213,11 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" class="btn btn-light-primary font-w
 														<thead>
 															<tr class="text-uppercase">
 																<th style="min-width: 50px">No. </th>
-																<th style="min-width: 250px" class="pl-7">
+																<th style="min-width: 200px" class="pl-7">
 																	<span class="text-dark-75">Actividad</span>
 																</th>
+																<th style="min-width: 100px">Descripción</th>
 																<th style="min-width: 100px">Estado</th>
-																
 																<th style="min-width: 100px">Año</th>
                                 								<th style="min-width: 100px">Enlace</th>
 															</tr>
@@ -232,7 +232,7 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" class="btn btn-light-primary font-w
 																<td class="pl-0 py-8">
 																	<div class="d-flex align-items-center">
 																		<div class="symbol symbol-50 flex-shrink-0 mr-4">
-																			<div class="symbol-label" style="background-image: url('/assets/media/stock-600x400/img-26.jpg')"></div>
+																			<div class="symbol-label" style="background-image: url('/assets/IMAGEN-RCt.png')"></div>
 																		</div>
 																		<div>
 																			<span class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">{{item.data.proyectos.actividad}}</span>
@@ -240,7 +240,9 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" class="btn btn-light-primary font-w
 																		</div>
 																	</div>
 																</td>
-																
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.proyectos.Descripcion}}</span>
+																</td>
 																<td>
 																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.proyectos.Estado}}</span>
 																</td>
