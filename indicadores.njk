@@ -47,6 +47,158 @@ permalink: "indicadores/index.html"
 									<!--begin::Content-->
 									<div class="flex-row-fluid ml-sm-8">
 										<div class="row">
+
+                                            <div class="col-xxl-6 col-lg-6">
+												
+												<!--begin::Mixed Widget 4-->
+												<div class="card card-custom bg-radial-gradient-danger gutter-b">
+													<!--begin::Header-->
+													<div class="card-header border-0 py-5">
+														<h3 class="card-title font-weight-bolder text-white">Innovación en Gobierno</h3>
+													</div>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<div class="card-body d-flex flex-column p-0">
+														<!--begin::Chart-->
+														<div id="kt_mixed_widget_4_chart" style="height: 200px"></div>
+														<!--end::Chart-->
+														<!--begin::Stats-->
+														<div class="card-spacer bg-white card-rounded flex-grow-1">
+															<!--begin::Row-->
+															<div class="row m-0">
+																{% for item in collections.indicadores%}
+																	{% if item.data.indicadores.Programa == "Innovación en Gobierno"  %}
+                                                                    {% if item.data.indicadores.id == 1 %}
+																	<div class="col px-8 py-6 mr-8">
+																		<div class="font-size-sm text-muted font-weight-bold">Descripción</div>
+																		<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>{{item.data.indicadores.DescripcionPrograma}}</p></div>
+																	</div>
+                                                                    {% endif %}
+																	{% endif %}
+																{% endfor %}
+															</div>
+															<!--end::Row-->
+														</div>
+														<!--end::Stats-->
+													</div>
+													<!--end::Body-->
+												</div>
+												<!--end::Mixed Widget 4-->
+											</div>
+
+                                            <div class="col-xxl-6 col-lg-6">
+												
+												<!--begin::Mixed Widget 4-->
+												<div class="card card-custom bg-radial-gradient-danger gutter-b">
+													<!--begin::Header-->
+													<div class="card-header border-0 py-5">
+														<h3 class="card-title font-weight-bolder text-white">Innovación Social</h3>
+													</div>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<div class="card-body d-flex flex-column p-0">
+														<!--begin::Chart-->
+														<div id="kt_mixed_widget_5_chart" style="height: 200px"></div>
+														<!--end::Chart-->
+														<!--begin::Stats-->
+														<div class="card-spacer bg-white card-rounded flex-grow-1">
+															<!--begin::Row-->
+															<div class="row m-0">
+																{% for item in collections.indicadores%}
+																	{% if item.data.indicadores.Programa == "Innovación Social"  %}
+                                                                    {% if item.data.indicadores.id == 11 %}
+																	<div class="col px-8 py-6 mr-8">
+																		<div class="font-size-sm text-muted font-weight-bold">Descripción</div>
+																		<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>{{item.data.indicadores.DescripcionPrograma}}</p></div>
+																	</div>
+                                                                    {% endif %}
+																	{% endif %}
+																{% endfor %}
+															</div>
+															<!--end::Row-->
+														</div>
+														<!--end::Stats-->
+													</div>
+													<!--end::Body-->
+												</div>
+												<!--end::Mixed Widget 4-->
+											</div>
+
+                                            <div class="col-xxl-6 col-lg-6">
+												
+												<!--begin::Mixed Widget 4-->
+												<div class="card card-custom bg-radial-gradient-danger gutter-b">
+													<!--begin::Header-->
+													<div class="card-header border-0 py-5">
+														<h3 class="card-title font-weight-bolder text-white">Fortalecimiento de espacios cívicos</h3>
+													</div>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<div class="card-body d-flex flex-column p-0">
+														<!--begin::Chart-->
+														<div id="kt_mixed_widget_6_chart" style="height: 200px"></div>
+														<!--end::Chart-->
+														<!--begin::Stats-->
+														<div class="card-spacer bg-white card-rounded flex-grow-1">
+															<!--begin::Row-->
+															<div class="row m-0">
+																{% for item in collections.indicadores%}
+																	{% if item.data.indicadores.Programa == "Fortalecimiento de espacios cívicos"  %}
+                                                                    {% if item.data.indicadores.id == 21 %}
+																	<div class="col px-8 py-6 mr-8">
+																		<div class="font-size-sm text-muted font-weight-bold">Descripción</div>
+																		<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>{{item.data.indicadores.DescripcionPrograma}}</p></div>
+																	</div>
+                                                                    {% endif %}
+																	{% endif %}
+																{% endfor %}
+															</div>
+															<!--end::Row-->
+														</div>
+														<!--end::Stats-->
+													</div>
+													<!--end::Body-->
+												</div>
+												<!--end::Mixed Widget 4-->
+											</div>
+
+                                            <div class="col-xxl-6 col-lg-6">
+												
+												<!--begin::Mixed Widget 4-->
+												<div class="card card-custom bg-radial-gradient-danger gutter-b">
+													<!--begin::Header-->
+													<div class="card-header border-0 py-5">
+														<h3 class="card-title font-weight-bolder text-white">Auditoria Social</h3>
+													</div>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<div class="card-body d-flex flex-column p-0">
+														<!--begin::Chart-->
+														<div id="kt_mixed_widget_7_chart" style="height: 200px"></div>
+														<!--end::Chart-->
+														<!--begin::Stats-->
+														<div class="card-spacer bg-white card-rounded flex-grow-1">
+															<!--begin::Row-->
+															<div class="row m-0">
+																{% for item in collections.indicadores%}
+																	{% if item.data.indicadores.Programa == "Auditoria Social"  %}
+                                                                    {% if item.data.indicadores.id == 31 %}
+																	<div class="col px-8 py-6 mr-8">
+																		<div class="font-size-sm text-muted font-weight-bold">Descripción</div>
+																		<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>{{item.data.indicadores.DescripcionPrograma}}</p></div>
+																	</div>
+                                                                    {% endif %}
+																	{% endif %}
+																{% endfor %}
+															</div>
+															<!--end::Row-->
+														</div>
+														<!--end::Stats-->
+													</div>
+													<!--end::Body-->
+												</div>
+												<!--end::Mixed Widget 4-->
+											</div>
 											
 												
 											<div class="col-xxl-12">
@@ -400,7 +552,7 @@ permalink: "indicadores/index.html"
     <script src="/assets/js/scripts.bundle.js"></script>
     <!--end::Global Theme Bundle-->
     <!--begin::Page Scripts(used by this page)-->
-    <script src="/assets/js/pages/widgets.js"></script>
+    <script src="/assets/js/pages/indicadores.js"></script>
     <!--end::Page Scripts-->
 
 {% endblock %}
