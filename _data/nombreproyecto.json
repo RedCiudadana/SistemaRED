@@ -17,6 +17,9 @@
         "EnlaceProducto": "https://www.impactalatam.org/",
         "LogoProyecto": "https://www.impactalatam.org/assets/img/IMPACTA-LATAM.png",
         "EnlaceReportes": "https://www.impactalatam.org/",
+        "id_ODS": "16",
+        "id_ODS2": "17",
+        "ODS3": "Objetivo 10: Reducir la desigualdad en y entre los países",
         "ODS": "Objetivo 1: Poner fin a la pobreza en todas sus formas en todo el mundo",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-1.svg"
     },
@@ -38,6 +41,9 @@
         "EnlaceProducto": "https://labmunicipal.redciudadana.org/",
         "LogoProyecto": "https://d33wubrfki0l68.cloudfront.net/2dd6ab5702c2df98c34f63b0673dfa117e623549/1c266/assets/img/lab.png",
         "EnlaceReportes": "https://labmunicipal.redciudadana.org/",
+        "id_ODS": "2",
+        "id_ODS2": "1",
+        "ODS3": "Objetivo 11: Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles",
         "ODS": "Objetivo 2: Poner fin al hambre, lograr la seguridad alimentaria y la mejora de la nutrición y promover la agricultura sostenible",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-2.svg"
     },
@@ -59,6 +65,9 @@
         "EnlaceProducto": "https://serviciospublicos.redciudadana.org/",
         "LogoProyecto": "https://serviciospublicos.redciudadana.org/ELEMENTOS/LOGOTIPO-GOBIERNO-DIGITAL.png",
         "EnlaceReportes": "https://serviciospublicos.redciudadana.org/",
+        "id_ODS": "3",
+        "id_ODS2": "2",
+        "ODS3": "Objetivo 12: Garantizar modalidades de consumo y producción sostenibles",
         "ODS": "Objetivo 3: Garantizar una vida sana y promover el bienestar para todos en todas las edades",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-3.svg"
     },
@@ -79,6 +88,9 @@
         "EnlaceProducto": "https://www.impactalatam.org/",
         "LogoProyecto": "https://www.impactalatam.org/assets/img/IMPACTA-LATAM.png",
         "EnlaceReportes": "https://www.impactalatam.org/",
+        "id_ODS": "4",
+        "id_ODS2": "3",
+        "ODS3": "Objetivo 13: Adoptar medidas urgentes para combatir el cambio climático y sus efectos",
         "ODS": "Objetivo 4: Garantizar una educación inclusiva, equitativa y de calidad y promover oportunidades de aprendizaje durante toda la vida para todos",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-4.svg"
     },
@@ -99,6 +111,9 @@
         "EnlaceProducto": "https://labmunicipal.redciudadana.org/",
         "LogoProyecto": "https://d33wubrfki0l68.cloudfront.net/2dd6ab5702c2df98c34f63b0673dfa117e623549/1c266/assets/img/lab.png",
         "EnlaceReportes": "https://labmunicipal.redciudadana.org/",
+        "id_ODS": "5",
+        "id_ODS2": "4",
+        "ODS3": "Objetivo 14: Conservar y utilizar en forma sostenible los océanos, los mares y los recursos marinos para el desarrollo sostenible",
         "ODS": "Objetivo 5: Lograr la igualdad entre los géneros y empoderar a todas las mujeres y las niñas",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-5.svg"
     },
@@ -119,6 +134,9 @@
         "EnlaceProducto": "https://serviciospublicos.redciudadana.org/",
         "LogoProyecto": "https://serviciospublicos.redciudadana.org/ELEMENTOS/LOGOTIPO-GOBIERNO-DIGITAL.png",
         "EnlaceReportes": "https://serviciospublicos.redciudadana.org/",
+        "id_ODS": "6",
+        "id_ODS2": "5",
+        "ODS3": "Objetivo 15: Gestionar sosteniblemente los bosques, luchar contra la desertificación, detener e invertir la degradación de las tierras y detener la pérdida de biodiversidad",
         "ODS": "Objetivo 6: Garantizar la disponibilidad de agua y su gestión sostenible y el saneamiento para todos",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-6.svg"
     },
@@ -139,6 +157,9 @@
         "EnlaceProducto": "https://www.impactalatam.org/",
         "LogoProyecto": "https://www.impactalatam.org/assets/img/IMPACTA-LATAM.png",
         "EnlaceReportes": "https://www.impactalatam.org/",
+        "id_ODS": "7",
+        "id_ODS2": "6",
+        "ODS3": "Objetivo 16: Promover sociedades, justas, pacíficas e inclusivas",
         "ODS": "Objetivo 7: Garantizar el acceso a una energía asequible, segura, sostenible y moderna para todos",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-7.svg"
     },
@@ -159,6 +180,9 @@
         "EnlaceProducto": "https://labmunicipal.redciudadana.org/",
         "LogoProyecto": "https://d33wubrfki0l68.cloudfront.net/2dd6ab5702c2df98c34f63b0673dfa117e623549/1c266/assets/img/lab.png",
         "EnlaceReportes": "https://labmunicipal.redciudadana.org/",
+        "id_ODS": "8",
+        "id_ODS2": "7",
+        "ODS3": "Objetivo 17: Revitalizar la Alianza Mundial para el Desarrollo Sostenible",
         "ODS": "Objetivo 8: Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-8.svg"
     },
@@ -179,6 +203,9 @@
         "EnlaceProducto": "https://serviciospublicos.redciudadana.org/",
         "LogoProyecto": "https://serviciospublicos.redciudadana.org/ELEMENTOS/LOGOTIPO-GOBIERNO-DIGITAL.png",
         "EnlaceReportes": "https://serviciospublicos.redciudadana.org/",
+        "id_ODS": "9",
+        "id_ODS2": "8",
+        "ODS3": "Objetivo 1: Poner fin a la pobreza en todas sus formas en todo el mundo",
         "ODS": "Objetivo 9: Industria, innovación e infraestructura",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-9.svg"
     },
@@ -199,6 +226,9 @@
         "EnlaceProducto": "https://www.impactalatam.org/",
         "LogoProyecto": "https://www.impactalatam.org/assets/img/IMPACTA-LATAM.png",
         "EnlaceReportes": "https://www.impactalatam.org/",
+        "id_ODS": "10",
+        "id_ODS2": "9",
+        "ODS3": "Objetivo 2: Poner fin al hambre, lograr la seguridad alimentaria y la mejora de la nutrición y promover la agricultura sostenible",
         "ODS": "Objetivo 10: Reducir la desigualdad en y entre los países",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-10.svg"
     },
@@ -219,6 +249,9 @@
         "EnlaceProducto": "https://labmunicipal.redciudadana.org/",
         "LogoProyecto": "https://d33wubrfki0l68.cloudfront.net/2dd6ab5702c2df98c34f63b0673dfa117e623549/1c266/assets/img/lab.png",
         "EnlaceReportes": "https://labmunicipal.redciudadana.org/",
+        "id_ODS": "11",
+        "id_ODS2": "10",
+        "ODS3": "Objetivo 3: Garantizar una vida sana y promover el bienestar para todos en todas las edades",
         "ODS": "Objetivo 11: Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-11.svg"
     },
@@ -239,6 +272,9 @@
         "EnlaceProducto": "https://serviciospublicos.redciudadana.org/",
         "LogoProyecto": "https://serviciospublicos.redciudadana.org/ELEMENTOS/LOGOTIPO-GOBIERNO-DIGITAL.png",
         "EnlaceReportes": "https://serviciospublicos.redciudadana.org/",
+        "id_ODS": "12",
+        "id_ODS2": "11",
+        "ODS3": "Objetivo 4: Garantizar una educación inclusiva, equitativa y de calidad y promover oportunidades de aprendizaje durante toda la vida para todos",
         "ODS": "Objetivo 12: Garantizar modalidades de consumo y producción sostenibles",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-12.svg"
     },
@@ -260,6 +296,9 @@
         "EnlaceProducto": "https://www.impactalatam.org/",
         "LogoProyecto": "https://www.impactalatam.org/assets/img/IMPACTA-LATAM.png",
         "EnlaceReportes": "https://www.impactalatam.org/",
+        "id_ODS": "13",
+        "id_ODS2": "12",
+        "ODS3": "Objetivo 5: Lograr la igualdad entre los géneros y empoderar a todas las mujeres y las niñas",
         "ODS": "Objetivo 13: Adoptar medidas urgentes para combatir el cambio climático y sus efectos",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-13.svg"
     },
@@ -281,6 +320,9 @@
         "EnlaceProducto": "https://labmunicipal.redciudadana.org/",
         "LogoProyecto": "https://d33wubrfki0l68.cloudfront.net/2dd6ab5702c2df98c34f63b0673dfa117e623549/1c266/assets/img/lab.png",
         "EnlaceReportes": "https://labmunicipal.redciudadana.org/",
+        "id_ODS": "14",
+        "id_ODS2": "13",
+        "ODS3": "Objetivo 6: Garantizar la disponibilidad de agua y su gestión sostenible y el saneamiento para todos",
         "ODS": "Objetivo 14: Conservar y utilizar en forma sostenible los océanos, los mares y los recursos marinos para el desarrollo sostenible",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-14.svg"
     },
@@ -302,6 +344,9 @@
         "EnlaceProducto": "https://serviciospublicos.redciudadana.org/",
         "LogoProyecto": "https://serviciospublicos.redciudadana.org/ELEMENTOS/LOGOTIPO-GOBIERNO-DIGITAL.png",
         "EnlaceReportes": "https://serviciospublicos.redciudadana.org/",
+        "id_ODS": "15",
+        "id_ODS2": "14",
+        "ODS3": "Objetivo 7: Garantizar el acceso a una energía asequible, segura, sostenible y moderna para todos",
         "ODS": "Objetivo 15: Gestionar sosteniblemente los bosques, luchar contra la desertificación, detener e invertir la degradación de las tierras y detener la pérdida de biodiversidad",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-15.svg"
     },
@@ -322,6 +367,9 @@
         "EnlaceProducto": "https://www.impactalatam.org/",
         "LogoProyecto": "https://www.impactalatam.org/assets/img/IMPACTA-LATAM.png",
         "EnlaceReportes": "https://www.impactalatam.org/",
+        "id_ODS": "16",
+        "id_ODS2": "15",
+        "ODS3": "Objetivo 8: Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos",
         "ODS": "Objetivo 16: Promover sociedades, justas, pacíficas e inclusivas",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-16.svg"
     },
@@ -342,6 +390,9 @@
         "EnlaceProducto": "https://labmunicipal.redciudadana.org/",
         "LogoProyecto": "https://d33wubrfki0l68.cloudfront.net/2dd6ab5702c2df98c34f63b0673dfa117e623549/1c266/assets/img/lab.png",
         "EnlaceReportes": "https://labmunicipal.redciudadana.org/",
+        "id_ODS": "17",
+        "id_ODS2": "16",
+        "ODS3": "Objetivo 9: Industria, innovación e infraestructura",
         "ODS": "Objetivo 17: Revitalizar la Alianza Mundial para el Desarrollo Sostenible",
         "ImagenODS": "https://d296gbxh4k2cui.cloudfront.net/assets/icons/SDG-17.svg"
     }

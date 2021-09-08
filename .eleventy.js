@@ -45,5 +45,9 @@ module.exports = function (eleventyConfig) {
         return collectionApi.getFilteredByTag('finan');
     });
 
+    eleventyConfig.addCollection("ods", function(collectionApi) {
+        return collectionApi.getFilteredByTag('ods');
+    });
+
 }
 
