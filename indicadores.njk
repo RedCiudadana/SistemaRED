@@ -221,15 +221,15 @@ permalink: "indicadores/index.html"
 																		<th style="min-width: 250px" class="pl-7">
 																			<span class="text-dark-75">Indicador</span>
 																		</th>
-																		<th style="min-width: 100px">Descripción</th>
-																		<th style="min-width: 100px">Base 2021</th>
-																		<th style="min-width: 100px">Resultado 2021</th>
+																		<th style="min-width: 100px">Descripción</th>																	
+																		<th style="min-width: 100px">Resultado Total</th>
 																		<th style="min-width: 150px">Restante</th>
+                                                                        <th style="min-width: 100px">Meta 2025</th>
 																	</tr>
 																</thead>
 																<tbody>
 																	{% for item in collections.indicadores %}
-                                                                    {% if item.data.indicadores.Programa == "Innovación en Gobierno" %}
+                                                                    {% if item.data.indicadores.Programa == "Auditoria Social" %}
 																	<tr>
 																		<td class="pl-0 py-8">
 																			<div class="d-flex align-items-center">
@@ -238,6 +238,7 @@ permalink: "indicadores/index.html"
 																				</div>
 																				<div>
 																					<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Id_indicador}}</span>
+                                                                                    <span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Area}}</span>
 																				</div>
 																			</div>
 																		</td>
@@ -249,17 +250,18 @@ permalink: "indicadores/index.html"
 																			</div>
 																			
 																		</td>
-																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Base2021}}</span>
-																			
-																		</td>
+																		
 
 																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Resultado2021}}</span>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.ResultadoTotal}}</span>
 																		</td>
 
                                                                         <td>
 																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Restante}}</span>
+																		</td>
+                                                                        <td>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Meta2025}}</span>
+																			
 																		</td>
 																		
 																	</tr>
@@ -293,18 +295,19 @@ permalink: "indicadores/index.html"
 															<table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
 																<thead>
 																	<tr class="text-uppercase">
+																		
 																		<th style="min-width: 250px" class="pl-7">
 																			<span class="text-dark-75">Indicador</span>
 																		</th>
-																		<th style="min-width: 100px">Descripción</th>
-																		<th style="min-width: 100px">Base 2021</th>
-																		<th style="min-width: 100px">Resultado 2021</th>
+																		<th style="min-width: 100px">Descripción</th>																	
+																		<th style="min-width: 100px">Resultado Total</th>
 																		<th style="min-width: 150px">Restante</th>
+                                                                        <th style="min-width: 100px">Meta 2025</th>
 																	</tr>
 																</thead>
 																<tbody>
 																	{% for item in collections.indicadores %}
-                                                                    {% if item.data.indicadores.Programa == "Innovación Social" %}
+                                                                    {% if item.data.indicadores.Programa == "Auditoria Social" %}
 																	<tr>
 																		<td class="pl-0 py-8">
 																			<div class="d-flex align-items-center">
@@ -313,6 +316,7 @@ permalink: "indicadores/index.html"
 																				</div>
 																				<div>
 																					<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Id_indicador}}</span>
+                                                                                    <span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Area}}</span>
 																				</div>
 																			</div>
 																		</td>
@@ -324,17 +328,18 @@ permalink: "indicadores/index.html"
 																			</div>
 																			
 																		</td>
-																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Base2021}}</span>
-																			
-																		</td>
+																		
 
 																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Resultado2021}}</span>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.ResultadoTotal}}</span>
 																		</td>
 
                                                                         <td>
 																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Restante}}</span>
+																		</td>
+                                                                        <td>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Meta2025}}</span>
+																			
 																		</td>
 																		
 																	</tr>
@@ -371,15 +376,15 @@ permalink: "indicadores/index.html"
 																		<th style="min-width: 250px" class="pl-7">
 																			<span class="text-dark-75">Indicador</span>
 																		</th>
-																		<th style="min-width: 100px">Descripción</th>
-																		<th style="min-width: 100px">Base 2021</th>
-																		<th style="min-width: 100px">Resultado 2021</th>
+																		<th style="min-width: 100px">Descripción</th>																	
+																		<th style="min-width: 100px">Resultado Total</th>
 																		<th style="min-width: 150px">Restante</th>
+                                                                        <th style="min-width: 100px">Meta 2025</th>
 																	</tr>
 																</thead>
 																<tbody>
 																	{% for item in collections.indicadores %}
-                                                                    {% if item.data.indicadores.Programa == "Fortalecimiento de espacios cívicos" %}
+                                                                    {% if item.data.indicadores.Programa == "Auditoria Social" %}
 																	<tr>
 																		<td class="pl-0 py-8">
 																			<div class="d-flex align-items-center">
@@ -388,6 +393,7 @@ permalink: "indicadores/index.html"
 																				</div>
 																				<div>
 																					<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Id_indicador}}</span>
+                                                                                    <span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Area}}</span>
 																				</div>
 																			</div>
 																		</td>
@@ -399,17 +405,18 @@ permalink: "indicadores/index.html"
 																			</div>
 																			
 																		</td>
-																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Base2021}}</span>
-																			
-																		</td>
+																		
 
 																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Resultado2021}}</span>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.ResultadoTotal}}</span>
 																		</td>
 
                                                                         <td>
 																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Restante}}</span>
+																		</td>
+                                                                        <td>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Meta2025}}</span>
+																			
 																		</td>
 																		
 																	</tr>
@@ -446,10 +453,10 @@ permalink: "indicadores/index.html"
 																		<th style="min-width: 250px" class="pl-7">
 																			<span class="text-dark-75">Indicador</span>
 																		</th>
-																		<th style="min-width: 100px">Descripción</th>
-																		<th style="min-width: 100px">Base 2021</th>
-																		<th style="min-width: 100px">Resultado 2021</th>
+																		<th style="min-width: 100px">Descripción</th>																	
+																		<th style="min-width: 100px">Resultado Total</th>
 																		<th style="min-width: 150px">Restante</th>
+                                                                        <th style="min-width: 100px">Meta 2025</th>
 																	</tr>
 																</thead>
 																<tbody>
@@ -463,6 +470,7 @@ permalink: "indicadores/index.html"
 																				</div>
 																				<div>
 																					<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Id_indicador}}</span>
+                                                                                    <span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Area}}</span>
 																				</div>
 																			</div>
 																		</td>
@@ -474,17 +482,18 @@ permalink: "indicadores/index.html"
 																			</div>
 																			
 																		</td>
-																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Base2021}}</span>
-																			
-																		</td>
+																		
 
 																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Resultado2021}}</span>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.ResultadoTotal}}</span>
 																		</td>
 
                                                                         <td>
 																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Restante}}</span>
+																		</td>
+                                                                        <td>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.indicadores.Meta2025}}</span>
+																			
 																		</td>
 																		
 																	</tr>
