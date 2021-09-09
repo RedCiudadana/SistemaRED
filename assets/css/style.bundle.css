@@ -29295,6 +29295,12 @@ h3 {
   70%);
 }
 
+.bg-radial-gradient-danger2 {
+  background-color: #3699FF;
+  background-image: radial-gradient(circle, rgba(255, 226, 229, 0.4), #3699FF  70%);
+}
+
+
 .bg-danger-o-5 {
   background-color: rgba(246, 78, 96, 0.02) !important;
 }
