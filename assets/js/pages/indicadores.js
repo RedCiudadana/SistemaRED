@@ -2868,10 +2868,10 @@ var KTWidgets = function () {
 
         var options = {
             series: [{
-                name: 'Restante',
+                name: 'Meta',
                 data: [10,30,50,70,90,110,140,160,180,200,100]
             }, {
-                name: 'Monto',
+                name: 'Resultado Total',
                 data: [10, 30, 50, 70, 90, 110, 130, 150, 170, 190, 90]
             }],
             chart: {
@@ -2903,7 +2903,7 @@ var KTWidgets = function () {
                 colors: ['transparent']
             },
             xaxis: {
-                categories: ['2011 ', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+                categories: ['1.1.1 ', '1.1.2', '1.1.3', '1.2.1', '1.2.2', '1.2.3', '1.3.1', '1.3.2', '1.3.3', '1.3.4'],
                 axisBorder: {
                     show: false,
                 },
