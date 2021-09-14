@@ -20,176 +20,175 @@ var KTWidgets = function () {
     var metas1,metas2,metas3,metas4,metas5,metas6,metas7,metas8,metas9,metas10;
     var resul1,resul2,resul3,resul4,resul5,resul6,resul7,resul8,resul9,resul10;
 
-    for(var i=1; i<=indicador.length; i++){
+    for(var i=0; i<indicador.length; i++){
         //programa 1
-        if(i==1){
+        if(i==0){
             res1=parseInt(actual[i].innerHTML);
             meta1=parseInt(meta[i].innerHTML);
         }
-        else if(i==2){
+        else if(i==1){
             res2=parseInt(actual[i].innerHTML);
             meta2=parseInt(meta[i].innerHTML);
         }
-        else if(i==3){
+        else if(i==2){
             res3=parseInt(actual[i].innerHTML);
             meta3=parseInt(meta[i].innerHTML);
         }
-        else if(i==4){
+        else if(i==3){
             res4=parseInt(actual[i].innerHTML);
             meta4=parseInt(meta[i].innerHTML);
         }
-        else if(i==5){
+        else if(i==4){
             res5=parseInt(actual[i].innerHTML);
             meta5=parseInt(meta[i].innerHTML);
         }
-        else if(i==6){
+        else if(i==5){
             res6=parseInt(actual[i].innerHTML);
             meta6=parseInt(meta[i].innerHTML);
         }
-        else if(i==7){
+        else if(i==6){
             res7=parseInt(actual[i].innerHTML);
             meta7=parseInt(meta[i].innerHTML);
         }
-        else if(i==8){
+        else if(i==7){
             res8=parseInt(actual[i].innerHTML);
             meta8=parseInt(meta[i].innerHTML);
         }
-        else if(i==9){
+        else if(i==8){
             res9=parseInt(actual[i].innerHTML);
             meta9=parseInt(meta[i].innerHTML);
         }
-        else if(i==10){
+        else if(i==9){
             res10=parseInt(actual[i].innerHTML);
             meta10=parseInt(meta[i].innerHTML);
         }
 
         //programa 2
-        else if(i==11){
+        else if(i==10){
             res12=parseInt(actual[i].innerHTML);
             meta12=parseInt(meta[i].innerHTML);
         }
-        else if(i==12){
+        else if(i==11){
             res22=parseInt(actual[i].innerHTML);
             meta22=parseInt(meta[i].innerHTML);
         }
-        else if(i==13){
+        else if(i==12){
             res32=parseInt(actual[i].innerHTML);
             meta32=parseInt(meta[i].innerHTML);
         }
-        else if(i==14){
+        else if(i==13){
             res42=parseInt(actual[i].innerHTML);
             meta42=parseInt(meta[i].innerHTML);
         }
-        else if(i==15){
+        else if(i==14){
             res52=parseInt(actual[i].innerHTML);
             meta52=parseInt(meta[i].innerHTML);
         }
-        else if(i==16){
+        else if(i==15){
             res62=parseInt(actual[i].innerHTML);
             meta62=parseInt(meta[i].innerHTML);
         }
-        else if(i==17){
+        else if(i==16){
             res72=parseInt(actual[i].innerHTML);
             meta72=parseInt(meta[i].innerHTML);
         }
-        else if(i==18){
+        else if(i==17){
             res82=parseInt(actual[i].innerHTML);
             meta82=parseInt(meta[i].innerHTML);
         }
-        else if(i==19){
+        else if(i==18){
             res92=parseInt(actual[i].innerHTML);
             meta92=parseInt(meta[i].innerHTML);
         }
-        else if(i==20){
+        else if(i==19){
             res102=parseInt(actual[i].innerHTML);
             meta102=parseInt(meta[i].innerHTML);
         }
 
         //programa 3
         
-        else if(i==21){
+        else if(i==20){
             res133=parseInt(actual[i].innerHTML);
             meta133=parseInt(meta[i].innerHTML);
         }
-        else if(i==22){
+        else if(i==21){
             res233=parseInt(actual[i].innerHTML);
             meta233=parseInt(meta[i].innerHTML);
         }
-        else if(i==23){
+        else if(i==22){
             res333=parseInt(actual[i].innerHTML);
             meta333=parseInt(meta[i].innerHTML);
         }
-        else if(i==24){
+        else if(i==23){
             res433=parseInt(actual[i].innerHTML);
             meta433=parseInt(meta[i].innerHTML);
         }
-        else if(i==25){
+        else if(i==24){
             res533=parseInt(actual[i].innerHTML);
             meta533=parseInt(meta[i].innerHTML);
         }
-        else if(i==26){
+        else if(i==25){
             res633=parseInt(actual[i].innerHTML);
             meta633=parseInt(meta[i].innerHTML);
         }
-        else if(i==27){
+        else if(i==26){
             res733=parseInt(actual[i].innerHTML);
             meta733=parseInt(meta[i].innerHTML);
         }
-        else if(i==28){
+        else if(i==27){
             res833=parseInt(actual[i].innerHTML);
             meta833=parseInt(meta[i].innerHTML);
         }
-        else if(i==29){
+        else if(i==28){
             res933=parseInt(actual[i].innerHTML);
             meta933=parseInt(meta[i].innerHTML);
         }
-        else if(i==30){
+        else if(i==29){
             res1033=parseInt(actual[i].innerHTML);
             meta1033=parseInt(meta[i].innerHTML);
         }
 
         //programa 4
-        /*
-        else if(i==31){
+        else if(i==30){
             resul1=parseInt(actual[i].innerHTML);
             metas1=parseInt(meta[i].innerHTML);
         }
-        else if(i==32){
+        else if(i==31){
             resul2=parseInt(actual[i].innerHTML);
             metas2=parseInt(meta[i].innerHTML);
         }
-        else if(i==33){
+        else if(i==32){
             resul3=parseInt(actual[i].innerHTML);
             metas3=parseInt(meta[i].innerHTML);
         }
-        else if(i==34){
+        else if(i==33){
             resul4=parseInt(actual[i].innerHTML);
             metas4=parseInt(meta[i].innerHTML);
         }
-        else if(i==35){
+        else if(i==34){
             resul5=parseInt(actual[i].innerHTML);
             metas5=parseInt(meta[i].innerHTML);
         }
-        else if(i==36){
+        else if(i==35){
             resul6=parseInt(actual[i].innerHTML);
             metas6=parseInt(meta[i].innerHTML);
         }
-        else if(i==37){
+        else if(i==36){
             resul7=parseInt(actual[i].innerHTML);
             metas7=parseInt(meta[i].innerHTML);
         }
-        else if(i==38){
+        else if(i==37){
             resul8=parseInt(actual[i].innerHTML);
             metas8=parseInt(meta[i].innerHTML);
         }
-        else if(i==39){
+        else if(i==38){
             resul9=parseInt(actual[i].innerHTML);
             metas9=parseInt(meta[i].innerHTML);
         }
-        else if(i==40){
+        else if(i==39){
             resul10=parseInt(actual[i].innerHTML);
             metas10=parseInt(meta[i].innerHTML);
-        }*/
+        }
        
     }
 

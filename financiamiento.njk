@@ -64,7 +64,7 @@ permalink: "financiamiento/index.html"
 														<div class="timeline timeline-6 mt-3">
 															
 															{% for item in collections.finan %}
-																{% if item.data.finan.id_Ultimas%}
+																{% if item.data.finan.id_Ultimas %}
 																<!--begin::Item-->
 																<div class="timeline-item align-items-start">
 																	<!--begin::Label-->
@@ -185,7 +185,7 @@ permalink: "financiamiento/index.html"
 																		</td>
 																		<td>
 																			<span id="montos" style="display:none!important" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.monto}}</span>
-																			<div class="d-flex"><span class="text-dark-75 font-weight-bolder d-block font-size-lg">Q &nbsp</span><span id="montosm" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.monto}}</span></div>
+																			<div class="d-flex"><span class="text-dark-75 font-weight-bolder d-block font-size-lg">Q &nbsp</span><span id="montosm" class="text-dark-75 font-weight-bolder d-block font-size-lg">{% if item.data.finan.monto %}{{item.data.finan.monto}}{% endif %}</span></div>
 																			
 																		</td>
 																		<td>
@@ -281,7 +281,13 @@ permalink: "financiamiento/index.html"
     var sumar = 0;            
 
     for(var i=0; i<inputs.length; i++) {
-        sumar += parseInt((inputs[i]).innerHTML);
+		if(inputs[i].innerHTML<1){
+			console.log("es nan");
+		}
+		else{
+			sumar += parseInt((inputs[i]).innerHTML);
+		}
+        
     }
 
     document.getElementById('finanT').innerHTML = sumar.toString();

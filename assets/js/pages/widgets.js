@@ -3,7 +3,50 @@
 // Class definition
 var KTWidgets = function () {
     // Private properties
+
+    var monto = document.querySelectorAll("[id='monto']");
     
+    var a2011,a2012,a2013,a2014,a2015,a2016,a2017,a2018,a2019,a2020,a2021;
+
+    for(var i=0;i<=monto.length;i++){
+        if(i==0){
+            a2011=parseInt(monto[i].innerHTML);
+        }
+        else if(i==1){
+            a2012=parseInt(monto[i].innerHTML);
+        }
+        else if(i==2){
+            a2013=parseInt(monto[i].innerHTML);
+        }
+        else if(i==3){
+            a2014=parseInt(monto[i].innerHTML);
+        }
+        else if(i==4){
+            a2015=parseInt(monto[i].innerHTML);
+        }
+        else if(i==5){
+            a2016=parseInt(monto[i].innerHTML);
+        }
+        else if(i==6){
+            a2017=parseInt(monto[i].innerHTML);
+        }
+        else if(i==7){
+            a2018=parseInt(monto[i].innerHTML);
+        }
+        else if(i==8){
+            a2019=parseInt(monto[i].innerHTML);
+        }
+        else if(i==9){
+            a2020=parseInt(monto[i].innerHTML);
+        }
+        else if(i==10){
+            a2021=parseInt(monto[i].innerHTML);
+        }
+        console.log(i);
+    }
+
+
+
     // General Controls
     var _initDaterangepicker = function () {
         if ($('#kt_dashboard_daterangepicker').length == 0) {
@@ -2742,7 +2785,7 @@ var KTWidgets = function () {
                 data: []
             }, {
                 name: 'Monto',
-                data: [10, 30, 50, 70, 90, 110, 130, 150, 170, 190, 90]
+                data: [a2011,a2012,a2013,a2014,a2015,a2016,a2017,a2018,a2019,a2020,a2021]
             }],
             chart: {
                 type: 'bar',
@@ -2790,7 +2833,7 @@ var KTWidgets = function () {
             },
             yaxis: {
                 min: 0,
-                max: 200,
+                max: 220000,
                 labels: {
                     style: {
                         colors: KTApp.getSettings()['colors']['gray']['gray-500'],
@@ -2831,7 +2874,11 @@ var KTWidgets = function () {
                 },
                 y: {
                     formatter: function (val) {
-                        return "Q " + val + " mil"
+                        var valcoms;            
+                        valcoms=val;
+                        valcoms = parseInt(valcoms);
+                        val = valcoms.toLocaleString('en-US');
+                        return "Q " + val 
                     }
                 },
                 marker: {
