@@ -12,6 +12,7 @@ const proyectos = [
     "Nuestra Elección",
     "Guatemala Leaks",
     "Mochila Electoral",
+    "LabElectoral"
 ];
 
 

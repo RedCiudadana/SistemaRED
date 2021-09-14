@@ -59,7 +59,13 @@ permalink: "indicadores/index.html"
 													<!--end::Header-->
 													<!--begin::Body-->
 													<div class="card-body d-flex flex-column p-0">
-														
+
+														{% for item in collections.indicadores%}
+														<div id="indicador" style="display:none">{{item.data.indicadores.Id_indicador}}</div>
+														<div id="actual" style="display:none">{{item.data.indicadores.ResultadoTotal}}</div>
+														<div id="meta" style="display:none">{{item.data.indicadores.Meta2025}}</div>
+														{% endfor %}
+
 														<!--begin::Chart-->
 														<div id="kt_mixed_widget_4_chart" style="height: 200px"></div>
 														<!--end::Chart-->
@@ -175,7 +181,7 @@ permalink: "indicadores/index.html"
 													<!--begin::Body-->
 													<div class="card-body d-flex flex-column p-0">
 														<!--begin::Chart-->
-														<div id="kt_mixed_widget_7_chart" style="height: 200px"></div>
+														<div id="kt_mixed_widget_42_chart" style="height: 200px"></div>
 														<!--end::Chart-->
 														<!--begin::Stats-->
 														<div class="card-spacer bg-white card-rounded flex-grow-1">
@@ -563,6 +569,7 @@ permalink: "indicadores/index.html"
     <!--end::Global Theme Bundle-->
     <!--begin::Page Scripts(used by this page)-->
     <script src="/assets/js/pages/indicadores.js"></script>
+	<script src="/assets/js/pages/indicadores2.js"></script>
     <!--end::Page Scripts-->
 
 {% endblock %}
