@@ -2526,7 +2526,7 @@ var KTWidgets = function () {
     }
 
 
-    var _initMixedWidget7 = function () {
+    var _initMixedWidget4 = function () {
         var element = document.getElementById("kt_mixed_widget_42_chart");
         var height = parseInt(KTUtil.css(element, 'height'));
 
