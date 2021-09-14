@@ -1,8 +1,7 @@
 [
     {
         "id_monitoreo": "1",
-        "Mes": "Enero",
-        "ano": "2021",
+        "Ano": "2015",
         "monitoreo": "35",
         "Masculino": "5",
         "%Masculino": "14.29%",
@@ -12,8 +11,7 @@
     },
     {
         "id_monitoreo": "2",
-        "Mes": "Febrero",
-        "ano": "2021",
+        "Ano": "2016",
         "monitoreo": "36",
         "Masculino": "25",
         "%Masculino": "70.00%",
@@ -23,8 +21,7 @@
     },
     {
         "id_monitoreo": "3",
-        "Mes": "Marzo",
-        "ano": "2021",
+        "Ano": "2017",
         "monitoreo": "37",
         "Masculino": "26",
         "%Masculino": "70.00%",
@@ -34,8 +31,7 @@
     },
     {
         "id_monitoreo": "4",
-        "Mes": "Abril",
-        "ano": "2021",
+        "Ano": "2018",
         "monitoreo": "38",
         "Masculino": "27",
         "%Masculino": "70.00%",
@@ -45,8 +41,7 @@
     },
     {
         "id_monitoreo": "5",
-        "Mes": "Mayo",
-        "ano": "2021",
+        "Ano": "2019",
         "monitoreo": "39",
         "Masculino": "27",
         "%Masculino": "70.00%",
@@ -56,8 +51,7 @@
     },
     {
         "id_monitoreo": "6",
-        "Mes": "Junio",
-        "ano": "2021",
+        "Ano": "2020",
         "monitoreo": "40",
         "Masculino": "28",
         "%Masculino": "70.00%",
@@ -67,177 +61,11 @@
     },
     {
         "id_monitoreo": "7",
-        "Mes": "Julio",
-        "ano": "2021",
+        "Ano": "2021",
         "monitoreo": "41",
         "Masculino": "29",
         "%Masculino": "70.00%",
         "Femenino": "12",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "8",
-        "Mes": "Agosto",
-        "ano": "2021",
-        "monitoreo": "42",
-        "Masculino": "29",
-        "%Masculino": "70.00%",
-        "Femenino": "13",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "9",
-        "Mes": "Septiembre",
-        "ano": "2021",
-        "monitoreo": "43",
-        "Masculino": "30",
-        "%Masculino": "70.00%",
-        "Femenino": "13",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "10",
-        "Mes": "Noviembre",
-        "ano": "2021",
-        "monitoreo": "44",
-        "Masculino": "31",
-        "%Masculino": "70.00%",
-        "Femenino": "13",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "11",
-        "Mes": "Diciembre",
-        "ano": "2021",
-        "monitoreo": "45",
-        "Masculino": "32",
-        "%Masculino": "70.00%",
-        "Femenino": "14",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "12",
-        "Mes": "Enero",
-        "ano": "2020",
-        "monitoreo": "35",
-        "Masculino": "25",
-        "%Masculino": "70.00%",
-        "Femenino": "11",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "13",
-        "Mes": "Febrero",
-        "ano": "2020",
-        "monitoreo": "36",
-        "Masculino": "25",
-        "%Masculino": "70.00%",
-        "Femenino": "11",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "14",
-        "Mes": "Marzo",
-        "ano": "2020",
-        "monitoreo": "37",
-        "Masculino": "26",
-        "%Masculino": "70.00%",
-        "Femenino": "11",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "15",
-        "Mes": "Abril",
-        "ano": "2020",
-        "monitoreo": "38",
-        "Masculino": "27",
-        "%Masculino": "70.00%",
-        "Femenino": "11",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "16",
-        "Mes": "Mayo",
-        "ano": "2020",
-        "monitoreo": "39",
-        "Masculino": "27",
-        "%Masculino": "70.00%",
-        "Femenino": "12",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "17",
-        "Mes": "Junio",
-        "ano": "2020",
-        "monitoreo": "40",
-        "Masculino": "28",
-        "%Masculino": "70.00%",
-        "Femenino": "12",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "18",
-        "Mes": "Julio",
-        "ano": "2020",
-        "monitoreo": "41",
-        "Masculino": "29",
-        "%Masculino": "70.00%",
-        "Femenino": "12",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "19",
-        "Mes": "Agosto",
-        "ano": "2020",
-        "monitoreo": "42",
-        "Masculino": "29",
-        "%Masculino": "70.00%",
-        "Femenino": "13",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "20",
-        "Mes": "Septiembre",
-        "ano": "2020",
-        "monitoreo": "43",
-        "Masculino": "30",
-        "%Masculino": "70.00%",
-        "Femenino": "13",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "21",
-        "Mes": "Noviembre",
-        "ano": "2020",
-        "monitoreo": "44",
-        "Masculino": "31",
-        "%Masculino": "70.00%",
-        "Femenino": "13",
-        "%Femenino": "30.00%",
-        "total": "100.00%"
-    },
-    {
-        "id_monitoreo": "22",
-        "Mes": "Diciembre",
-        "ano": "2020",
-        "monitoreo": "45",
-        "Masculino": "32",
-        "%Masculino": "70.00%",
-        "Femenino": "14",
         "%Femenino": "30.00%",
         "total": "100.00%"
     }

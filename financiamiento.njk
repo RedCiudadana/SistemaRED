@@ -119,13 +119,13 @@ permalink: "financiamiento/index.html"
 																	{% if item.data.resfin.Ano == 2021 %}
 																	<div class="col px-8 py-6 mr-8">
 																		<div class="font-size-sm text-muted font-weight-bold">Financiamiento Anual</div>
-																		<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>Q&nbsp </p><p id="finanA">{{item.data.resfin.monto}}</p></div>
+																		<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>$&nbsp </p><p id="finanA">{{item.data.resfin.monto}}</p></div>
 																	</div>
 																	{% endif %}
 																{% endfor %}
 																<div class="col px-8 py-6 mr-8">
 																	<div class="font-size-sm text-muted font-weight-bold">Financiamiento Total</div>
-																	<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>Q&nbsp </p><p id="finanT"></p></div>
+																	<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>$&nbsp </p><p id="finanT"></p></div>
 																</div>
 															</div>
 															<!--end::Row-->
@@ -153,10 +153,11 @@ permalink: "financiamiento/index.html"
 															<table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
 																<thead>
 																	<tr class="text-uppercase">
-																		<th style="min-width: 250px" class="pl-7">
+																		<th style="min-width: 150px" class="pl-7">
 																			<span class="text-dark-75">Proyecto</span>
 																		</th>
-																		<th style="min-width: 100px">Donante</th>
+																		<th style="min-width: 200px">Donante</th>
+																		<th style="min-width: 150px">Tipo de Donanción</th>
 																		<th style="min-width: 100px">Monto</th>
 																		<th style="min-width: 100px">Año</th>
 																		<th style="min-width: 150px">Enlace del Convenio</th>
@@ -184,8 +185,11 @@ permalink: "financiamiento/index.html"
 																			
 																		</td>
 																		<td>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.TipoDonacion}}</span>
+																		</td>
+																		<td>
 																			<span id="montos" style="display:none!important" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.monto}}</span>
-																			<div class="d-flex"><span class="text-dark-75 font-weight-bolder d-block font-size-lg">Q &nbsp</span><span id="montosm" class="text-dark-75 font-weight-bolder d-block font-size-lg">{% if item.data.finan.monto %}{{item.data.finan.monto}}{% endif %}</span></div>
+																			<div class="d-flex"><span class="text-dark-75 font-weight-bolder d-block font-size-lg">$ &nbsp</span><span id="montosm" class="text-dark-75 font-weight-bolder d-block font-size-lg">{% if item.data.finan.monto %}{{item.data.finan.monto}}{% endif %}</span></div>
 																			
 																		</td>
 																		<td>

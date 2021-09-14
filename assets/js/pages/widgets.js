@@ -6,43 +6,33 @@ var KTWidgets = function () {
 
     var monto = document.querySelectorAll("[id='monto']");
     
-    var a2011,a2012,a2013,a2014,a2015,a2016,a2017,a2018,a2019,a2020,a2021;
+    var a2014,a2015,a2016,a2017,a2018,a2019,a2020,a2021;
 
     for(var i=0;i<=monto.length;i++){
         if(i==0){
-            a2011=parseInt(monto[i].innerHTML);
-        }
-        else if(i==1){
-            a2012=parseInt(monto[i].innerHTML);
-        }
-        else if(i==2){
-            a2013=parseInt(monto[i].innerHTML);
-        }
-        else if(i==3){
             a2014=parseInt(monto[i].innerHTML);
         }
-        else if(i==4){
+        else if(i==1){
             a2015=parseInt(monto[i].innerHTML);
         }
-        else if(i==5){
+        else if(i==2){
             a2016=parseInt(monto[i].innerHTML);
         }
-        else if(i==6){
+        else if(i==3){
             a2017=parseInt(monto[i].innerHTML);
         }
-        else if(i==7){
+        else if(i==4){
             a2018=parseInt(monto[i].innerHTML);
         }
-        else if(i==8){
+        else if(i==5){
             a2019=parseInt(monto[i].innerHTML);
         }
-        else if(i==9){
+        else if(i==6){
             a2020=parseInt(monto[i].innerHTML);
         }
-        else if(i==10){
+        else if(i==7){
             a2021=parseInt(monto[i].innerHTML);
         }
-        console.log(i);
     }
 
 
@@ -2785,7 +2775,7 @@ var KTWidgets = function () {
                 data: []
             }, {
                 name: 'Monto',
-                data: [a2011,a2012,a2013,a2014,a2015,a2016,a2017,a2018,a2019,a2020,a2021]
+                data: [a2014,a2015,a2016,a2017,a2018,a2019,a2020,a2021]
             }],
             chart: {
                 type: 'bar',
@@ -2816,7 +2806,7 @@ var KTWidgets = function () {
                 colors: ['transparent']
             },
             xaxis: {
-                categories: ['2011 ', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+                categories: ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
                 axisBorder: {
                     show: false,
                 },
@@ -2878,7 +2868,7 @@ var KTWidgets = function () {
                         valcoms=val;
                         valcoms = parseInt(valcoms);
                         val = valcoms.toLocaleString('en-US');
-                        return "Q " + val 
+                        return "$ " + val 
                     }
                 },
                 marker: {
@@ -3023,7 +3013,7 @@ var KTWidgets = function () {
                 },
                 y: {
                     formatter: function (val) {
-                        return "$" + val + " thousands"
+                        return "Q" + val + " thousands"
                     }
                 }
             },

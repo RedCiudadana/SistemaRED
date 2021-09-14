@@ -1,56 +1,41 @@
 [
     {
         "id_financiamiento": "1",
-        "Ano": "2011",
-        "monto": "0"
+        "Ano": "2014",
+        "monto": "15000"
     },
     {
         "id_financiamiento": "2",
-        "Ano": "2012",
-        "monto": "0"
+        "Ano": "2015",
+        "monto": "4223"
     },
     {
         "id_financiamiento": "3",
-        "Ano": "2013",
-        "monto": "0"
-    },
-    {
-        "id_financiamiento": "4",
-        "Ano": "2014",
-        "monto": "0"
-    },
-    {
-        "id_financiamiento": "5",
-        "Ano": "2015",
-        "monto": "11390"
-    },
-    {
-        "id_financiamiento": "6",
         "Ano": "2016",
         "monto": "10000"
     },
     {
-        "id_financiamiento": "7",
+        "id_financiamiento": "4",
         "Ano": "2017",
         "monto": "104803"
     },
     {
-        "id_financiamiento": "8",
+        "id_financiamiento": "5",
         "Ano": "2018",
         "monto": "52338"
     },
     {
-        "id_financiamiento": "9",
+        "id_financiamiento": "6",
         "Ano": "2019",
         "monto": "91741"
     },
     {
-        "id_financiamiento": "10",
+        "id_financiamiento": "7",
         "Ano": "2020",
         "monto": "217140"
     },
     {
-        "id_financiamiento": "11",
+        "id_financiamiento": "8",
         "Ano": "2021",
         "monto": "167000"
     }
