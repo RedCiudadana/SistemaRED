@@ -87,10 +87,10 @@ permalink: "monitoreo/index.html"
 															</div>
 															<!--end::Row-->
 															{% for item in collections.resmon%}
-																{% if item.data.resmon.ano == 2021 %}
-																	<div id="meses" style="display:none">{{item.data.resmon.Mes}}</div>
-																	<div id="personas" style="display:none">{{item.data.resmon.monitoreo}}</div>
-																{% endif %}
+																
+																<div id="anos" style="display:none">{{item.data.resmon.Ano}}</div>
+																<div id="personas" style="display:none">{{item.data.resmon.monitoreo}}</div>
+																
 															{% endfor %}
 
 

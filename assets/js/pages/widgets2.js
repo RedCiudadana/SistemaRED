@@ -30,62 +30,44 @@ var KTWidgets = function () {
         }
     }
 
-    var mes = document.querySelectorAll("[id='meses']");
+    var anos = document.querySelectorAll("[id='anos']");
     var per = document.querySelectorAll("[id='personas']");
-    var ene=0;
-    var feb=0;
-    var mar=0;
-    var abr=0;
-    var may=0;
-    var jun=0;
-    var jul=0;
-    var ago=0;
-    var sep=0;
-    var oct=0;
-    var nov=0;
-    var dic=0;
-    
-    let mapa=new Map();
-    for(var i=0; i<mes.length; i++){
-        mapa.set(mes[i].innerHTML,per[i].innerHTML);
-    }
-    
 
-    if(mapa.has("Enero")){
-        ene = mapa.get("Enero");
+    var a2015=0;
+    var a2016=0;
+    var a2017=0;
+    var a2018=0;
+    var a2019=0;
+    var a2020=0;
+    var a2021=0;
+
+
+    let mapa=new Map();
+    for(var i=0; i<anos.length; i++){
+        mapa.set(anos[i].innerHTML,per[i].innerHTML);
     }
-    if (mapa.has("Febrero")){
-        feb = mapa.get("Febrero");
+
+    
+    if (mapa.has("2015")){
+        a2015 = mapa.get("2015");
     }
-    if (mapa.has("Marzo")){
-        mar = mapa.get("Marzo");
+    if (mapa.has("2016")){
+        a2016 = mapa.get("2016");
     }
-    if(mapa.has("Abril")){
-        abr = mapa.get("Abril");
+    if(mapa.has("2017")){
+        a2017 = mapa.get("2017");
     }
-    if (mapa.has("Mayo")){
-        may = mapa.get("Mayo");
+    if (mapa.has("2018")){
+        a2018 = mapa.get("2018");
     }
-    if (mapa.has("Junio")){
-        jun = mapa.get("Junio");
+    if (mapa.has("2019")){
+        a2019 = mapa.get("2019");
     }
-    if(mapa.has("Julio")){
-        jul = mapa.get("Julio");
+    if(mapa.has("2020")){
+        a2020 = mapa.get("2020");
     }
-    if (mapa.has("Agosto")){
-        ago = mapa.get("Agosto");
-    }
-    if (mapa.has("Septiembre")){
-        sep = mapa.get("Septiembre");
-    }
-    if(mapa.has("Octubre")){
-        oct = mapa.get("Octubre");
-    }
-    if (mapa.has("Noviembre")){
-        nov = mapa.get("Noviembre");
-    }
-    if (mapa.has("Diciembre")){
-        dic = mapa.get("Diciembre");
+    if (mapa.has("2021")){
+        a2021 = mapa.get("2021");
     }
 
 
@@ -2955,7 +2937,7 @@ var KTWidgets = function () {
         var options = {
             series: [{
                 name: 'Personas',
-                data: [ene,feb,mar,abr,may,jun,jul,ago,sep,oct,nov,dic]
+                data: [a2015,a2016,a2017,a2018,a2019,a2020,a2021]
             }],
             chart: {
                 type: 'area',
@@ -2988,7 +2970,7 @@ var KTWidgets = function () {
                 colors: [KTApp.getSettings()['colors']['theme']['base']['info']]
             },
             xaxis: {
-                categories: ['Enero','Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                categories: ['2015','2016', '2017', '2018', '2019', '2020', '2021'],
                 axisBorder: {
                     show: false,
                 },

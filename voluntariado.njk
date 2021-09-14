@@ -88,10 +88,10 @@ permalink: "voluntariado/index.html"
 															</div>
 															<!--end::Row-->
 															{% for item in collections.resvol%}
-																{% if item.data.resvol.ano == 2021 %}
-																	<div id="meses" style="display:none">{{item.data.resvol.Mes}}</div>
-																	<div id="personas" style="display:none">{{item.data.resvol.voluntariado}}</div>
-																{% endif %}
+																
+																<div id="anos" style="display:none">{{item.data.resvol.Ano}}</div>
+																<div id="personas" style="display:none">{{item.data.resvol.voluntariado}}</div>
+																
 															{% endfor %}
 														</div>
 														<!--end::Stats-->
