@@ -746,3 +746,32 @@ color: #748188; }
   color: white;
 }
 
+/*Submenu*/
+.sub{
+  display:none;
+  position:absolute;
+  list-style: none;
+  background-color: rgb(255, 255, 255); /* Grey background color */
+  border: #ccc 0.5px solid;
+  color: black; /* Black text color */
+  padding: 20px; /* Add some padding */
+  text-decoration: none;
+}
+
+.sub a{
+  color: #748188;
+  font-weight: 800;
+}
+
+.sub li{
+  padding: 10px 4px;
+}
+
+.sub a:hover{
+  color: black;
+}
+      
+.subm:hover .sub{
+  display:block;
+}
+
