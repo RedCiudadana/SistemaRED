@@ -750,6 +750,7 @@ color: #748188; }
 .sub{
   display:none;
   position:absolute;
+  z-index: 1000;
   list-style: none;
   background-color: rgb(255, 255, 255); /* Grey background color */
   border: #ccc 0.5px solid;
