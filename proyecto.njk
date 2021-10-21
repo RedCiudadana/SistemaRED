@@ -36,52 +36,7 @@ permalink: "proyecto/{{proyecto.id_proyecto}}/index.html"
 										
 									</div>
 									<!--end::Search Form-->
-									<!--begin::Group Actions-->
-									<div class="d-flex- align-items-center flex-wrap mr-2 d-none" id="kt_subheader_group_actions">
-										<div class="text-dark-50 font-weight-bold">
-										<span id="kt_subheader_group_selected_rows">23</span>Selected:</div>
-										<div class="d-flex ml-6">
-											<div class="dropdown mr-2" id="kt_subheader_group_actions_status_change">
-												<button type="button" class="btn btn-light-primary font-weight-bolder btn-sm dropdown-toggle" data-toggle="dropdown">Update Status</button>
-												<div class="dropdown-menu p-0 m-0 dropdown-menu-sm">
-													<ul class="navi navi-hover pt-3 pb-4">
-														<li class="navi-header font-weight-bolder text-uppercase text-primary font-size-lg pb-0">Change status to:</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link" data-toggle="status-change" data-status="1">
-																<span class="navi-text">
-																	<span class="label label-light-success label-inline font-weight-bold">Approved</span>
-																</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link" data-toggle="status-change" data-status="2">
-																<span class="navi-text">
-																	<span class="label label-light-danger label-inline font-weight-bold">Rejected</span>
-																</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link" data-toggle="status-change" data-status="3">
-																<span class="navi-text">
-																	<span class="label label-light-warning label-inline font-weight-bold">Pending</span>
-																</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link" data-toggle="status-change" data-status="4">
-																<span class="navi-text">
-																	<span class="label label-light-info label-inline font-weight-bold">On Hold</span>
-																</span>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</div>
-											<button class="btn btn-light-success font-weight-bolder btn-sm mr-2" id="kt_subheader_group_actions_fetch" data-toggle="modal" data-target="#kt_datatable_records_fetch_modal">Fetch Selected</button>
-											<button class="btn btn-light-danger font-weight-bolder btn-sm mr-2" id="kt_subheader_group_actions_delete_all">Delete All</button>
-										</div>
-									</div>
-									<!--end::Group Actions-->
+									
 								</div>
 								<!--end::Details-->
 								<!--begin::Toolbar-->
@@ -91,7 +46,7 @@ permalink: "proyecto/{{proyecto.id_proyecto}}/index.html"
 									<!--end::Button-->
 									<!--begin::Button-->
 									<a href="https://docs.google.com/spreadsheets/d/1oKSVsIOMHbyiarzY-
-E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" taget="_blank" class="btn btn-light-primary font-weight-bold ml-2">Actualizar proyectos</a>
+E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" target="_blank" class="btn btn-light-primary font-weight-bold ml-2">Actualizar proyectos</a>
 									<!--end::Button-->
 									
 								</div>
@@ -201,6 +156,28 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" taget="_blank" class="btn btn-light
 											<!--begin::Header-->
 											<div class="card-header border-0 py-5">
 												<h3 class="card-title align-items-start flex-column">
+													<span class="card-label font-weight-bolder text-dark">Descripción del Proyecto</span>
+												</h3>
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body pt-0 pb-3">
+												<p>{{proyecto.TdC}}</p>
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Advance Table Widget 3-->
+									</div>
+								</div>
+								<!--end::Row-->
+								<!--begin::Row-->
+								<div class="row">
+									<div class="col-lg-12">
+										<!--begin::Advance Table Widget 3-->
+										<div class="card card-custom card-stretch gutter-b">
+											<!--begin::Header-->
+											<div class="card-header border-0 py-5">
+												<h3 class="card-title align-items-start flex-column">
 													<span class="card-label font-weight-bolder text-dark">Actividades</span>
 												</h3>
 											</div>
@@ -282,21 +259,177 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" taget="_blank" class="btn btn-light
 										</div>
 										<!--end::Advance Table Widget 3-->
 									</div>
+
+									<div class="col-xxl-12">
+										<!--begin::Advance Table Widget 3-->
+										<div class="card card-custom gutter-b" >
+											<!--begin::Header-->
+											<div class="card-header border-0 py-5">
+												<h3 class="card-title align-items-start flex-column">
+													<span class="card-label font-weight-bolder text-dark">Indicadores</span>
+												</h3>
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body pt-0 pb-3">
+												<!--begin::Table-->
+												<div class="table-responsive">
+													<table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
+														<thead>
+															<tr class="text-uppercase">
+																
+																<th style="min-width: 100px" class="pl-7">
+																	<span class="text-dark-75">id_indicador</span>
+																</th>																
+																<th style="min-width: 100px">Indicador Resumen</th>
+																<th style="min-width: 150px">Indicador</th>
+																<th style="min-width: 100px">Resultado2021 </th>
+																<th style="min-width: 100px">Restante </th>
+																<th style="min-width: 100px">Meta 2025 </th>
+																
+															</tr>
+														</thead>
+														<tbody>
+															{% for item in collections[proyecto.Proyecto] %}
+															
+															<tr>
+																<td class="pl-0 py-8">
+																	<div class="d-flex align-items-center">
+																		<div class="symbol symbol-50 flex-shrink-0 mr-4">
+																			<div class="symbol-label" style="background-image: url('/assets/IMAGEN-RCt.png')"></div>
+																		</div>
+																		<div>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.detindicadores.id_indicador}}</span>
+																		</div>
+																	</div>
+																</td>
+																<td>
+																	<div class="d-flex align-items-center">
+																		<div>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.detindicadores.IndicadorResumen}}</span>
+																		</div>
+																	</div>
+																	
+																</td>
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.detindicadores.indicador}}</span>
+																</td>
+
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.detindicadores.Resultado2021}}</span>
+																</td>
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.detindicadores.Restante}}</span>
+																	
+																</td>
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.detindicadores.Meta2025}}</span>
+																	
+																</td>
+																
+															</tr>
+															
+															{% endfor %}
+															
+														</tbody>
+													</table>
+												</div>
+												<!--end::Table-->
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Advance Table Widget 3-->
+
+										
+									</div>
+
+									<div class="col-lg-12">
+										<!--begin::Advance Table Widget 3-->
+										<div class="card card-custom card-stretch gutter-b">
+											<!--begin::Header-->
+											<div class="card-header border-0 py-5">
+												<h3 class="card-title align-items-start flex-column">
+													<span class="card-label font-weight-bolder text-dark">Sistematización</span>
+												</h3>
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body pt-0 pb-3">
+												<!--begin::Table-->
+												<div class="table-responsive">
+													<table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
+														<thead>
+															<tr class="text-uppercase">
+																<th style="min-width: 100px" class="pl-7">
+																	<span class="text-dark-75">Proyecto</span>
+																</th>
+																<th style="min-width: 100px">Enlace al Proyecto</th>
+																<th style="min-width: 100px">id_informe</th>
+																<th style="min-width: 100px">Reporte</th>
+																<th style="min-width: 100px">Enlace del Reporte</th>
+															</tr>
+														</thead>
+														<tbody>
+															
+																{% for item in collections[proyecto.Proyecto] %}
+																<tr>
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.proyectos.Proyecto}}</span>
+																</td>
+																<td class=" pr-0">
+																	
+																	<a href="{{item.data.proyectos.ProyectoEnlace}}" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+																		<span class="svg-icon svg-icon-md svg-icon-primary">
+																			<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
+																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																				<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																					<polygon points="0 0 24 0 24 24 0 24" />
+																					<rect fill="#000000" opacity="0.3" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+																					<path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+																				</g>
+																			</svg>
+																			<!--end::Svg Icon-->
+																		</span>
+																	</a>
+																</td>
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.proyectos.id_informe}}</span>
+																</td>
+																<td>
+																	<span class="label label-lg label-light-primary label-inline">{{item.data.proyectos.Reporte}}</span>
+																</td>
+																<td class=" pr-0">
+																	
+																	<a href="{{item.data.proyectos.ReporteEnlace}}" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+																		<span class="svg-icon svg-icon-md svg-icon-primary">
+																			<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
+																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																				<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																					<polygon points="0 0 24 0 24 24 0 24" />
+																					<rect fill="#000000" opacity="0.3" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+																					<path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+																				</g>
+																			</svg>
+																			<!--end::Svg Icon-->
+																		</span>
+																	</a>
+																</td>
+															</tr>
+                              							{% endfor %}
+																
+															
+														</tbody>
+													</table>
+												</div>
+												<!--end::Table-->
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Advance Table Widget 3-->
+									</div>
 								</div>
 								<!--end::Row-->
-								<!--begin::Row-->
-								<div class="row">
-									<div class="col-lg-4">
-										
-									</div>
-									<div class="col-lg-4">
-										
-									</div>
-									<div class="col-lg-4">
-										
-									</div>
-								</div>
-								<!--end::Row-->
+								
 							</div>
 							<!--end::Container-->
 						</div>

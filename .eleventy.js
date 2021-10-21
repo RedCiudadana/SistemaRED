@@ -12,7 +12,8 @@ const proyectos = [
     "CandiDatos",
     "Nuestra Elección",
     "Guatemala Leaks",
-    "Mochila Electoral"
+    "Mochila Electoral",
+    "MancoVerapaz"
 ];
 
 
@@ -30,9 +31,41 @@ module.exports = function (eleventyConfig) {
                 return item.data.proyectos.Proyecto === proyecto;
             });
 
+            let collection = collectionApi.getFilteredByTags('detindicadores').filter(function (item) {
+                return item.data.detindicadores.Proyecto === proyecto;
+            });
+
+            let collection = collectionApi.getFilteredByTags('sis').filter(function (item) {
+                return item.data.sis.Proyecto === proyecto;
+            });
+
+
+            return collection;
+
+        });
+    });
+    /*
+    proyectos.forEach((indicadores) => {
+        eleventyConfig.addCollection(indicadores, function (collectionApi) {
+
+            let collection = collectionApi.getFilteredByTags('detindicadores').filter(function (item) {
+                return item.data.detindicadores.Proyecto === proyecto;
+            });
+
             return collection;
         });
     });
+
+    proyectos.forEach((sistematizacion) => {
+        eleventyConfig.addCollection(sistematizacion, function (collectionApi) {
+
+            let collection = collectionApi.getFilteredByTags('sis').filter(function (item) {
+                return item.data.sis.Proyecto === proyecto;
+            });
+
+            return collection;
+        });
+    });*/
 
     /*eleventyConfig.addCollection("proyectos", function(collectionApi) {
         return collectionApi.getFilteredByTag('proyectos');
