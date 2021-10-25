@@ -290,14 +290,11 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" target="_blank" class="btn btn-ligh
 															</tr>
 														</thead>
 														<tbody>
-															{% for item in collections[proyecto.Proyecto] %}
-															
+															{% for item in collections.detindicadores %}
+															{% if item.data.detindicadores.Proyecto == proyecto.Proyecto%}
 															<tr>
 																<td class="pl-0 py-8">
 																	<div class="d-flex align-items-center">
-																		<div class="symbol symbol-50 flex-shrink-0 mr-4">
-																			<div class="symbol-label" style="background-image: url('/assets/IMAGEN-RCt.png')"></div>
-																		</div>
 																		<div>
 																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.detindicadores.id_indicador}}</span>
 																		</div>
@@ -328,7 +325,7 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" target="_blank" class="btn btn-ligh
 																</td>
 																
 															</tr>
-															
+															{% endif %}
 															{% endfor %}
 															
 														</tbody>
@@ -371,14 +368,15 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" target="_blank" class="btn btn-ligh
 														</thead>
 														<tbody>
 															
-																{% for item in collections[proyecto.Proyecto] %}
+																{% for item in collections.sis %}
+																{% if item.data.sis.Proyecto == proyecto.Proyecto%}
 																<tr>
 																<td>
-																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.proyectos.Proyecto}}</span>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.sis.Proyecto}}</span>
 																</td>
 																<td class=" pr-0">
 																	
-																	<a href="{{item.data.proyectos.ProyectoEnlace}}" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+																	<a href="{{item.data.sis.ProyectoEnlace}}" class="btn btn-icon btn-light btn-hover-primary btn-sm">
 																		<span class="svg-icon svg-icon-md svg-icon-primary">
 																			<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
 																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -393,14 +391,14 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" target="_blank" class="btn btn-ligh
 																	</a>
 																</td>
 																<td>
-																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.proyectos.id_informe}}</span>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.sis.id_informe}}</span>
 																</td>
 																<td>
-																	<span class="label label-lg label-light-primary label-inline">{{item.data.proyectos.Reporte}}</span>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.sis.Reporte}}</span>
 																</td>
 																<td class=" pr-0">
 																	
-																	<a href="{{item.data.proyectos.ReporteEnlace}}" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+																	<a href="{{item.data.sis.ReporteEnlace}}" class="btn btn-icon btn-light btn-hover-primary btn-sm">
 																		<span class="svg-icon svg-icon-md svg-icon-primary">
 																			<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
 																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -415,6 +413,7 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" target="_blank" class="btn btn-ligh
 																	</a>
 																</td>
 															</tr>
+														{%endif%}
                               							{% endfor %}
 																
 															

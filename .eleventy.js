@@ -31,45 +31,18 @@ module.exports = function (eleventyConfig) {
                 return item.data.proyectos.Proyecto === proyecto;
             });
 
-            /*let collection = collectionApi.getFilteredByTags('detindicadores').filter(function (item) {
-                return item.data.detindicadores.Proyecto === proyecto;
-            });
-
-            let collection = collectionApi.getFilteredByTags('sis').filter(function (item) {
-                return item.data.sis.Proyecto === proyecto;
-            });*/
-
-
             return collection;
 
         });
     });
-    /*
-    proyectos.forEach((indicadores) => {
-        eleventyConfig.addCollection(indicadores, function (collectionApi) {
 
-            let collection = collectionApi.getFilteredByTags('detindicadores').filter(function (item) {
-                return item.data.detindicadores.Proyecto === proyecto;
-            });
-
-            return collection;
-        });
+    eleventyConfig.addCollection("detindicadores", function(collectionApi) {
+        return collectionApi.getFilteredByTag('detindicadores');
     });
 
-    proyectos.forEach((sistematizacion) => {
-        eleventyConfig.addCollection(sistematizacion, function (collectionApi) {
-
-            let collection = collectionApi.getFilteredByTags('sis').filter(function (item) {
-                return item.data.sis.Proyecto === proyecto;
-            });
-
-            return collection;
-        });
-    });*/
-
-    /*eleventyConfig.addCollection("proyectos", function(collectionApi) {
-        return collectionApi.getFilteredByTag('proyectos');
-    });*/
+    eleventyConfig.addCollection("sis", function(collectionApi) {
+        return collectionApi.getFilteredByTag('sis');
+    });
 
     eleventyConfig.addCollection("monitoreos", function(collectionApi) {
         return collectionApi.getFilteredByTag('monitoreos');
