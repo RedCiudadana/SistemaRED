@@ -19,10 +19,10 @@ permalink: "proyecto/{{proyecto.id_proyecto}}/index.html"
 
 {% block content %}
 <!--begin::Content-->
-					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+					<div class="content d-flex flex-column flex-column-fluid" id="kt_content" >
 						<!--begin::Subheader-->
 						<div class="subheader py-2 py-lg-4 subheader-transparent" id="kt_subheader">
-							<div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+							<div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap" style="padding: 0 50px!important">
 								<!--begin::Details-->
 								<div class="d-flex align-items-center flex-wrap mr-2">
 									<!--begin::Title-->
@@ -278,7 +278,7 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" target="_blank" class="btn btn-ligh
 														<thead>
 															<tr class="text-uppercase">
 																
-																<th style="min-width: 100px" class="pl-7">
+																<th style="min-width: 50px" class="pl-7">
 																	<span class="text-dark-75">No.</span>
 																</th>																
 																<th style="min-width: 100px">Indicador Resumen</th>
@@ -294,9 +294,9 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" target="_blank" class="btn btn-ligh
 															{% if item.data.detindicadores.Proyecto == proyecto.Proyecto%}
 															<tr>
 																<td class="pl-0 py-8">
-																	<div class="d-flex align-items-center">
+																	<div class="d-flex align-items-center" style="margin-left:2rem">
 																		<div>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg text-center">{{item.data.detindicadores.id_indicador}}</span>
+																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.detindicadores.id_indicador}}</span>
 																		</div>
 																	</div>
 																</td>
@@ -357,7 +357,7 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" target="_blank" class="btn btn-ligh
 													<table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
 														<thead>
 															<tr class="text-uppercase">
-																<th style="min-width: 100px" class="pl-7">
+																<th style="min-width: 50px" class="pl-7">
 																	<span class="text-dark-75">No.</span>
 																</th>
 																<th style="min-width: 100px">Proyecto</th>
@@ -371,7 +371,7 @@ E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" target="_blank" class="btn btn-ligh
 																{% if item.data.sis.Proyecto == proyecto.Proyecto%}
 																<tr>
 																<td>
-																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.sis.id_informe}}</span>
+																	<span style="margin-left:2rem" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.sis.id_informe}}</span>
 																</td>
 																<td>
 																	<a href="{{item.data.sis.ProyectoEnlace}}" >
