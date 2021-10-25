@@ -31,13 +31,13 @@ module.exports = function (eleventyConfig) {
                 return item.data.proyectos.Proyecto === proyecto;
             });
 
-            let collection = collectionApi.getFilteredByTags('detindicadores').filter(function (item) {
+            /*let collection = collectionApi.getFilteredByTags('detindicadores').filter(function (item) {
                 return item.data.detindicadores.Proyecto === proyecto;
             });
 
             let collection = collectionApi.getFilteredByTags('sis').filter(function (item) {
                 return item.data.sis.Proyecto === proyecto;
-            });
+            });*/
 
 
             return collection;
