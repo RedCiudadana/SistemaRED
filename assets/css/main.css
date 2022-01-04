@@ -790,3 +790,14 @@ color: #748188; }
   margin-bottom: 20px;
   font-weight: bold;
 }
+
+.btn-verde{
+  padding:20px;
+  background-color: #03b664;
+  border: 5px solid #03b664;
+  color: #fff;
+}
+
+.btn-verde:hover{
+  color: #ccc;
+}
