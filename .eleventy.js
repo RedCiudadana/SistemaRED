@@ -13,7 +13,9 @@ const proyectos = [
     "Nuestra Elección",
     "Guatemala Leaks",
     "Mochila Electoral",
-    "MancoVerapaz"
+    "MancoVerapaz",
+    "Índice de Datos Abiertos Justicia 2021",
+    "Índice de Datos Abiertos 2021"
 ];
 
 
