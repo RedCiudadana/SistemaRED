@@ -12,7 +12,7 @@
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.gt.undp.org/",
         "TipoDonacion": "Donación",
-        "monto": "35000"
+        "monto": "30000"
     },
     {
         "id_financiamiento": "2",
@@ -33,7 +33,7 @@
         "id_financiamiento": "3",
         "id_Ultimas": "3",
         "Ano": "2021",
-        "Donante": "NIMD",
+        "Donante": "Netherlands Institute for Multiparty Democracy (NIMD)",
         "EnlaceDonante": "https://centralamerica.nimd.org/",
         "Proyecto": "Jovenes+D",
         "Descripcion": "Descripcion de San Juan Sacatepequez en Datos",
@@ -91,7 +91,7 @@
     {
         "id_financiamiento": "7",
         "Ano": "2020",
-        "Donante": "Fundación Konrad Adenauer",
+        "Donante": "Konrad Adenauer Stiftung (KAS)",
         "EnlaceDonante": "https://www.kas.de",
         "Proyecto": "Escuela de Innovación",
         "Descripcion": "Descripcion de San Juan Sacatepequez en Datos",
@@ -225,7 +225,7 @@
     {
         "id_financiamiento": "17",
         "Ano": "2018",
-        "Donante": "Konrad Adenauer Stiftung",
+        "Donante": "Konrad Adenauer Stiftung (KAS)",
         "EnlaceDonante": "https://www.kas.de/es/home",
         "Proyecto": "Proyecto Electoral: ElectoKAS",
         "EnlaceThumbnails": "https://redciudadana.org/wp-content/uploads/2019/07/red-logo-01.png",
@@ -233,12 +233,12 @@
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.kas.de/es/home",
         "TipoDonacion": "Donación",
-        "monto": "12337.66234"
+        "monto": "13338"
     },
     {
         "id_financiamiento": "18",
         "Ano": "2017",
-        "Donante": "USAID-CPI",
+        "Donante": "USAID - Counterpart International",
         "EnlaceDonante": "https://www.counterpart.org/",
         "Proyecto": "Politica Legislativa de Datos Abiertos",
         "EnlaceThumbnails": "https://redciudadana.org/wp-content/uploads/2019/07/red-logo-01.png",
@@ -303,26 +303,28 @@
     {
         "id_financiamiento": "23",
         "Ano": "2016",
-        "Donante": "USAID - Counterpart",
+        "Donante": "USAID - Counterpart International",
         "EnlaceDonante": "https://www.counterpart.org/",
         "Proyecto": "Camino a un Gobierno Abierto",
         "EnlaceThumbnails": "https://redciudadana.org/wp-content/uploads/2019/07/red-logo-01.png",
         "EnlaceProyecto": "https://redciudadana.org/",
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.counterpart.org/",
-        "TipoDonacion": "Contratación Directa"
+        "TipoDonacion": "Contratación Directa",
+        "monto": "0"
     },
     {
         "id_financiamiento": "24",
         "Ano": "2016",
-        "Donante": "Fundación Konrad Adenauer",
+        "Donante": "Konrad Adenauer Stiftung (KAS)",
         "EnlaceDonante": "https://www.kas.de/es/home",
         "Proyecto": "Camino a un Gobierno Abierto",
         "EnlaceThumbnails": "https://redciudadana.org/wp-content/uploads/2019/07/red-logo-01.png",
         "EnlaceProyecto": "https://redciudadana.org/",
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.kas.de/es/home",
-        "TipoDonacion": "Contratación Directa"
+        "TipoDonacion": "Contratación Directa",
+        "monto": "0"
     },
     {
         "id_financiamiento": "25",
@@ -334,7 +336,8 @@
         "EnlaceProyecto": "https://redciudadana.org/",
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.ndi.org/",
-        "TipoDonacion": "Contratación Directa"
+        "TipoDonacion": "Contratación Directa",
+        "monto": "0"
     },
     {
         "id_financiamiento": "26",
@@ -346,7 +349,8 @@
         "EnlaceProyecto": "https://redciudadana.org/",
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.iri.org/",
-        "TipoDonacion": "Contratación Directa"
+        "TipoDonacion": "Contratación Directa",
+        "monto": "0"
     },
     {
         "id_financiamiento": "27",
@@ -358,7 +362,8 @@
         "EnlaceProyecto": "https://redciudadana.org/",
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.counterpart.org/",
-        "TipoDonacion": "Contratación Directa"
+        "TipoDonacion": "Contratación Directa",
+        "monto": "0"
     },
     {
         "id_financiamiento": "28",
@@ -370,7 +375,8 @@
         "EnlaceProyecto": "https://redciudadana.org/",
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.ndi.org/",
-        "TipoDonacion": "Contratación Directa"
+        "TipoDonacion": "Contratación Directa",
+        "monto": "0"
     },
     {
         "id_financiamiento": "29",
@@ -382,47 +388,54 @@
         "EnlaceProyecto": "https://redciudadana.org/",
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.iri.org/",
-        "TipoDonacion": "Contratación Directa"
-    },
-    {
-        "id_financiamiento": "30",
-        "Ano": "2015",
-        "Donante": "HIVOS",
-        "EnlaceDonante": "https://www.hivos.org/",
-        "Proyecto": "¿A dónde van mis impuestos?",
-        "EnlaceThumbnails": "https://redciudadana.org/wp-content/uploads/2019/07/red-logo-01.png",
-        "EnlaceProyecto": "http://adondevanmisimpuestos.gt/",
-        "EnlaceRC": "https://redciudadana.org/",
-        "EnlaceConvenio": "https://www.hivos.org/",
-        "TipoDonacion": "Donación",
-        "monto": "10000"
+        "TipoDonacion": "Contratación Directa",
+        "monto": "0"
     },
     {
         "id_financiamiento": "31",
         "Ano": "2015",
-        "Donante": "Fundación Konrad Adenauer",
+        "Donante": "Konrad Adenauer Stiftung (KAS)",
         "EnlaceDonante": "https://www.kas.de/es/home",
         "Proyecto": "¿A dónde van mis impuestos?- Fase II",
         "EnlaceThumbnails": "https://redciudadana.org/wp-content/uploads/2019/07/red-logo-01.png",
         "EnlaceProyecto": "http://adondevanmisimpuestos.gt/",
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.kas.de/es/home",
-        "TipoDonacion": "Contratación Directa"
+        "TipoDonacion": "Contratación Directa",
+        "monto": "1000"
     },
     {
         "id_financiamiento": "32",
         "Ano": "2015",
-        "Donante": "HIVOS – Ciudadano Inteligente",
+        "Donante": "Donación Individual",
+        "Proyecto": "CandiDatos",
+        "TipoDonacion": "Donación",
+        "monto": "533.3333333"
+    },
+    {
+        "id_financiamiento": "33",
+        "Ano": "2015",
+        "Donante": "Iniciativa Latinoamericana por los Datos Abiertos (ILDA)",
+        "EnlaceDonante": "https://idatosabiertos.org/",
+        "Proyecto": "Open Data Day",
+        "TipoDonacion": "Donación",
+        "monto": "300"
+    },
+    {
+        "id_financiamiento": "34",
+        "Ano": "2015",
+        "Donante": "HIVOS – Ciudadania Inteligente",
         "EnlaceDonante": "https://www.hivos.org/",
         "Proyecto": "CandiDatos",
         "EnlaceThumbnails": "https://redciudadana.org/wp-content/uploads/2019/07/red-logo-01.png",
         "EnlaceProyecto": "http://www.candidatos.gt/",
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.hivos.org/",
-        "TipoDonacion": "Contratación Directa - Alianza Estratégica"
+        "TipoDonacion": "Contratación Directa - Alianza Estratégica",
+        "monto": "0"
     },
     {
-        "id_financiamiento": "33",
+        "id_financiamiento": "35",
         "Ano": "2015",
         "Donante": "Indiegogo",
         "EnlaceDonante": "https://www.indiegogo.com/projects/help-guatemala-vote--2#/",
@@ -435,15 +448,29 @@
         "monto": "1390"
     },
     {
-        "id_financiamiento": "34",
+        "id_financiamiento": "36",
         "Ano": "2015",
-        "Donante": "Fundación Konrad Adenauer",
+        "Donante": "Konrad Adenauer Stiftung (KAS)",
         "EnlaceDonante": "https://www.kas.de/es/home",
         "Proyecto": "CandiDatos",
         "EnlaceThumbnails": "https://redciudadana.org/wp-content/uploads/2019/07/red-logo-01.png",
         "EnlaceProyecto": "http://www.candidatos.gt/",
         "EnlaceRC": "https://redciudadana.org/",
         "EnlaceConvenio": "https://www.kas.de/es/home",
-        "TipoDonacion": "Contratación Directa"
+        "TipoDonacion": "Contratación Directa",
+        "monto": "1000"
+    },
+    {
+        "id_financiamiento": "30",
+        "Ano": "2014",
+        "Donante": "HIVOS",
+        "EnlaceDonante": "https://www.hivos.org/",
+        "Proyecto": "¿A dónde van mis impuestos?",
+        "EnlaceThumbnails": "https://redciudadana.org/wp-content/uploads/2019/07/red-logo-01.png",
+        "EnlaceProyecto": "http://adondevanmisimpuestos.gt/",
+        "EnlaceRC": "https://redciudadana.org/",
+        "EnlaceConvenio": "https://www.hivos.org/",
+        "TipoDonacion": "Donación",
+        "monto": "15000"
     }
 ]
