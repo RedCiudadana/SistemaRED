@@ -1,0 +1,353 @@
+[
+    {
+        "id_administracion": "1",
+        "Categoria": "Planificación institucional",
+        "Documento": "Plan estratégico",
+        "Prioridad": "Indispensable",
+        "Estado": "En proceso",
+        "TextoDescarga": "Ver estrategia 2022 - 2025 (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "2",
+        "Categoria": "Planificación institucional",
+        "Documento": "Estructura organizacional",
+        "Prioridad": "Indispensable",
+        "Estado": "En proceso",
+        "TextoDescarga": "Ver estructura organizacional (PDF) (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "3",
+        "Categoria": "Planificación institucional",
+        "Documento": "Consejo Directivo",
+        "Prioridad": "Importante",
+        "Estado": "En proceso",
+        "TextoDescarga": "Ver Consejo Directivo (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "4",
+        "Categoria": "Planificación institucional",
+        "Documento": "Organigrama",
+        "Prioridad": "Importante",
+        "Estado": "En proceso",
+        "TextoDescarga": "Ver Organigrama (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "5",
+        "Categoria": "Planificación institucional",
+        "Documento": "Puestos",
+        "Prioridad": "Importante",
+        "Estado": "En proceso",
+        "TextoDescarga": "Ver Puestos (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "6",
+        "Categoria": "Planificación institucional",
+        "Documento": "Funciones",
+        "Prioridad": "Importante",
+        "Estado": "En proceso",
+        "TextoDescarga": "Ver Funciones (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "7",
+        "Categoria": "Planificación institucional",
+        "Documento": "Colaboradores",
+        "Prioridad": "Importante",
+        "Estado": "En proceso",
+        "TextoDescarga": "Ver Colaboradores (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "8",
+        "Categoria": "Administración",
+        "Documento": "Manual de Procesos Administrativos",
+        "Prioridad": "Indispensable",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Manual de Procesos Administrativos (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "9",
+        "Categoria": "Administración",
+        "Documento": "Manual de Compras",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Manual de Compras (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "10",
+        "Categoria": "Administración",
+        "Documento": "Manual de Viajes",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Manual de Viajes (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "11",
+        "Categoria": "Administración",
+        "Documento": "Manual de Contabilidad y Financiero",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Manual de Contabilidad y Financiero (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "12",
+        "Categoria": "Administración",
+        "Documento": "Manual de Caja Chica",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Manual de Caja Chica (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "13",
+        "Categoria": "Administración",
+        "Documento": "Manual de Recursos Humanos",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Manual de Recursos Humanos (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "14",
+        "Categoria": "Administración",
+        "Documento": "Codigo de Etica",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Codigo de Etica (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "15",
+        "Categoria": "Administración",
+        "Documento": "Manual de Prevención de Conflictos de Interés",
+        "Prioridad": "Indispensable",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Manual de Prevención de Conflictos de Interés (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "16",
+        "Categoria": "Administración",
+        "Documento": "Manifiesto y Protocolo para Promover la Igualdad de Género",
+        "Prioridad": "Indispensable",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Manifiesto y Protocolo para Promover la Igualdad de Género (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "17",
+        "Categoria": "Memorias",
+        "Documento": "Memoria Red Ciudadana 2021",
+        "Prioridad": "Importante",
+        "Estado": "En proceso",
+        "TextoDescarga": "Ver Memoria Red Ciudadana 2021 (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "18",
+        "Categoria": "Memorias",
+        "Documento": "Memoria Red Ciudadana 2020",
+        "Prioridad": "Importante",
+        "Estado": "En proceso",
+        "TextoDescarga": "Ver Memoria Red Ciudadana 2020 (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "19",
+        "Categoria": "Memorias",
+        "Documento": "Memoria Red Ciudadana 2019",
+        "Prioridad": "Importante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Memoria Red Ciudadana 2019 (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "20",
+        "Categoria": "Marco legal",
+        "Documento": "Nombramiento de Representante Legal",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Nombramiento de Representante Legal (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "21",
+        "Categoria": "Marco legal",
+        "Documento": "Acta Constitutiva",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Acta Constitutiva (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "22",
+        "Categoria": "Marco legal",
+        "Documento": "Mandato",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Mandato (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "23",
+        "Categoria": "Marco fiscal",
+        "Documento": "Declaraciones Fiscales",
+        "Prioridad": "Indispensable",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Declaraciones Fiscales (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "24",
+        "Categoria": "Marco fiscal",
+        "Documento": "Información Financiera",
+        "Prioridad": "Indispensable",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Información Financiera (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "25",
+        "Categoria": "Marco fiscal",
+        "Documento": "Constancia de Registro Tributario Unificado (RTU)",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Constancia de Registro Tributario Unificado (RTU) (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "26",
+        "Categoria": "Marco fiscal",
+        "Documento": "Resolución de SAT con relación a la exención de impuestos.",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Resolución de SAT con relación a la exención de impuestos. (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "27",
+        "Categoria": "Marco fiscal",
+        "Documento": "Stickers de autorización de libros contables y libro de actas",
+        "Prioridad": "Indispensable",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Stickers de autorización de libros contables y libro de actas (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "28",
+        "Categoria": "Marco fiscal",
+        "Documento": "Presupuestos Anuales",
+        "Prioridad": "Importante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Presupuestos Anuales (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "29",
+        "Categoria": "Marco fiscal",
+        "Documento": "Listado de Financiamiento",
+        "Prioridad": "Importante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Listado de Financiamiento (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "30",
+        "Categoria": "Marco fiscal",
+        "Documento": "Administración de recursos",
+        "Prioridad": "Relevante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Administración de recursos (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "31",
+        "Categoria": "Metodología social",
+        "Documento": "Beneficiarios",
+        "Prioridad": "Relevante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Beneficiarios (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "32",
+        "Categoria": "Metodología social",
+        "Documento": "Modelo de Intervención (programas y servicios)",
+        "Prioridad": "Relevante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Modelo de Intervención (programas y servicios) (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "33",
+        "Categoria": "Metodología social",
+        "Documento": "Listado de proyectos",
+        "Prioridad": "Relevante",
+        "Estado": "Completo",
+        "TextoDescarga": "Ver Listado de proyectos (PDF)",
+        "Enlace": "https://redciudadana.org/"
+    },
+    {
+        "id_administracion": "34",
+        "Categoria": "Sostenibilidad",
+        "Documento": "Relaciones interinstitucionales",
+        "Prioridad": "Relevante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Relaciones interinstitucionales (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "35",
+        "Categoria": "Sostenibilidad",
+        "Documento": "Comunicación (interna y externa)",
+        "Prioridad": "Relevante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Comunicación (interna y externa) (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "36",
+        "Categoria": "Sostenibilidad",
+        "Documento": "Plan de Desarrollo",
+        "Prioridad": "Relevante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Desarrollo (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "37",
+        "Categoria": "Sostenibilidad",
+        "Documento": "Experiencia Documentada",
+        "Prioridad": "Relevante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Experiencia Documentada (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "38",
+        "Categoria": "Sostenibilidad",
+        "Documento": "Programas",
+        "Prioridad": "Relevante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Programas (PDF)",
+        "Enlace": "#"
+    },
+    {
+        "id_administracion": "39",
+        "Categoria": "Sostenibilidad",
+        "Documento": "Evaluación de Resultados",
+        "Prioridad": "Relevante",
+        "Estado": "Pendiente",
+        "TextoDescarga": "Ver Evaluación de Resultados (PDF)",
+        "Enlace": "#"
+    }
+]

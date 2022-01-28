@@ -1,0 +1,319 @@
+---
+permalink: "admin/index.html"
+---
+
+{% extends "base.njk" %}
+
+{% block head %}
+<title> Administración </title>
+{% endblock %}
+
+{% block content %}
+<!--begin::Body-->
+			<!-- breadcrumb-area-start -->
+            <div class="breadcrumb-area pt-150 pb-155" style="background-image:url(/assets/ELEMENTOS/SLIDER/SLIDER.png)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="breadcrumb-text text-center" style="padding: 0 2rem">
+								<h2 class="text-white" style="font-weight:1000;font-size:5rem">Administración</h2>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- breadcrumb-area-end -->
+            <!--begin::Content-->
+			<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+				<!--begin::Entry-->
+				<div class="d-flex flex-column-fluid">
+					<!--begin::Container-->
+					<div class="container">
+						<!--begin::Page Layout-->
+						<div class="d-flex flex-row">
+							<!--begin::Layout-->
+							<div class="flex-row-fluid ml-lg-8">
+								<!--begin::Card-->
+								<div class="">
+									<div class="">
+										<div class="d-flex">								
+											<!--begin: Info-->
+											<div class="flex-grow-1">
+												<!--begin: Title-->
+												<div class="d-flex align-items-center justify-content-between flex-wrap">
+													<div class="mr-3"></div>
+													
+													<div class="my-lg-0 my-1">
+														<div class="popup-wrapper1" >
+															<div class="popup">
+																<div class="popup-close1">x</div>
+																<div class="popup-content">
+																	<h2>Copie el código </h2>
+																	<code>
+																	&lt;embed src="https://sistemaranking.redciudadana.org/administracion/admin1/" style="overflow:hidden" &gt;
+																	</code>
+																	
+																</div>
+															</div>
+														</div>
+														<button id="boton1" class="btn btn-sm btn-info font-weight-bolder text-uppercase">Compartir<img height="20px" width="20px" style="margin-left:4px" src="/assets/ELEMENTOS/MAPAS_SR-06.png"></button>
+													</div>
+												</div>
+												<!--end: Title-->								
+											</div>
+											<!--end: Info-->
+										</div>
+									</div>
+								</div>
+								<br>
+								<!--end::Card-->
+
+                                <div class="row" style="margin-bottom:1rem">
+
+									<div class="col-xl-4" style="margin-bottom:1rem">
+
+                                        <div class="card-body p-0 d-flex rounded justify-content-center" style="background:radial-gradient(94.09% 94.09% at 50% 50%, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 100%), #fff; margin-bottom:1rem;height:100%!important">
+											<div class="row m-0">
+												<div class=" p-0">
+													<div class="card card-custom card-stretch card-transparent card-shadowless">
+														<div class="card-body d-flex flex-column justify-content-center">
+															{% for item in collections.resadmin %}
+															{% if item.data.resadmin.Prioridad === "Indispensable" %}
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
+                                                            Indispensable 
+                                                            </h3>
+															<h3 class="text-center" id="iniciartext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}/{{item.data.resadmin.Sumatotal}}</h3>
+															{% endif %}
+                                                            <br>
+															{% if item.data.resadmin.Prioridad === "Importante" %}
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
+                                                            Importante
+                                                            </h3>
+															<h3 class="text-center" id="procesotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}/{{item.data.resadmin.Sumatotal}}</h3>
+															{% endif %}
+                                                            <br>
+															{% if item.data.resadmin.Prioridad === "Relevante" %}
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
+                                                            Relevante
+                                                            </h3>
+															<h3 class="text-center" id="finalizadotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}/{{item.data.resadmin.Sumatotal}}</h3>
+															{% endif %}
+															{% endfor %}
+														</div>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+
+                                    </div>
+
+									<div class="col-xl-4" style="margin-bottom:1rem">
+
+                                        <div class="card-body p-0 d-flex rounded justify-content-center" style="background:radial-gradient(94.09% 94.09% at 50% 50%, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 100%), #fff; margin-bottom:1rem;height:100%!important">
+											<div class="row m-0">
+												<div class=" p-0">
+													<div class="card card-custom card-stretch card-transparent card-shadowless">
+														<div class="card-body d-flex flex-column justify-content-center">
+															{% for item in collections.resadmin %}
+															{% if item.data.resadmin.Prioridad === "Indispensable" %}
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
+                                                            Completo
+                                                            </h3>
+															<h3 class="text-center" id="iniciartext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}</h3>
+															
+                                                            <br>
+
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
+                                                            En proceso
+                                                            </h3>
+															<h3 class="text-center" id="procesotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Enproceso}}</h3>
+															
+                                                            <br>
+
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
+                                                            Pendiente
+                                                            </h3>
+															<h3 class="text-center" id="finalizadotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Pendiente}}</h3>
+															{% endif %}
+															{% endfor %}
+														</div>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+
+                                    </div>
+
+                                    
+                                        
+                                    <div class="col-xl-4" style="margin-bottom:1rem" >
+                                        
+                                        <div class="card-body p-0 d-flex rounded justify-content-center" style="background:radial-gradient(94.09% 94.09% at 50% 50%, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 100%), #fff; margin-bottom:1rem;height:100%!important">
+											<div class="row m-0">
+												<div class=" p-0">
+													<div class="card card-custom card-stretch card-transparent card-shadowless">
+														<div class="card-body d-flex flex-column justify-content-center">
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
+                                                                Avance
+															</h3>
+
+															{% for item in collections.resadmin %}
+															{% if item.data.resadmin.Prioridad === "Indispensable" %}
+															<p id="completo" style="display:none">{{item.data.resadmin.PorcentajeCompleto}} </p>
+															<p id="proceso" style="display:none">{{item.data.resadmin.PorcentajeProceso}} </p>
+															<p id="pendiente" style="display:none">{{item.data.resadmin.PorcentajePendiente}} </p>
+															{% endif %}
+															{% endfor %}
+
+															<div id="chart_11"></div>
+														</div>
+													</div>
+												</div>	
+											</div>
+										</div>
+                                    </div>
+                                </div>                               
+
+								<div class="row" style="margin-bottom:1rem">
+									<div class="col-xxl-12">
+										<!--begin::Advance Table Widget 3-->
+										<div class="card card-custom gutter-b" >
+											<!--begin::Header-->
+											<div class="card-header border-0 py-5">
+												<h3 class="card-title align-items-start flex-column">
+													<span class="card-label font-weight-bolder text-dark">Administración</span>
+												</h3>
+												<div class="my-lg-0 my-1">
+													<div class="popup-wrapper2">
+														<div class="popup">
+															<div class="popup-close2">x</div>
+															<div class="popup-content">
+																<h2>Copie el código </h2>
+																<code>
+																&lt;embed src="https://sistemaranking.redciudadana.org/administracion/admin2/" style="overflow:hidden" &gt;
+																</code>
+																
+															</div>
+														</div>
+													</div>
+													<button id="boton2" class="btn btn-sm btn-info font-weight-bolder text-uppercase">Compartir<img height="20px" width="20px" style="margin-left:4px" src="/assets/ELEMENTOS/MAPAS_SR-06.png"></button>
+												</div>
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body pt-0 pb-3">
+												<!--begin::Table-->
+												<div class="table-responsive">
+													<table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
+														<thead>
+															<tr class="text-uppercase">
+																<th style="min-width: 50px">Id</th>
+																<th style="min-width: 150px" class="pl-7">
+																	<span class="text-dark-75">Categoria</span>
+																</th>
+																<th style="min-width: 150px">Documento</th>
+																<th style="min-width: 150px">Prioridad</th>
+																<th style="min-width: 150px">Estado</th>
+																<th style="min-width: 200px">Descarga</th>
+															</tr>
+														</thead>
+														<tbody>
+															{% for item in collections.admin %}
+															<tr>
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.admin.id_administracion}}</span>
+																</td>
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.admin.Categoria}}</span>
+																</td>
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.admin.Documento}}</span>
+																</td>
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.admin.Prioridad}}</span>
+																</td>
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.admin.Estado}}</span>
+																</td>
+																<td class="pl-0 py-8">
+																	<div class="d-flex align-items-center">
+																		<div>
+																			<a href="{{item.data.admin.Enlace}}" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">{{item.data.admin.TextoDescarga}}</a><br>
+																		</div>
+																	</div>
+																</td>	
+															</tr>
+															{% endfor %}
+															
+														</tbody>
+													</table>
+												</div>
+												<!--end::Table-->
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Advance Table Widget 3-->
+									</div>
+
+								</div>
+
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Page-->
+		</div>
+		<!--end::Main-->
+		
+		<!--begin::Scrolltop-->
+		<div id="kt_scrolltop" class="scrolltop">
+			<span class="svg-icon">
+				<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Up-2.svg-->
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<polygon points="0 0 24 0 24 24 0 24" />
+						<rect fill="#000000" opacity="0.3" x="11" y="10" width="2" height="10" rx="1" />
+						<path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" fill="#000000" fill-rule="nonzero" />
+					</g>
+				</svg>
+				<!--end::Svg Icon-->
+			</span>
+		</div>
+		<!--end::Scrolltop-->
+		
+		
+
+
+<!--end::Body-->
+
+{% endblock %}
+
+
+{% block body_javascripts %}
+<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
+<!--begin::Global Config(global config for global JS scripts)-->
+<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#6993FF", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "primary": "#E1E9FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
+<!--end::Global Config-->
+<!--begin::Global Theme Bundle(used by all pages)-->
+<script src="/assets/plugins/global/plugins.bundle.js"></script>
+<script src="/assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+<script src="/assets/js/scripts.bundle.js"></script>
+<!--end::Global Theme Bundle-->
+
+<script  src="/assets/js/pages/features/charts/apexchartadmin.js"></script>
+
+<script src="/assets/js/popup1.js"></script>
+<script src="/assets/js/popup2.js"></script>
+
+{% endblock %}
+
+
+
+
+

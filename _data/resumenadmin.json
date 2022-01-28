@@ -1,0 +1,42 @@
+[
+    {
+        "Prioridad": "Indispensable",
+        "Completo": "12",
+        "Enproceso": "2",
+        "Pendiente": "5",
+        "Sumatotal": "19",
+        "PorcentajeCompleto": "63.15",
+        "PorcentajeProceso": "10.53",
+        "PorcentajePendiente": "26.32"
+    },
+    {
+        "Prioridad": "Importante",
+        "Completo": "0",
+        "Enproceso": "7",
+        "Pendiente": "3",
+        "Sumatotal": "10",
+        "PorcentajeCompleto": "0.00%",
+        "PorcentajeProceso": "70.00%",
+        "PorcentajePendiente": "30.00%"
+    },
+    {
+        "Prioridad": "Relevante",
+        "Completo": "1",
+        "Enproceso": "0",
+        "Pendiente": "9",
+        "Sumatotal": "10",
+        "PorcentajeCompleto": "10.00%",
+        "PorcentajeProceso": "0.00%",
+        "PorcentajePendiente": "90.00%"
+    },
+    {
+        "Prioridad": "Suma total",
+        "Completo": "13",
+        "Enproceso": "9",
+        "Pendiente": "17",
+        "Sumatotal": "39",
+        "PorcentajeCompleto": "73.16%",
+        "PorcentajeProceso": "23.08%",
+        "PorcentajePendiente": "43.59%"
+    }
+]
