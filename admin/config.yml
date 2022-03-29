@@ -1,0 +1,9 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# publish_mode: editorial_workflow
+media_folder: "images/posts" # Media files will be stored in the repo under src/assets/images/posts
+public_folder: "/images/posts" # The src attribute for uploaded media will begin with assets/images/posts
+
+show_preview_links: true
