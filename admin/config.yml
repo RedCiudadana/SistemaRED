@@ -3,7 +3,28 @@ backend:
   branch: main
 
 # publish_mode: editorial_workflow
-media_folder: "images/posts" # Media files will be stored in the repo under src/assets/images/posts
-public_folder: "/images/posts" # The src attribute for uploaded media will begin with assets/images/posts
+media_folder: "assets/images/posts" # Media files will be stored in the repo under src/assets/images/posts
+public_folder: "/assets/images/posts" # The src attribute for uploaded media will begin with assets/images/posts
+
+collections:
+  - name: "podcast" # Used in routes, e.g., /admin/collections/podcast
+    label: "Podcast" # Used in the UI
+    folder: "src/podcasts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Title" }
+      - { name: "description", label: "Description" }
+      - { name: "link", label: "Enlace de podcast" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - {
+          name: "highlight",
+          label: "Highlight",
+          widget: "boolean",
+          default: false,
+          hint: "Display podcast in home's highlights",
+        }
 
 show_preview_links: true
