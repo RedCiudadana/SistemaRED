@@ -262,7 +262,45 @@
 
 
 
+<script>
+jQuery(document).ready( function(){
 
+    $('input[type="file"]').change(function(e){
+        var fileName = e.target.files[0].name;
+        $('.custom-file-label').html(fileName);
+    });
+
+    tinymce.init({
+        selector: '#post-message',
+        menubar: false,
+        setup: function(editor) {
+            editor.on('change', function(e) {
+                editor.save();
+            });
+        }
+    });
+
+    $(function(){
+        if(window.location.hash) {
+            var hash = window.location.hash;
+            $(hash).modal('toggle');
+        }
+    });
+});
+</script>
+
+<script>
+if (window.netlifyIdentity) {
+window.netlifyIdentity.on('init', (user) => {
+    if (!user) {
+    window.netlifyIdentity.on('login', () => {
+        document.location.href = '/admin/';
+    });
+    }
+});
+}
+</script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 {% block body_javascripts %}
 
