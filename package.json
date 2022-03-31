@@ -21,5 +21,8 @@
   "homepage": "https://github.com/RedCiudadana/SistemaRED#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0"
+  },
+  "dependencies": {
+    "netlify-cms-app": "^2.15.70"
   }
 }
