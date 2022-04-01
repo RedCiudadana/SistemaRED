@@ -26,7 +26,7 @@
 <!--begin::Layout Themes(used by all pages)-->
 <!--end::Layout Themes-->
 <link rel="shortcut icon" href="/assets/favicon.png" />
-
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 {% block head %}
 {% endblock %}
 
@@ -261,17 +261,17 @@
 </main>
 
 <script>
-if (window.netlifyIdentity) {
-window.netlifyIdentity.on('init', (user) => {
-    if (!user) {
-    window.netlifyIdentity.on('login', () => {
-        document.location.href = '/admin/';
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
     });
-    }
-});
-}
+  }
 </script>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 
 {% block body_javascripts %}
 
