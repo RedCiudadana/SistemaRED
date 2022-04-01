@@ -7,8 +7,8 @@ media_folder: "assets/images/posts" # Media files will be stored in the repo und
 public_folder: "/assets/images/posts" # The src attribute for uploaded media will begin with assets/images/posts
 
 collections:
-  - name: "podcast" # Used in routes, e.g., /admin/collections/podcast
-    label: "Podcast" # Used in the UI
+  - name: "administracion" # Used in routes, e.g., /admin/collections/podcast
+    label: "Administracion" # Used in the UI
     folder: "src/administracion" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
