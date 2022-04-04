@@ -21,7 +21,7 @@ const proyectos = [
 
 module.exports = function (eleventyConfig) {
 
-    eleventyConfig.setTemplateFormats("njk");
+    eleventyConfig.setTemplateFormats("njk, html, md");
     eleventyConfig.addPassthroughCopy('src');
     eleventyConfig.addPassthroughCopy('assets');
     eleventyConfig.addPassthroughCopy('features');
