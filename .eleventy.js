@@ -21,10 +21,11 @@ const proyectos = [
 
 module.exports = function (eleventyConfig) {
 
-    eleventyConfig.setTemplateFormats("njk, html, md");
+    eleventyConfig.setTemplateFormats("njk,html,md");
     eleventyConfig.addPassthroughCopy('src');
     eleventyConfig.addPassthroughCopy('assets');
-    eleventyConfig.addPassthroughCopy('features');
+
+    eleventyConfig.addPassthroughCopy('admin');
     
     proyectos.forEach((proyecto) => {
         eleventyConfig.addCollection(proyecto, function (collectionApi) {
