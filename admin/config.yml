@@ -15,6 +15,125 @@ collections:
     editor:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
-      - { name: "title", label: "Title" }
-      - { name: "description", label: "Description" }
-      - { name: "link", label: "Enlace de podcast" }
+      - { name: "title", label: "Documento" }
+      - { name: "categoria", label: "categoria" }
+      - { name: "prioridad", label: "Prioridad" }
+      - { name: "estado", label: "Estado" }
+      - { name: "link", label: "Link de Descarga" }
+  - name: "estrategia"
+    label: "Estrategia 2022-2025"
+    folder: "src/cms/administracion"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Título" }
+      - { name: "link", label: "Enlace a Documento" }
+  - name: "indicadores"
+    label: "Indicadores"
+    folder: "src/cms/indicadores"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Indicador" }
+      - {
+          name: "programa",
+          label: "Programa",
+          widget: "select",
+          options:
+            [
+              "Innovación en Gobierno",
+              "Innovación Social",
+              "Fortalecimiento de espacios cívicos",
+              "Auditoria Social",
+            ],
+          multiple: false,
+        }
+      - { name: "descripcion", label: "Descripcion", widget: "text" }
+      - { name: "resultadototal", label: "Resultado Total" }
+      - { name: "restante", label: "Restante" }
+      - { name: "meta", label: "Meta 2025" }
+  - name: "proyectos"
+    label: "Proyectos"
+    folder: "src/cms/proyectos"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Proyecto" }
+      - {
+          name: "programa",
+          label: "Programa",
+          widget: "select",
+          options:
+            [
+              "Innovación en Gobierno",
+              "Innovación Social",
+              "Fortalecimiento de espacios cívicos",
+              "Auditoria Social",
+            ],
+          multiple: false,
+        }
+      - { name: "descripcion", label: "Descripcion", widget: "text" }
+      - { name: "tdc", label: "TdC" }
+      - { name: "tematica", label: "Tematica" }
+      - { name: "fase", label: "Fase" }
+      - { name: "ano", label: "Año" }
+      - {
+          name: "fechaInicio",
+          label: "FechaInicio",
+          widget: "date",
+          format: "DD MM YYYY",
+        }
+      - {
+          name: "fechaCierre",
+          label: "FechaCierre",
+          widget: "date",
+          format: "DD MM YYYY",
+        }
+      - { name: "estado", label: "Estado" }
+      - { name: "progreso", label: "Progreso" }
+      - { name: "actividades", label: "Actividades" }
+      - { name: "ubicacion", label: "Ubicación" }
+      - { name: "enlaceProducto", label: "Enlace del Producto" }
+      - {
+          name: "logoProyecto",
+          label: "Logo Proyecto",
+          hint: "Direccion url de la imagen",
+        }
+      - {
+          name: "logoProyecto80",
+          label: "Logo Proyecto 80 x 80",
+          hint: "Direccion url de la imagen pequeña desplegada en preview",
+        }
+      - { name: "EnlaceReportes", label: "Enlace Reportes" }
+      - {
+          name: "ods",
+          label: "ODS",
+          widget: "select",
+          options:
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+            ],
+        }
