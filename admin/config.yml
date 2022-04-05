@@ -176,3 +176,26 @@ collections:
           format: "DD MM YYYY",
         }
       - { name: "enlace", label: "Enlace de Actividad"}
+  - name: "financiamiento"
+    label: "Financiamiento"
+    folder: "src/cms/financiamiento"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Financiamiento" }
+      - { name: "ano", label: "Año"}
+      - { name: "donante", label: "Donante"}
+      - { name: "enlacedonante", label: "Enlace del Donante"}
+      - { name: "proyecto", label: "Proyecto",  widget: "relation", collection: "proyectos", searchFields: ["title"], valueField: "title", multiple: false}
+      - { name: "enlaceproyecto", label: "Enlace del Proyecto"}
+      - { name: "enlaceconvenio", label: "Enlace del Convenio"}
+      - { name: "tipodonacion", label: "Tipo de Donacion"}
+      - { name: "monto", label: "Monto", widget: "number", value_type: "float"}
+      - {
+          name: "highlight",
+          label: "Highlight",
+          widget: "boolean",
+          default: false,
+        }
