@@ -7,6 +7,16 @@ media_folder: "assets/images/cms" # Media files will be stored in the repo under
 public_folder: "/assets/images/cms" # The src attribute for uploaded media will begin with assets/images/posts
 
 collections:
+- name: "estrategia"
+    label: "Estrategia 2022-2025"
+    folder: "src/cms/administracion"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Título" }
+      - { name: "link", label: "Enlace a Documento" }
   - name: "administracion" # Used in routes, e.g., /admin/collections/podcast
     label: "Administracion" # Used in the UI
     folder: "src/cms/administracion" # The path to the folder where the documents are stored
@@ -20,16 +30,6 @@ collections:
       - { name: "prioridad", label: "Prioridad" }
       - { name: "estado", label: "Estado" }
       - { name: "link", label: "Link de Descarga" }
-  - name: "estrategia"
-    label: "Estrategia 2022-2025"
-    folder: "src/cms/administracion"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    editor:
-      preview: false # Disable the editor preview and use instead 'preview links'
-    fields: # The fields for each document, usually in front matter
-      - { name: "title", label: "Título" }
-      - { name: "link", label: "Enlace a Documento" }
   - name: "indicadores"
     label: "Indicadores"
     folder: "src/cms/indicadores"
