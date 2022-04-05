@@ -28,7 +28,7 @@ collections:
       - { name: "title", label: "Documento" }
       - { name: "categoria", label: "categoria" }
       - { name: "prioridad", label: "Prioridad" }
-      - { name: "estado", label: "Estado" }
+      - { name: "estado", label: "Estado", widget: "select", options: ['Por Empezar', 'En Progreso', 'Finalizado'], multiple: false }
       - { name: "link", label: "Link de Descarga" }
   - name: "indicadores"
     label: "Indicadores"
@@ -95,7 +95,7 @@ collections:
           widget: "date",
           format: "DD MM YYYY",
         }
-      - { name: "estado", label: "Estado" }
+      - { name: "estado", label: "Estado", widget: "select", options: ['Por Empezar', 'En Progreso', 'Finalizado'], multiple: false }
       - { name: "progreso", label: "Progreso" }
       - { name: "actividades", label: "Actividades" }
       - { name: "ubicacion", label: "Ubicación" }
@@ -137,3 +137,42 @@ collections:
               "18",
             ],
         }
+  - name: "actividades"
+    label: "Actividades"
+    folder: "src/cms/actividades"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Actividad" }
+      - { name: "proyecto", label: "Proyecto",  widget: "relation", collection: "proyectos", searchFields: ["title"], valueField: "title", multiple: false}
+      - {
+          name: "programa",
+          label: "Programa",
+          widget: "select",
+          options:
+            [
+              "Innovación en Gobierno",
+              "Innovación Social",
+              "Fortalecimiento de espacios cívicos",
+              "Auditoria Social",
+            ],
+          multiple: false,
+        }
+      - { name: "tematica", label: "Temática"}
+      - { name: "descripcion", label: "Descripción", widget: "text"}
+      - { name: "estado", label: "Estado", widget: "select", options: ['Por Empezar', 'En Progreso', 'Finalizado'], multiple: false}
+      - {
+          name: "fechaInicio",
+          label: "FechaInicio",
+          widget: "date",
+          format: "DD MM YYYY",
+        }
+      - {
+          name: "fechaCierre",
+          label: "FechaCierre",
+          widget: "date",
+          format: "DD MM YYYY",
+        }
+      - { name: "enlace", label: "Enlace de Actividad"}
