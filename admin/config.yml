@@ -208,3 +208,65 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Monitoreo" }
+      - {
+          name: "programa",
+          label: "Programa",
+          widget: "select",
+          options:
+            [
+              "Innovación en Gobierno",
+              "Innovación Social",
+              "Fortalecimiento de espacios cívicos",
+              "Auditoria Social",
+            ],
+          multiple: false,
+        }
+      - { name: "proyecto", label: "Proyecto",  widget: "relation", collection: "proyectos", searchFields: ["title"], valueField: "title", multiple: false}
+      - { name: "fase", label: "Fase"}
+      - { name: "ano", label: "Año"}
+      - { name: "estado", label: "Estado"}
+      - {
+          name: "fechaInicio",
+          label: "FechaInicio",
+          widget: "date",
+          format: "DD MM YYYY",
+        }
+      - {
+          name: "fechaCierre",
+          label: "FechaCierre",
+          widget: "date",
+          format: "DD MM YYYY",
+        }
+      - { name: "nombre", label: "Nombre"}
+      - { name: "correo", label: "Correo"}
+      - { name: "genero", label: "Género"}
+      - { name: "edad", label: "edad", widget: "number", value_type: "int"}
+      - { name: "academico", label: "Académico"}
+      - { name: "sector", label: "Sector"}
+  - name: "monitoreo"
+    label: "Monitoreo"
+    folder: "src/cms/monitoreo"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    identifier_field: comportamientos
+    fields: # The fields for each document, usually in front matter
+      - { name: "comportamientos", label: "Embed de Comportamientos", widget: "markdown" }
+      - { name: "audiencia", label: "Embed de Audiencia", widget: "markdown" }
+  - name: "reporteanual"
+    label: "Reporte Anual"
+    folder: "src/cms/reporte"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    identifier_field: reporte
+    fields: # The fields for each document, usually in front matter
+      - { name: "reporte", label: "Enlace al reporte" }
+      - { name: "instituciones", label: "Instituciones", hint: "Instituciones públicas con las que se colabora" }
+      - { name: "organizaciones", label: "Organizaciones", hint: "Organizaciones con las que se colabora" }
+      - { name: "cursos", label: "Cursos", hint: "Cursos de innovación" }
+      - { name: "estudiantes", label: "Estudiantes" }
+      - { name: "participantes", label: "Participantes", hint: "Participantes en procesos de Co-Creación" }
+      - { name: "publicacionesyreportes", label: "Publicaciones y Reportes"}
