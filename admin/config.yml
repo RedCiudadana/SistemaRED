@@ -285,9 +285,9 @@ collections:
       - { name: "edad", label: "edad", widget: "number", value_type: "int" }
       - { name: "academico", label: "Académico" }
       - { name: "sector", label: "Sector" }
-  - name: "monitoreo"
-    label: "Monitoreo"
-    folder: "src/cms/monitoreo"
+  - name: "analiticas"
+    label: "Analíticas"
+    folder: "src/cms/analiticas"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
