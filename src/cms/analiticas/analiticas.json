@@ -1,0 +1,4 @@
+{
+    "tags": "analiticas",
+    "permalink": "analiticas/{{ page.fileSlug }}/index.html",
+}
