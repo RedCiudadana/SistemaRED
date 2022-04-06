@@ -7,7 +7,7 @@ media_folder: "assets/images/cms" # Media files will be stored in the repo under
 public_folder: "/assets/images/cms" # The src attribute for uploaded media will begin with assets/images/posts
 
 collections:
-- name: "estrategia"
+  - name: "estrategia"
     label: "Estrategia 2022-2025"
     folder: "src/cms/administracion"
     create: true
@@ -28,7 +28,13 @@ collections:
       - { name: "title", label: "Documento" }
       - { name: "categoria", label: "categoria" }
       - { name: "prioridad", label: "Prioridad" }
-      - { name: "estado", label: "Estado", widget: "select", options: ['Por Empezar', 'En Progreso', 'Finalizado'], multiple: false }
+      - {
+          name: "estado",
+          label: "Estado",
+          widget: "select",
+          options: ["Por Empezar", "En Progreso", "Finalizado"],
+          multiple: false,
+        }
       - { name: "link", label: "Link de Descarga" }
   - name: "indicadores"
     label: "Indicadores"
@@ -95,7 +101,13 @@ collections:
           widget: "date",
           format: "DD MM YYYY",
         }
-      - { name: "estado", label: "Estado", widget: "select", options: ['Por Empezar', 'En Progreso', 'Finalizado'], multiple: false }
+      - {
+          name: "estado",
+          label: "Estado",
+          widget: "select",
+          options: ["Por Empezar", "En Progreso", "Finalizado"],
+          multiple: false,
+        }
       - { name: "progreso", label: "Progreso" }
       - { name: "actividades", label: "Actividades" }
       - { name: "ubicacion", label: "Ubicación" }
@@ -146,7 +158,15 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Actividad" }
-      - { name: "proyecto", label: "Proyecto",  widget: "relation", collection: "proyectos", searchFields: ["title"], valueField: "title", multiple: false}
+      - {
+          name: "proyecto",
+          label: "Proyecto",
+          widget: "relation",
+          collection: "proyectos",
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: false,
+        }
       - {
           name: "programa",
           label: "Programa",
@@ -160,9 +180,15 @@ collections:
             ],
           multiple: false,
         }
-      - { name: "tematica", label: "Temática"}
-      - { name: "descripcion", label: "Descripción", widget: "text"}
-      - { name: "estado", label: "Estado", widget: "select", options: ['Por Empezar', 'En Progreso', 'Finalizado'], multiple: false}
+      - { name: "tematica", label: "Temática" }
+      - { name: "descripcion", label: "Descripción", widget: "text" }
+      - {
+          name: "estado",
+          label: "Estado",
+          widget: "select",
+          options: ["Por Empezar", "En Progreso", "Finalizado"],
+          multiple: false,
+        }
       - {
           name: "fechaInicio",
           label: "FechaInicio",
@@ -175,7 +201,7 @@ collections:
           widget: "date",
           format: "DD MM YYYY",
         }
-      - { name: "enlace", label: "Enlace de Actividad"}
+      - { name: "enlace", label: "Enlace de Actividad" }
   - name: "financiamiento"
     label: "Financiamiento"
     folder: "src/cms/financiamiento"
@@ -185,14 +211,22 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Financiamiento" }
-      - { name: "ano", label: "Año"}
-      - { name: "donante", label: "Donante"}
-      - { name: "enlacedonante", label: "Enlace del Donante"}
-      - { name: "proyecto", label: "Proyecto",  widget: "relation", collection: "proyectos", searchFields: ["title"], valueField: "title", multiple: false}
-      - { name: "enlaceproyecto", label: "Enlace del Proyecto"}
-      - { name: "enlaceconvenio", label: "Enlace del Convenio"}
-      - { name: "tipodonacion", label: "Tipo de Donacion"}
-      - { name: "monto", label: "Monto", widget: "number", value_type: "float"}
+      - { name: "ano", label: "Año" }
+      - { name: "donante", label: "Donante" }
+      - { name: "enlacedonante", label: "Enlace del Donante" }
+      - {
+          name: "proyecto",
+          label: "Proyecto",
+          widget: "relation",
+          collection: "proyectos",
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: false,
+        }
+      - { name: "enlaceproyecto", label: "Enlace del Proyecto" }
+      - { name: "enlaceconvenio", label: "Enlace del Convenio" }
+      - { name: "tipodonacion", label: "Tipo de Donacion" }
+      - { name: "monto", label: "Monto", widget: "number", value_type: "float" }
       - {
           name: "highlight",
           label: "Highlight",
@@ -221,10 +255,18 @@ collections:
             ],
           multiple: false,
         }
-      - { name: "proyecto", label: "Proyecto",  widget: "relation", collection: "proyectos", searchFields: ["title"], valueField: "title", multiple: false}
-      - { name: "fase", label: "Fase"}
-      - { name: "ano", label: "Año"}
-      - { name: "estado", label: "Estado"}
+      - {
+          name: "proyecto",
+          label: "Proyecto",
+          widget: "relation",
+          collection: "proyectos",
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: false,
+        }
+      - { name: "fase", label: "Fase" }
+      - { name: "ano", label: "Año" }
+      - { name: "estado", label: "Estado" }
       - {
           name: "fechaInicio",
           label: "FechaInicio",
@@ -237,12 +279,12 @@ collections:
           widget: "date",
           format: "DD MM YYYY",
         }
-      - { name: "nombre", label: "Nombre"}
-      - { name: "correo", label: "Correo"}
-      - { name: "genero", label: "Género"}
-      - { name: "edad", label: "edad", widget: "number", value_type: "int"}
-      - { name: "academico", label: "Académico"}
-      - { name: "sector", label: "Sector"}
+      - { name: "nombre", label: "Nombre" }
+      - { name: "correo", label: "Correo" }
+      - { name: "genero", label: "Género" }
+      - { name: "edad", label: "edad", widget: "number", value_type: "int" }
+      - { name: "academico", label: "Académico" }
+      - { name: "sector", label: "Sector" }
   - name: "monitoreo"
     label: "Monitoreo"
     folder: "src/cms/monitoreo"
@@ -252,7 +294,11 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     identifier_field: comportamientos
     fields: # The fields for each document, usually in front matter
-      - { name: "comportamientos", label: "Embed de Comportamientos", widget: "markdown" }
+      - {
+          name: "comportamientos",
+          label: "Embed de Comportamientos",
+          widget: "markdown",
+        }
       - { name: "audiencia", label: "Embed de Audiencia", widget: "markdown" }
   - name: "reporteanual"
     label: "Reporte Anual"
@@ -264,9 +310,21 @@ collections:
     identifier_field: reporte
     fields: # The fields for each document, usually in front matter
       - { name: "reporte", label: "Enlace al reporte" }
-      - { name: "instituciones", label: "Instituciones", hint: "Instituciones públicas con las que se colabora" }
-      - { name: "organizaciones", label: "Organizaciones", hint: "Organizaciones con las que se colabora" }
+      - {
+          name: "instituciones",
+          label: "Instituciones",
+          hint: "Instituciones públicas con las que se colabora",
+        }
+      - {
+          name: "organizaciones",
+          label: "Organizaciones",
+          hint: "Organizaciones con las que se colabora",
+        }
       - { name: "cursos", label: "Cursos", hint: "Cursos de innovación" }
       - { name: "estudiantes", label: "Estudiantes" }
-      - { name: "participantes", label: "Participantes", hint: "Participantes en procesos de Co-Creación" }
-      - { name: "publicacionesyreportes", label: "Publicaciones y Reportes"}
+      - {
+          name: "participantes",
+          label: "Participantes",
+          hint: "Participantes en procesos de Co-Creación",
+        }
+      - { name: "publicacionesyreportes", label: "Publicaciones y Reportes" }
