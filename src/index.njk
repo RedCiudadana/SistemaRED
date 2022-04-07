@@ -44,7 +44,7 @@ permalink: "index.html"
 
 											<!--begin::Featured Category-->
 											<div class="col-md-3 col-lg-3 col-xxl-3">
-												<a target="_blank" href="https://publicaciones.redciudadana.org/2021/Estrategia2022-2025.pdf"><div class="card-body p-0 d-flex rounded" style="background-image: url('/assets/IMAGENES RECUADROS/RECUADRO/001.png');background-size: cover;height:100%">
+												<a target="_blank" href="{% for est in collections.estrategia %} {{est.link}} {% endfor %}"><div class="card-body p-0 d-flex rounded" style="background-image: url('/assets/IMAGENES RECUADROS/RECUADRO/001.png');background-size: cover;height:100%">
 													<div class="row m-0 " style="    padding: 35px 0;">
 														
 														<div class="col-12 p-0">

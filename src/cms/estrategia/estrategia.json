@@ -1,0 +1,4 @@
+{
+    "tags": "estrategia",
+    "permalink": "{{ page.fileSlug }}/index.html"
+}
