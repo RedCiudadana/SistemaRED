@@ -288,7 +288,7 @@ collections:
   - name: "analiticas"
     label: "Analíticas"
     folder: "src/cms/analiticas"
-    create: true
+    create: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
       preview: false # Disable the editor preview and use instead 'preview links'
