@@ -1,5 +1,5 @@
 {
-    "tags": "repanual",
+    "tags": "reporteanual",
     "permalink": "{{ page.fileSlug }}/index.html",
     "layout": "/layouts/repanual.njk"
 }
