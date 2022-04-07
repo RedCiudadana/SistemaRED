@@ -10,7 +10,7 @@ collections:
   - name: "estrategia"
     label: "Estrategia 2022-2025"
     folder: "src/cms/estrategia"
-    create: true
+    create: false
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
       preview: false # Disable the editor preview and use instead 'preview links'
