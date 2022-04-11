@@ -127,6 +127,7 @@ collections:
           name: "ods",
           label: "ODS",
           widget: "select",
+          multiple: true,
           options:
             [
               "1",
