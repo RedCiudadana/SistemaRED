@@ -203,6 +203,9 @@ collections:
           format: "DD MM YYYY",
         }
       - { name: "enlace", label: "Enlace de Actividad" }
+    view_groups:
+      - label: Proyecto
+        field: proyecto
   - name: "financiamiento"
     label: "Financiamiento"
     folder: "src/cms/financiamiento"
