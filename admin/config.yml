@@ -45,6 +45,16 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Indicador" }
+      - { name: "id", label: "Número de Indicador" }
+      - {
+          name: "proyecto",
+          label: "Proyecto",
+          widget: "relation",
+          collection: "proyectos",
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: false,
+        }
       - {
           name: "programa",
           label: "Programa",
@@ -62,6 +72,27 @@ collections:
       - { name: "resultadototal", label: "Resultado Total" }
       - { name: "restante", label: "Restante" }
       - { name: "meta", label: "Meta 2025" }
+  - name: "sistematizacion"
+    label: "Sistematizacion"
+    folder: "src/cms/sistematizacion"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Sistematización" }
+      - { name: "id", label: "Número de sistematización" }
+      - {
+          name: "proyecto",
+          label: "Proyecto",
+          widget: "relation",
+          collection: "proyectos",
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: false,
+        }
+      - { name: "reporte", label: "Reporte" }
+      - { name: "enlace", label: "Enlace" }
   - name: "proyectos"
     label: "Proyectos"
     folder: "src/cms/proyectos"
@@ -159,6 +190,7 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Actividad" }
+      - { name: "no_actividad", label: "Número de Actividad" }
       - {
           name: "proyecto",
           label: "Proyecto",
