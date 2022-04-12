@@ -321,6 +321,58 @@ collections:
       - { name: "edad", label: "edad", widget: "number", value_type: "int" }
       - { name: "academico", label: "Académico" }
       - { name: "sector", label: "Sector" }
+  - name: "voluntariado"
+    label: "Voluntariado"
+    folder: "src/cms/voluntariado"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Voluntariado" }
+      - {
+          name: "programa",
+          label: "Programa",
+          widget: "select",
+          options:
+            [
+              "Innovación en Gobierno",
+              "Innovación Social",
+              "Fortalecimiento de espacios cívicos",
+              "Auditoria Social",
+            ],
+          multiple: false,
+        }
+      - {
+          name: "proyecto",
+          label: "Proyecto",
+          widget: "relation",
+          collection: "proyectos",
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: false,
+        }
+      - { name: "fase", label: "Fase" }
+      - { name: "ano", label: "Año" }
+      - { name: "estado", label: "Estado" }
+      - {
+          name: "fechaInicio",
+          label: "FechaInicio",
+          widget: "date",
+          format: "DD MM YYYY",
+        }
+      - {
+          name: "fechaCierre",
+          label: "FechaCierre",
+          widget: "date",
+          format: "DD MM YYYY",
+        }
+      - { name: "nombre", label: "Nombre" }
+      - { name: "correo", label: "Correo" }
+      - { name: "genero", label: "Género" }
+      - { name: "edad", label: "edad", widget: "number", value_type: "int" }
+      - { name: "academico", label: "Académico" }
+      - { name: "sector", label: "Sector" }
   - name: "analiticas"
     label: "Analíticas"
     folder: "src/cms/analiticas"

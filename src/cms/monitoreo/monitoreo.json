@@ -1,0 +1,5 @@
+{
+    "tags": "monitoreo_cms",
+    "permalink": "{{ page.fileSlug }}/index.html",
+    "layout": "/layouts/monitoreo.njk"
+}
