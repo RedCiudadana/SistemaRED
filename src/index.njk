@@ -11,14 +11,17 @@ permalink: "index.html"
 {% block content %}
 <!--begin::Body-->
 			<!-- breadcrumb-area-start -->
-            <div class="breadcrumb-area pt-150 pb-155" style="background-image:url(/assets/ELEMENTOS/SLIDER/SLIDER.png)">
+            <div class="breadcrumb-area pt-150 pb-155" style="background-image:url(/assets/newElements/SLIDER/er-30.png)">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
                             <div class="breadcrumb-text text-center" style="padding: 0 2rem">
-								<h2 class="text-white" style="font-weight:1000;font-size:5rem">Sistema RC</h2>
-                                <h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h1-xl mb-0 text-white font-weight-bolder">
-								Conoce más sobre los proyectos, monitoreo y evaluación, voluntariado y financiamiento de Red Ciudadana </h3>
+								<div class="titulo_new">
+									<img src="/assets/newElements/er-40.png">
+									<h2 >Sistema RC</h2>
+								</div>
+                                <h3 class="text-white" style="font-size:20px">
+								Conoce más sobre los proyectos, monitoreo y evaluación, voluntariado y financiamiento de <b>Red Ciudadana</b> </h3>
                             </div>
                         </div>
                     </div>
@@ -39,201 +42,72 @@ permalink: "index.html"
 									<!--begin::Layout-->
 									<div class="flex-row-fluid ml-lg-8">
 
-										<div class="row" style="margin-bottom:3rem">
+										<div class="row my-30">
 
-											<!--begin::Featured Category-->
-											<div class="col-md-3 col-lg-3 col-xxl-3">
-												<a target="_blank" href="{% for est in collections.estrategia %} {{est.data.link}} {% endfor %}"><div class="card-body p-0 d-flex rounded" style="background-image: url('/assets/IMAGENES RECUADROS/RECUADRO/001.png');background-size: cover;height:100%">
-													<div class="row m-0 " style="    padding: 35px 0;">
-														
-														<div class="col-12 p-0">
-															<div class="card card-custom card-stretch card-transparent card-shadowless">
-																<div class="card-body d-flex flex-column justify-content-center pr-0">
-																	<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h1-xl mb-0 text-white font-weight-bolder">
-																		Estrategia 2022-2025
-																	</h3>
-																</div>
-															</div>
-														</div>
-														
-													</div>
+											<div class="col-lg-3 my-4">
+												<a href="{% for est in collections.estrategia %} {{est.data.link}} {% endfor %}" target="_blank"><div class="cuadro_index">
+													<img src="/assets/newElements/ICONOS/er-31.png">
+													<h4>Estrategia 2022-2025</h4>
 												</div></a>
 											</div>
-											<!--end::Featured Category-->
 
-											<!--begin::Featured Category-->
-											<div class="col-md-3 col-lg-3 col-xxl-3">
-												<a href="/adminis/index.html"><div class="card-body p-0 d-flex rounded" style="background-image: url('/assets/IMAGENES RECUADROS/RECUADRO/004.png');background-size: cover;height:100%">
-													<div class="row m-0 pv-50" >
-														
-														<div class="col-12 p-0">
-															<div class="card card-custom card-stretch card-transparent card-shadowless">
-																<div class="card-body d-flex flex-column justify-content-center pr-0">
-																	<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h1-xl mb-0 text-white font-weight-bolder">
-																		Administración
-																	</h3>
-																</div>
-															</div>
-														</div>
-														
-													</div>
+											<div class="col-lg-3 my-4">
+												<a href="/adminis/index.html"><div class="cuadro_index">
+													<img src="/assets/newElements/ICONOS/er-32.png">
+													<h4>Administración</h4>
 												</div></a>
 											</div>
-											<!--end::Featured Category-->
 
-											<!--begin::Featured Category-->
-											<div class="col-md-3 col-lg-3 col-xxl-3">
-												<a href="/indicadores/index.html"><div class="card-body p-0 d-flex rounded" style="background-image: url('/assets/IMAGENES RECUADROS/RECUADRO/002.png');background-size: cover;height:100%">
-													<div class="row m-0 pv-50" >
-														
-														<div class="col-12 p-0">
-															<div class="card card-custom card-stretch card-transparent card-shadowless">
-																<div class="card-body d-flex flex-column justify-content-center pr-0">
-																	<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h1-xl mb-0 text-white font-weight-bolder">
-																		Indicadores
-																	</h3>
-																</div>
-															</div>
-														</div>
-														
-													</div>
+											<div class="col-lg-3 my-4">
+												<a href="/financiamiento/index.html"><div class="cuadro_index">
+													<img src="/assets/newElements/ICONOS/er-33.png">
+													<h4>Financiamiento</h4>
 												</div></a>
 											</div>
-											<!--end::Featured Category-->
 
-											<!--begin::Featured Category-->
-											<div class="col-md-3 col-lg-3 col-xxl-3">
-												<a href="/proyectos/index.html"><div class="card-body p-0 d-flex rounded" style="background-image: url('/assets/IMAGENES RECUADROS/RECUADRO/03.png');background-size: cover;height:100%">
-													<div class="row m-0 pv-50" >
-														
-														<div class="col-12 p-0">
-															<div class="card card-custom card-stretch card-transparent card-shadowless">
-																<div class="card-body d-flex flex-column justify-content-center pr-0">
-																	<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h1-xl mb-0 text-white font-weight-bolder">
-																		Proyectos
-																	</h3>
-																</div>
-															</div>
-														</div>
-														
-													</div>
+											<div class="col-lg-3 my-4">
+												<a href="{% for reporte in collections.reporteanual %} {{reporte.url}} {% endfor %}"><div class="cuadro_index">
+													<img src="/assets/newElements/ICONOS/er-34.png">
+													<h4>Reporte Anual</h4>
 												</div></a>
 											</div>
-											<!--end::Featured Category-->
+
+											<div class="col-lg-3 my-4">
+												<a href="/indicadores/index.html"><div class="cuadro_index">
+													<img src="/assets/newElements/ICONOS/er-38.png">
+													<h4>Indicadores</h4>
+												</div></a>
+											</div>
+
+											<div class="col-lg-3 my-4">
+												<a href="/proyectos/index.html"><div class="cuadro_index">
+													<img src="/assets/newElements/ICONOS/er-37.png">
+													<h4>Proyectos</h4>
+												</div></a>
+											</div>
+
+											<div class="col-lg-3 my-4">
+												<a href="/monitoreo/index.html"><div class="cuadro_index">
+													<img src="/assets/newElements/ICONOS/er-36.png">
+													<h4>Monitoreo</h4>
+												</div></a>
+											</div>
+
+											<div class="col-lg-3 my-4">
+												<a href="{% for analitica in collections.analiticas %} {{analitica.url}} {% endfor %}"><div class="cuadro_index">
+													<img src="/assets/newElements/ICONOS/er-35.png">
+													<h4>Analíticas</h4>
+												</div></a>
+											</div>
+
+											<div class="col-lg-3 my-4">
+												<a href="/voluntariado/index.html"><div class="cuadro_index">
+													<img src="/assets/newElements/ICONOS/er-37.png">
+													<h4>Voluntariado</h4>
+												</div></a>
+											</div>
 											
 										</div>
-
-										<div class="row" style="margin-bottom:3rem">
-
-											<!--begin::Featured Category-->
-											<div class="col-md-3 col-lg-3 col-xxl-3">
-												<a href="/financiamiento/index.html"><div class="card-body p-0 d-flex rounded" style="background-image: url('/assets/IMAGENES RECUADROS/RECUADRO/004.png');background-size: cover;height:100%">
-													<div class="row m-0 pv-50" >
-														
-														<div class="col-12 p-0">
-															<div class="card card-custom card-stretch card-transparent card-shadowless">
-																<div class="card-body d-flex flex-column justify-content-center pr-0">
-																	<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h1-xl mb-0 text-white font-weight-bolder">
-																		Financiamiento
-																	</h3>
-																</div>
-															</div>
-														</div>
-														
-													</div>
-												</div></a>
-											</div>
-											<!--end::Featured Category-->
-
-											<!--begin::Featured Category-->
-											<div class="col-md-3 col-lg-3 col-xxl-3">
-												<a href="/monitoreo/index.html"><div class="card-body p-0 d-flex rounded" style="background-image: url('/assets/IMAGENES RECUADROS/RECUADRO/005.png');background-size: cover;height:100%">
-													<div class="row m-0 pv-50" >
-														
-														<div class="col-12 p-0">
-															<div class="card card-custom card-stretch card-transparent card-shadowless">
-																<div class="card-body d-flex flex-column justify-content-center pr-0">
-																	<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h1-xl mb-0 text-white font-weight-bolder">
-																		Monitoreo
-																	</h3>
-																</div>
-															</div>
-														</div>
-														
-													</div>
-												</div></a>
-											</div>
-											<!--end::Featured Category-->
-
-											<!--begin::Featured Category-->
-											<div class="col-md-3 col-lg-3 col-xxl-3">
-												<a href="/voluntariado/index.html"><div class="card-body p-0 d-flex rounded" style="background-image: url('/assets/IMAGENES RECUADROS/RECUADRO/006.png');background-size: cover;height:100%">
-													<div class="row m-0 pv-50" >
-														
-														<div class="col-12 p-0">
-															<div class="card card-custom card-stretch card-transparent card-shadowless">
-																<div class="card-body d-flex flex-column justify-content-center pr-0">
-																	<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h1-xl mb-0 text-white font-weight-bolder">
-																		Voluntariado
-																	</h3>
-																</div>
-															</div>
-														</div>
-														
-													</div>
-												</div><a>
-											</div>
-											<!--end::Featured Category-->
-
-											<!--begin::Featured Category-->
-											<div class="col-md-3 col-lg-3 col-xxl-3">
-												
-												<a href="{% for analitica in collections.analiticas %} {{analitica.url}} {% endfor %}"><div class="card-body p-0 d-flex rounded" style="background-image: url('/assets/IMAGENES RECUADROS/RECUADRO/007.png');background-size: cover;height:100%">
-													<div class="row m-0 pv-50" >
-														
-														<div class="col-12 p-0">
-															<div class="card card-custom card-stretch card-transparent card-shadowless">
-																<div class="card-body d-flex flex-column justify-content-center pr-0">
-																	<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h1-xl mb-0 text-white font-weight-bolder">
-																		Analíticas
-																	</h3>
-																</div>
-															</div>
-														</div>
-														
-													</div>
-												</div></a>
-											</div>
-											<!--end::Featured Category-->
-											
-										</div>
-
-										<div class="row" style="margin-bottom:1rem">
-
-											
-
-											<!--begin::Featured Category-->
-											<div class="col-md-3 col-lg-3 col-xxl-3">
-												<a href="{% for reporte in collections.reporteanual %} {{reporte.url}} {% endfor %}"><div class="card-body p-0 d-flex rounded" style="background-image: url('/assets/IMAGENES RECUADROS/RECUADRO/008.png');background-size: cover;height:100%">
-													<div class="row m-0 pv-50" >
-														
-														<div class="col-12 p-0">
-															<div class="card card-custom card-stretch card-transparent card-shadowless">
-																<div class="card-body d-flex flex-column justify-content-center pr-0">
-																	<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h1-xl mb-0 text-white font-weight-bolder">
-																		Reporte Anual
-																	</h3>
-																</div>
-															</div>
-														</div>
-														
-													</div>
-												</div></a>
-											</div>
-											<!--end::Featured Category-->
-											
-										</div>
-
 
 									</div>
 									<!--end::Layout-->

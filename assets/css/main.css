@@ -171,7 +171,7 @@ font-family: "Barlow", sans-serif; }
 .header-02-icon {
 margin-top: 5px; }
 .header-02-icon a {
-    color: #a0aeb8;
+    color: #3F4254;
     font-size: 16px;
     margin-right: 18px; }
 
@@ -412,7 +412,11 @@ border-bottom: none;
 padding-left: 55px; }
 
 .default-header .main-menu nav > ul > li > a {
-color: #748188; }
+  color: #3F4254;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 14px;
+}
 
 /* 15. footer */
 .footer-icon {
@@ -885,4 +889,56 @@ color: #748188; }
   right: 15px;
   cursor: pointer;
   font-size: 1.5rem;
+}
+
+.titulo_new{
+  display: block;
+}
+
+.titulo_new img{
+  width:100%; 
+  height:190px
+}
+
+.titulo_new h2{
+  position:absolute;
+  font-weight:1000;
+  font-size:5rem;
+  top:23%;
+  left:25%
+}
+
+@media only screen and (max-width: 960px) {
+  .titulo_new h2 {
+    font-size:3rem;
+    top:25%;
+    left:20%
+  }
+  .titulo_new img{
+    height:180px
+  }
+  .logo img{
+    width: 65%!important;
+  }
+}
+
+.cuadro_index{
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #ccc;
+  background-color: #fff;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.cuadro_index img{
+  width: 70px;
+  height: auto;
+}
+
+.cuadro_index h4{
+  color: #3F4254!important;
+  text-align: center;
 }
