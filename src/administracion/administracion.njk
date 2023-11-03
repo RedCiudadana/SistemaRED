@@ -11,14 +11,15 @@ permalink: "adminis/index.html"
 {% block content %}
 <!--begin::Body-->
 			<!-- breadcrumb-area-start -->
-            <div class="breadcrumb-area pt-150 pb-155" style="background-image:url(/assets/ELEMENTOS/SLIDER/SLIDER.png)">
+            <div class="breadcrumb-area pt-150 pb-155" style="background-image:url(/assets/newElements/SLIDER/er-39.png)">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7">
                             <div class="breadcrumb-text text-center" style="padding: 0 2rem">
-								<h2 class="text-white" style="font-weight:1000;font-size:5rem">Administración</h2>
-                                <br>
-                                <br>
+								<div class="titulo_new titulo_new_2">
+									<img src="/assets/newElements/er-40.png">
+									<h2 >Administración</h2>
+								</div>
                             </div>
                         </div>
                     </div>
@@ -81,24 +82,28 @@ permalink: "adminis/index.html"
 														<div class="card-body d-flex flex-column justify-content-center">
 															{% for item in collections.resadmin %}
 															{% if item.data.resadmin.Prioridad === "Indispensable" %}
-															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
+															<h3 class="text-center" id="iniciartext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}/{{item.data.resadmin.Sumatotal}}</h3>
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  text-center" >
                                                             Indispensable 
                                                             </h3>
-															<h3 class="text-center" id="iniciartext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}/{{item.data.resadmin.Sumatotal}}</h3>
 															{% endif %}
-                                                            <br>
+															{% endfor %}
+															<br>
+															{% for item in collections.resadmin %}
 															{% if item.data.resadmin.Prioridad === "Importante" %}
-															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
+															<h3 class="text-center" id="procesotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}/{{item.data.resadmin.Sumatotal}}</h3>
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  text-center" >
                                                             Importante
                                                             </h3>
-															<h3 class="text-center" id="procesotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}/{{item.data.resadmin.Sumatotal}}</h3>
 															{% endif %}
-                                                            <br>
+															{% endfor %}
+															<br>
+															{% for item in collections.resadmin %}
 															{% if item.data.resadmin.Prioridad === "Relevante" %}
-															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
+															<h3 class="text-center" id="finalizadotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}/{{item.data.resadmin.Sumatotal}}</h3>
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  text-center" >
                                                             Relevante
                                                             </h3>
-															<h3 class="text-center" id="finalizadotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}/{{item.data.resadmin.Sumatotal}}</h3>
 															{% endif %}
 															{% endfor %}
 														</div>
@@ -119,24 +124,26 @@ permalink: "adminis/index.html"
 														<div class="card-body d-flex flex-column justify-content-center">
 															{% for item in collections.resadmin %}
 															{% if item.data.resadmin.Prioridad === "Indispensable" %}
-															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
-                                                            Completo
-                                                            </h3>
-															<h3 class="text-center" id="iniciartext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}</h3>
 															
+															<h3 class="text-center" id="finalizadotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Pendiente}}</h3>
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  text-center" >
+                                                            Por Iniciar
+                                                            </h3>
+																														
                                                             <br>
 
-															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
+															<h3 class="text-center" id="procesotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Enproceso}}</h3>
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  text-center" >
                                                             En proceso
                                                             </h3>
-															<h3 class="text-center" id="procesotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Enproceso}}</h3>
 															
                                                             <br>
 
-															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  font-weight-bolder text-center" >
-                                                            Pendiente
+															<h3 class="text-center" id="iniciartext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Completo}}</h3>
+															<h3 class="font-size-h4 font-size-h1-sm font-size-h4-lg font-size-h4-lg font-size-h1-xl mb-0  text-center" >
+                                                            Finalizado
                                                             </h3>
-															<h3 class="text-center" id="finalizadotext" style="font-size:50px;padding-top:5px;font-weight:bold">{{item.data.resadmin.Pendiente}}</h3>
+							
 															{% endif %}
 															{% endfor %}
 														</div>

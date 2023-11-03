@@ -6,9 +6,9 @@ const info = '#8950FC';
 const warning = '#FFA800';
 const danger = '#F64E60';
 
-const rojo = '#cc0000';
-const naranja = '#FF9326';
-const verde = '#00ff00';
+const rojo = '#e5e8ec';
+const naranja = '#7eace7';
+const verde = '#67bda8';
 
 var iniciarraw=document.getElementById("completo");
 var procesoraw=document.getElementById("proceso");
