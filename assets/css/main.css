@@ -956,3 +956,29 @@ padding-left: 55px; }
   color: #3F4254!important;
   text-align: center;
 }
+
+
+.cuadro_sistema{
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #ccc;
+  background-color: #fff;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.cuadro_sistema_titulo{
+  display: flex;
+  align-items: center;
+}
+
+.cuadro_sistema_titulo img{
+  width: 70px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.cuadro_sistema_titulo h4{
+  color: #3F4254!important;
+  text-align: center;
+}
