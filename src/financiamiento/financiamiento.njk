@@ -10,254 +10,264 @@ permalink: "financiamiento/index.html"
 
 {% block content %}
 
-<!--begin::Content-->
-					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-						<!--begin::Subheader-->
-						<div class="subheader py-2 py-lg-6 subheader-transparent" id="kt_subheader">
-							<div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap" style="padding: 0 50px!important">
-								<!--begin::Info-->
-								<div class="d-flex align-items-center flex-wrap mr-1">
-									<!--begin::Page Heading-->
-									<div class="d-flex align-items-baseline flex-wrap mr-5">
-										<!--begin::Page Title-->
-										<h5 class="text-dark font-weight-bold my-1 mr-5">Financiamiento Red Ciudadana</h5>
-										<!--end::Page Title-->
-										
-									</div>
-									<!--end::Page Heading-->
+			<!-- breadcrumb-area-start -->
+            <div class="breadcrumb-area pt-150 pb-155" style="background-image:url(/assets/newElements/SLIDER/er-39.png)">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7">
+                            <div class="breadcrumb-text text-center" style="padding: 0 2rem">
+								<div class="titulo_new titulo_new_2">
+									<img src="/assets/newElements/er-40.png">
+									<h2 >Financiamiento</h2>
 								</div>
-								<!--end::Info-->
-								<!--begin::Toolbar-->
-								<div class="d-flex align-items-center">
-									<!--begin::Actions-->
-									<a target="_blank" href="https://docs.google.com/spreadsheets/d/1oKSVsIOMHbyiarzY-E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" class="btn btn-light-primary font-weight-bolder btn-sm">Actualizar</a>
-									<!--end::Actions-->
-									
-								</div>
-								<!--end::Toolbar-->
-							</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- breadcrumb-area-end -->
+
+			<!--begin::Content-->
+		<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+			<!--begin::Subheader-->
+			<div class="subheader py-2 py-lg-6 subheader-transparent" id="kt_subheader">
+				<div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap" style="padding: 0 50px!important">
+					<!--begin::Info-->
+					<div class="d-flex align-items-center flex-wrap mr-1">
+						<!--begin::Page Heading-->
+						<div class="d-flex align-items-baseline flex-wrap mr-5">
+							<!--begin::Page Title-->
+							<h5 class="text-dark font-weight-bold my-1 mr-5">Financiamiento Red Ciudadana</h5>
+							<!--end::Page Title-->
+							
 						</div>
-						<!--end::Subheader-->
-						<!--begin::Entry-->
-						<div class="d-flex flex-column-fluid">
-							<!--begin::Container-->
-							<div class="container">
-								<!--begin::Statistics-->
-								<div class="d-flex flex-sm-row flex-column">
-									<!--begin::Content-->
-									<div class="flex-row-fluid ml-sm-8">
-										<div class="row">
-											<div class="col-xxl-4 col-lg-4">
-												<!--begin::List Widget 9-->
-												<div class="card card-custom gutter-b">
-													<!--begin::Header-->
-													<div class="card-header align-items-center border-0 mt-4">
-														<h3 class="card-title align-items-start flex-column">
-															<span class="font-weight-bolder text-dark">Últimas Donaciones</span>
-														</h3>
-														
-													</div>
-													<!--end::Header-->
-													<!--begin::Body-->
-													<div class="card-body pt-4">
-														<!--begin::Timeline-->
-														<div class="timeline timeline-6 mt-3">
-															
-															{% for item in collections.finan %}
-																{% if item.data.finan.id_Ultimas %}
-																<!--begin::Item-->
-																<div class="timeline-item align-items-start">
-																	<!--begin::Label-->
-																	<div class="timeline-label font-weight-bolder text-dark-75 font-size-lg">{{item.data.finan.Ano}}</div>
-																	<!--end::Label-->
-																	<!--begin::Badge-->
-																	<div class="timeline-badge">
-																		<i class="fa fa-genderless text-warning icon-xl"></i>
-																	</div>
-																	<!--end::Badge-->
-																	<!--begin::Text-->
-																	<div class="font-weight-mormal font-size-lg timeline-content text-muted pl-3">{{item.data.finan.Donante}}/{{item.data.finan.Proyecto}}</div>
-																	<!--end::Text-->
-																</div>
-																<!--end::Item-->
-																{% endif %}
-															{% endfor %}
-															
-
-
-															
-														</div>
-														<!--end::Timeline-->
-													</div>
-													<!--end: Card Body-->
-												</div>
-												<!--end: List Widget 9-->
-											</div>
-											<div class="col-xxl-8 col-lg-8">
+						<!--end::Page Heading-->
+					</div>
+					<!--end::Info-->
+					<!--begin::Toolbar-->
+					<div class="d-flex align-items-center">
+						<!--begin::Actions-->
+						<a target="_blank" href="https://docs.google.com/spreadsheets/d/1oKSVsIOMHbyiarzY-E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" class="btn btn-light-primary font-weight-bolder btn-sm">Actualizar</a>
+						<!--end::Actions-->
+						
+					</div>
+					<!--end::Toolbar-->
+				</div>
+			</div>
+			<!--end::Subheader-->
+			<!--begin::Entry-->
+			<div class="d-flex flex-column-fluid">
+				<!--begin::Container-->
+				<div class="container">
+					<!--begin::Statistics-->
+					<div class="d-flex flex-sm-row flex-column">
+						<!--begin::Content-->
+						<div class="flex-row-fluid ml-sm-8">
+							<div class="row">
+								<div class="col-xxl-4 col-lg-4">
+									<!--begin::List Widget 9-->
+									<div class="card card-custom gutter-b">
+										<!--begin::Header-->
+										<div class="card-header align-items-center border-0 mt-4">
+											<h3 class="card-title align-items-start flex-column">
+												<span class="font-weight-bolder text-dark">Últimas Donaciones</span>
+											</h3>
+											
+										</div>
+										<!--end::Header-->
+										<!--begin::Body-->
+										<div class="card-body pt-4">
+											<!--begin::Timeline-->
+											<div class="timeline timeline-6 mt-3">
 												
-												<!--begin::Mixed Widget 4-->
-												<div class="card card-custom bg-radial-gradient-danger gutter-b">
-													<!--begin::Header-->
-													<div class="card-header border-0 py-5">
-														<h3 class="card-title font-weight-bolder text-white">Financiamiento Anual</h3>
-													</div>
-													<!--end::Header-->
-													<!--begin::Body-->
-													<div class="card-body d-flex flex-column p-0">
-														{% for item in collections.resfin%}
-															<div id="ano" style="display:none">{{item.data.resfin.Ano}}</div>
-															<div id="monto" style="display:none">{{item.data.resfin.monto}}</div>
-														{% endfor %}
-														<!--begin::Chart-->
-														<div id="kt_mixed_widget_6_chart" style="height: 200px"></div>
-														<!--end::Chart-->
-														<!--begin::Stats-->
-														<div class="card-spacer bg-white card-rounded flex-grow-1">
-															<!--begin::Row-->
-															<div class="row m-0">
-																{% for item in collections.resfin%}
-																	{% if item.data.resfin.Ano == 2021 %}
-																	<div class="col px-8 py-6 mr-8">
-																		<div class="font-size-sm text-muted font-weight-bold">Financiamiento Anual</div>
-																		<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>$&nbsp </p><p id="finanA">{{item.data.resfin.monto}}</p></div>
-																	</div>
-																	{% endif %}
-																{% endfor %}
-																<div class="col px-8 py-6 mr-8">
-																	<div class="font-size-sm text-muted font-weight-bold">Financiamiento Total</div>
-																	<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>$&nbsp </p><p id="finanT"></p></div>
-																</div>
-															</div>
-															<!--end::Row-->
+												{% for item in collections.finan %}
+													{% if item.data.finan.id_Ultimas %}
+													<!--begin::Item-->
+													<div class="timeline-item align-items-start">
+														<!--begin::Label-->
+														<div class="timeline-label font-weight-bolder text-dark-75 font-size-lg">{{item.data.finan.Ano}}</div>
+														<!--end::Label-->
+														<!--begin::Badge-->
+														<div class="timeline-badge">
+															<i class="fa fa-genderless text-warning icon-xl"></i>
 														</div>
-														<!--end::Stats-->
+														<!--end::Badge-->
+														<!--begin::Text-->
+														<div class="font-weight-mormal font-size-lg timeline-content text-muted pl-3">{{item.data.finan.Donante}}/{{item.data.finan.Proyecto}}</div>
+														<!--end::Text-->
 													</div>
-													<!--end::Body-->
-												</div>
-												<!--end::Mixed Widget 4-->
-											</div>
-											<div class="col-xxl-12">
-												<!--begin::Advance Table Widget 3-->
-												<div class="card card-custom gutter-b" >
-													<!--begin::Header-->
-													<div class="card-header border-0 py-5">
-														<h3 class="card-title align-items-start flex-column">
-															<span class="card-label font-weight-bolder text-dark">Financiamiento</span>
-														</h3>
-														<div class="my-lg-0 my-1">
-															<div class="popup-wrapper1">
-																<div class="popup">
-																	<div class="popup-close1">x</div>
-																	<div class="popup-content">
-																		<h2>Copie el código </h2>
-																		<code>
-																		&lt;embed src="https://sistema.redciudadana.org/financiamiento/finan1/" style="overflow:hidden" &gt;
-																		</code>
-																		
-																	</div>
-																</div>
-															</div>
-															<button id="boton1" class="btn btn-sm btn-info font-weight-bolder text-uppercase">Compartir<img height="20px" width="20px" style="margin-left:4px" src="/assets/ELEMENTOS/MAPAS_SR-06.png"></button>
-														</div>
-													</div>
-													<!--end::Header-->
-													<!--begin::Body-->
-													<div class="card-body pt-0 pb-3">
-														<!--begin::Table-->
-														<div class="table-responsive">
-															<table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
-																<thead>
-																	<tr class="text-uppercase">
-																		<th style="min-width: 150px" class="pl-7">
-																			<span class="text-dark-75">Proyecto</span>
-																		</th>
-																		<th style="min-width: 200px">Donante</th>
-																		<th style="min-width: 150px">Tipo de Donanción</th>
-																		<th style="min-width: 100px">Monto</th>
-																		<th style="min-width: 100px">Año</th>
-																		<th style="min-width: 150px">Enlace del Convenio</th>
-																	</tr>
-																</thead>
-																<tbody>
-																	{% for item in collections.finan %}
-																	<tr>
-																		<td class="pl-0 py-8">
-																			<div class="d-flex align-items-center">
-																				<div class="symbol symbol-50 flex-shrink-0 mr-4">
-																					<div class="symbol-label" style="background-image: url('/assets/IMAGEN-RCt.png')"></div>
-																				</div>
-																				<div>
-																					<a href="{{item.data.finan.EnlaceProyecto}}" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">{{item.data.finan.Proyecto}}</a><br>
-																				</div>
-																			</div>
-																		</td>
-																		<td>
-																			<div class="d-flex align-items-center">
-																				<div>
-																					<a href="{{item.data.finan.EnlaceDonante}}" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">{{item.data.finan.Donante}}</a>
-																				</div>
-																			</div>
-																			
-																		</td>
-																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.TipoDonacion}}</span>
-																		</td>
-																		<td>
-																			<span id="montos" style="display:none!important" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.monto}}</span>
-																			<div class="d-flex"><span class="text-dark-75 font-weight-bolder d-block font-size-lg">$ &nbsp</span><span id="montosm" class="text-dark-75 font-weight-bolder d-block font-size-lg">{% if item.data.finan.monto %}{{item.data.finan.monto}}{% endif %}</span></div>
-																			
-																		</td>
-																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.Ano}}</span>
-																		</td>
-																		<td class=" pr-0">
+													<!--end::Item-->
+													{% endif %}
+												{% endfor %}
+												
 
-																			<a href="{{item.data.finan.EnlaceConvenio}}" class="btn btn-icon btn-light btn-hover-primary btn-sm">
-																				<span class="svg-icon svg-icon-md svg-icon-primary">
-																					<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
-																					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																							<polygon points="0 0 24 0 24 24 0 24" />
-																							<rect fill="#000000" opacity="0.3" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-																							<path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-																						</g>
-																					</svg>
-																					<!--end::Svg Icon-->
-																				</span>
-																			</a>
-																		</td>
-																			
-																	</tr>
-																	{% endfor %}
-																	
-																</tbody>
-															</table>
+
+												
+											</div>
+											<!--end::Timeline-->
+										</div>
+										<!--end: Card Body-->
+									</div>
+									<!--end: List Widget 9-->
+								</div>
+								<div class="col-xxl-8 col-lg-8">
+									
+									<!--begin::Mixed Widget 4-->
+									<div class="card card-custom bg-radial-gradient-danger gutter-b">
+										<!--begin::Header-->
+										<div class="card-header border-0 py-5">
+											<h3 class="card-title font-weight-bolder text-white">Financiamiento Anual</h3>
+										</div>
+										<!--end::Header-->
+										<!--begin::Body-->
+										<div class="card-body d-flex flex-column p-0">
+											{% for item in collections.resfin%}
+												<div id="ano" style="display:none">{{item.data.resfin.Ano}}</div>
+												<div id="monto" style="display:none">{{item.data.resfin.monto}}</div>
+											{% endfor %}
+											<!--begin::Chart-->
+											<div id="kt_mixed_widget_6_chart" style="height: 200px"></div>
+											<!--end::Chart-->
+											<!--begin::Stats-->
+											<div class="card-spacer bg-white card-rounded flex-grow-1">
+												<!--begin::Row-->
+												<div class="row m-0">
+													{% for item in collections.resfin%}
+														{% if item.data.resfin.Ano == 2021 %}
+														<div class="col px-8 py-6 mr-8">
+															<div class="font-size-sm text-muted font-weight-bold">Financiamiento Anual</div>
+															<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>$&nbsp </p><p id="finanA">{{item.data.resfin.monto}}</p></div>
 														</div>
-														<!--end::Table-->
+														{% endif %}
+													{% endfor %}
+													<div class="col px-8 py-6 mr-8">
+														<div class="font-size-sm text-muted font-weight-bold">Financiamiento Total</div>
+														<div class="font-size-h4 font-weight-bolder" style="display:flex!important"><p>$&nbsp </p><p id="finanT"></p></div>
 													</div>
-													<!--end::Body-->
 												</div>
-												<!--end::Advance Table Widget 3-->
+												<!--end::Row-->
+											</div>
+											<!--end::Stats-->
+										</div>
+										<!--end::Body-->
+									</div>
+									<!--end::Mixed Widget 4-->
+								</div>
+								<div class="col-xxl-12">
+									<!--begin::Advance Table Widget 3-->
+									<div class="card card-custom gutter-b" >
+										<!--begin::Header-->
+										<div class="card-header border-0 py-5">
+											<h3 class="card-title align-items-start flex-column">
+												<span class="card-label font-weight-bolder text-dark">Financiamiento</span>
+											</h3>
+											<div class="my-lg-0 my-1">
+												<div class="popup-wrapper1">
+													<div class="popup">
+														<div class="popup-close1">x</div>
+														<div class="popup-content">
+															<h2>Copie el código </h2>
+															<code>
+															&lt;embed src="https://sistema.redciudadana.org/financiamiento/finan1/" style="overflow:hidden" &gt;
+															</code>
+															
+														</div>
+													</div>
+												</div>
+												<button id="boton1" class="btn btn-sm btn-info font-weight-bolder text-uppercase">Compartir<img height="20px" width="20px" style="margin-left:4px" src="/assets/ELEMENTOS/MAPAS_SR-06.png"></button>
 											</div>
 										</div>
+										<!--end::Header-->
+										<!--begin::Body-->
+										<div class="card-body pt-0 pb-3">
+											<!--begin::Table-->
+											<div class="table-responsive">
+												<table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
+													<thead>
+														<tr class="text-uppercase">
+															<th style="min-width: 150px" class="pl-7">
+																<span class="text-dark-75">Proyecto</span>
+															</th>
+															<th style="min-width: 200px">Donante</th>
+															<th style="min-width: 150px">Tipo de Donanción</th>
+															<th style="min-width: 100px">Monto</th>
+															<th style="min-width: 100px">Año</th>
+															<th style="min-width: 150px">Enlace del Convenio</th>
+														</tr>
+													</thead>
+													<tbody>
+														{% for item in collections.finan %}
+														<tr>
+															<td class="pl-0 py-8">
+																<div class="d-flex align-items-center">
+																	<div class="symbol symbol-50 flex-shrink-0 mr-4">
+																		<div class="symbol-label" style="background-image: url('/assets/IMAGEN-RCt.png')"></div>
+																	</div>
+																	<div>
+																		<a href="{{item.data.finan.EnlaceProyecto}}" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">{{item.data.finan.Proyecto}}</a><br>
+																	</div>
+																</div>
+															</td>
+															<td>
+																<div class="d-flex align-items-center">
+																	<div>
+																		<a href="{{item.data.finan.EnlaceDonante}}" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">{{item.data.finan.Donante}}</a>
+																	</div>
+																</div>
+																
+															</td>
+															<td>
+																<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.TipoDonacion}}</span>
+															</td>
+															<td>
+																<span id="montos" style="display:none!important" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.monto}}</span>
+																<div class="d-flex"><span class="text-dark-75 font-weight-bolder d-block font-size-lg">$ &nbsp</span><span id="montosm" class="text-dark-75 font-weight-bolder d-block font-size-lg">{% if item.data.finan.monto %}{{item.data.finan.monto}}{% endif %}</span></div>
+																
+															</td>
+															<td>
+																<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.finan.Ano}}</span>
+															</td>
+															<td class=" pr-0">
+
+																<a href="{{item.data.finan.EnlaceConvenio}}" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+																	<span class="svg-icon svg-icon-md svg-icon-primary">
+																		<!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
+																		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																				<polygon points="0 0 24 0 24 24 0 24" />
+																				<rect fill="#000000" opacity="0.3" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+																				<path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+																			</g>
+																		</svg>
+																		<!--end::Svg Icon-->
+																	</span>
+																</a>
+															</td>
+																
+														</tr>
+														{% endfor %}
+														
+													</tbody>
+												</table>
+											</div>
+											<!--end::Table-->
+										</div>
+										<!--end::Body-->
 									</div>
-									<!--end::Content-->
+									<!--end::Advance Table Widget 3-->
 								</div>
-								<!--end::Statistics-->
 							</div>
-							<!--end::Container-->
 						</div>
-						<!--end::Entry-->
+						<!--end::Content-->
 					</div>
-					<!--end::Content-->
-					
+					<!--end::Statistics-->
 				</div>
-				<!--end::Wrapper-->
+				<!--end::Container-->
 			</div>
-			<!--end::Page-->
+			<!--end::Entry-->
 		</div>
-		<!--end::Main-->
-		
+		<!--end::Content-->
+	
 		
 		<!--begin::Scrolltop-->
 		<div id="kt_scrolltop" class="scrolltop">

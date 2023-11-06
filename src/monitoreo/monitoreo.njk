@@ -14,299 +14,311 @@ permalink: "monitoreo/index.html"
 
 {% block content %}
 
-<!--begin::Content-->
-					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-						<!--begin::Subheader-->
-						<div  class="subheader py-2 py-lg-6 subheader-transparent" id="kt_subheader">
-							<div  class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap" style="padding: 0 50px!important">
-								<!--begin::Info-->
-								<div class="d-flex align-items-center flex-wrap mr-1" >
-									<!--begin::Page Heading-->
-									<div class="d-flex align-items-baseline flex-wrap mr-5" >
-										<!--begin::Page Title-->
-										<h5 class="text-dark font-weight-bold my-1 mr-5" >Monitoreo y Evaluación</h5>
-										<!--end::Page Title-->
-
-									</div>
-									<!--end::Page Heading-->
+			<!-- breadcrumb-area-start -->
+            <div class="breadcrumb-area pt-150 pb-155" style="background-image:url(/assets/newElements/SLIDER/er-39.png)">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7">
+                            <div class="breadcrumb-text text-center" style="padding: 0 2rem">
+								<div class="titulo_new titulo_new_2">
+									<img src="/assets/newElements/er-40.png">
+									<h2 style="left:30%">Monitoreo</h2>
 								</div>
-								<!--end::Info-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- breadcrumb-area-end -->
 
-								<!--begin::Toolbar-->
-								<div class="d-flex align-items-center">
-									<!--begin::Actions-->
-									<a target="_blank" href="https://docs.google.com/spreadsheets/d/1oKSVsIOMHbyiarzY-E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" class="btn btn-light-primary font-weight-bolder btn-sm">Actualizar Monitoreo</a>
-									<!--end::Actions-->
-									
-								</div>
-								<!--end::Toolbar-->
-								
+			<!--begin::Content-->
+			<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+				<!--begin::Subheader-->
+				<div  class="subheader py-2 py-lg-6 subheader-transparent" id="kt_subheader">
+					<div  class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap" style="padding: 0 50px!important">
+						<!--begin::Info-->
+						<div class="d-flex align-items-center flex-wrap mr-1" >
+							<!--begin::Page Heading-->
+							<div class="d-flex align-items-baseline flex-wrap mr-5" >
+								<!--begin::Page Title-->
+								<h5 class="text-dark font-weight-bold my-1 mr-5" >Monitoreo y Evaluación</h5>
+								<!--end::Page Title-->
+
 							</div>
+							<!--end::Page Heading-->
 						</div>
-						<!--end::Subheader-->
-						<!--begin::Entry-->
-						<div class="d-flex flex-column-fluid">
-							<!--begin::Container-->
-							<div class="container">
-								<!--begin::Statistics-->
-								<div class="d-flex flex-sm-row flex-column">
-									<!--begin::Aside>
-									<div class="flex-md-row-auto w-sm-250px w-md-275px w-xl-325px">
-										
+						<!--end::Info-->
+
+						<!--begin::Toolbar-->
+						<div class="d-flex align-items-center">
+							<!--begin::Actions-->
+							<a target="_blank" href="https://docs.google.com/spreadsheets/d/1oKSVsIOMHbyiarzY-E8B5FmYtLDGwuMmrF_2C-kinvM/edit?usp=sharing" class="btn btn-light-primary font-weight-bolder btn-sm">Actualizar Monitoreo</a>
+							<!--end::Actions-->
+							
+						</div>
+						<!--end::Toolbar-->
 						
-
-
-									</div>
-									<end::Aside-->
-									<!--begin::Content-->
-									<div class="flex-row-fluid ml-sm-12">
-										<div class="row">
-											<div class="col-xxl-12">
-												<!--begin::Mixed Widget 13-->
-												<div class="card card-custom gutter-b">
-													<!--begin::Beader-->
-													<div class="card-header border-0 py-5">
-														<h3 class="card-title font-weight-bolder">Datos Generales</h3>
-													</div>
-													<!--end::Header-->
-													<!--begin::Body-->
-													<div class="card-body p-0 d-flex flex-column">
-														<!--begin::Stats-->
-														<div class="card-spacer pt-5 bg-white flex-grow-1">
-															<!--begin::Row-->
-															<div class="row row-paddingless">
-																<div class="col mr-8">
-																	<div class="font-size-sm text-muted font-weight-bold">Número de Personas impactadas</div>
-																	{% for item in collections.monitoreos %}
-																		{% if loop.length==loop.index %}
-																			<div class="font-size-h4 font-weight-bolder" >{{loop.length}}</div>
-																		{% endif %}
-																	
-																	{% endfor %}
-																</div>
-															</div>
-															<!--end::Row-->
-															{% for item in collections.resmon%}
-																
-																<div id="anos" style="display:none">{{item.data.resmon.Ano}}</div>
-																<div id="personas" style="display:none">{{item.data.resmon.monitoreo}}</div>
-																
-															{% endfor %}
-
-
-														</div>
-														<!--end::Stats-->
-														<!--begin::Chart-->
-														<div id="kt_mixed_widget_13_chart" class="card-rounded-bottom" style="height: 200px"></div>
-														<!--end::Chart-->
-													</div>
-													<!--end::Body-->
-												</div>
-												<!--end::Mixed Widget 13-->
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-xxl-6">
-												
-												<!--begin::Mixed Widget 18-->
-												<div class="card card-custom gutter-b">
-													<!--begin::Header-->
-													<div class="card-header border-0 pt-5">
-														<div class="card-title font-weight-bolder">
-															<div class="card-label">Monitoreo por Género</div>
-														</div>
-														
-													</div>
-													<!--end::Header-->
-													<!--begin::Body-->
-													<div class="card-body">
-														{% for item in collections.monitoreos %}
-															
-														<div class="font-size-h4 font-weight-bolder" id="genero" style="display:none">{{item.data.monitoreos.Genero}}</div>
-															
-														{% endfor %}
-
-														<!--begin::Chart-->
-														<div id="piechart1" ></div>
-														<!--end::Chart-->
-														
-													</div>
-													<!--end::Body-->
-												</div>
-												<!--end::Mixed Widget 18-->
-											</div>
-											<div class="col-xxl-6">
-												<!--begin::Charts Widget 1-->
-												<div class="card card-custom gutter-b">
-													<!--begin::Header-->
-													<div class="card-header h-auto border-0">
-														<!--begin::Title-->
-														<div class="card-title py-5">
-															<h3 class="card-label">
-																<span class="d-block text-dark font-weight-bolder">Monitoreo por Edades</span>
-															</h3>
-														</div>
-														<!--end::Title-->
-													</div>
-													<!--end::Header-->
-													<!--begin::Body-->
-													<div class="card-body">
-														{% for item in collections.monitoreos %}
-
-															<div id="edad" style="display:none">{{item.data.monitoreos.Edad}}</div>
-
-														{% endfor %}
-														<!--begin::Chart-->
-														<div id="kt_charts_widget_1_chart2"></div>
-														<!--end::Chart-->
-														
-													</div>
-													<!--end::Body-->
-												</div>
-												<!--end::Charts Widget 1-->
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-xxl-6">
-												
-												<!--begin::Mixed Widget 18-->
-												<div class="card card-custom gutter-b">
-													<!--begin::Header-->
-													<div class="card-header border-0 pt-5">
-														<div class="card-title font-weight-bolder">
-															<div class="card-label">Monitoreo por Nivel Académico</div>
-															
-														</div>
-														
-													</div>
-													<!--end::Header-->
-													<!--begin::Body-->
-													<div class="card-body">
-														{% for item in collections.monitoreos %}
-															
-														<div class="font-size-h4 font-weight-bolder" id="nivel" style="display:none">{{item.data.monitoreos.academico}}</div>
-															
-														{% endfor %}
-														<!--begin::Chart-->
-														<div id="piechart2" ></div>
-														<!--end::Chart-->
-														
-													</div>
-													<!--end::Body-->
-												</div>
-												<!--end::Mixed Widget 18-->
-											</div>
-											<div class="col-xxl-6">
-												
-												<!--begin::Mixed Widget 18-->
-												<div class="card card-custom gutter-b">
-													<!--begin::Header-->
-													<div class="card-header border-0 pt-5">
-														<div class="card-title font-weight-bolder">
-															<div class="card-label">Monitoreo por Sector</div>
-															
-														</div>
-														
-													</div>
-													<!--end::Header-->
-													<!--begin::Body-->
-													<div class="card-body">
-														{% for item in collections.monitoreos %}
-															
-														<div class="font-size-h4 font-weight-bolder" id="sector" style="display:none">{{item.data.monitoreos.sector}}</div>
-															
-														{% endfor %}
-														<!--begin::Chart-->
-														<div id="piechart3" ></div>
-														<!--end::Chart-->
-														
-													</div>
-													<!--end::Body-->
-												</div>
-												<!--end::Mixed Widget 18-->
-											</div>
-										</div>
-										<!--div class="row">
-											<div class="col-lg-12 col-md-12 col-xxl-12">
-												<begin::Advance Table Widget 3>
-												<div class="card card-custom gutter-b">
-													<begin::Header>
-													<div class="card-header border-0 py-5">
-														<h3 class="card-title align-items-start flex-column">
-															<span class="card-label font-weight-bolder text-dark">Monitoreo</span>
-															<span class="text-muted mt-3 font-weight-bold font-size-sm">Más de 400+ miembros</span>
-														</h3>
-													</div>
-													<end::Header>
-													<begin::Body>
-													<div class="card-body pt-0 pb-3">
-														<begin::Table>
-														<div class="table-responsive">
-															<table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
-																<thead>
-																	<tr class="text-uppercase">
-																		<th style="min-width: 250px" class="pl-7">
-																			<span class="text-dark-75">Proyecto</span>
-																		</th>
-																		<th style="min-width: 100px">Año</th>
-																		<th style="min-width: 100px">Masculino</th>
-																		<th style="min-width: 100px">Femenino</th>
-																		<th style="min-width: 100px">Total</th>
-																	</tr>
-																</thead>
-																<tbody>
-																	{% for item in collections.monitoreos %}
-																	<tr>
-																		<td class="pl-0 py-8">
-																			<div class="d-flex align-items-center">
-																				<div class="symbol symbol-50 flex-shrink-0 mr-4">
-																					<div class="symbol-label" style="background-image: url('/assets/IMAGEN-RCt.png')"></div>
-																				</div>
-																				<div>
-																					<a href="#" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">{{item.data.monitoreos.Proyecto}}</a>
-																					<span class="text-muted font-weight-bold d-block">{{item.data.monitoreos.Programa}}</span>
-																					<span class="text-muted font-weight-bold d-block">Sector: {{item.data.monitoreos.sector}}</span>
-																				</div>
-																			</div>
-																		</td>
-																		<td>
-																			<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Ano}}</span>
-																		</td>
-																		<td>
-																			<span id="hombres" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Genero}}</span>
-																		</td>
-																		<td>
-																			<span id="personas" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Estado}}</span>
-																		</td>
-																		
-																	</tr>
-																	{% endfor %}
-																	
-																</tbody>
-															</table>
-														</div>
-														<end::Table>
-													</div>
-													<end::Body>
-												</div>
-												<end::Advance Table Widget 3>
-											</div>
-										</div-->
-									</div>
-									<!--end::Content-->
-								</div>
-								<!--end::Statistics-->
-							</div>
-							<!--end::Container-->
-						</div>
-						<!--end::Entry-->
 					</div>
-					<!--end::Content-->
-					
 				</div>
-				<!--end::Wrapper-->
+				<!--end::Subheader-->
+				<!--begin::Entry-->
+				<div class="d-flex flex-column-fluid">
+					<!--begin::Container-->
+					<div class="container">
+						<!--begin::Statistics-->
+						<div class="d-flex flex-sm-row flex-column">
+							<!--begin::Aside>
+							<div class="flex-md-row-auto w-sm-250px w-md-275px w-xl-325px">
+								
+				
+
+
+							</div>
+							<end::Aside-->
+							<!--begin::Content-->
+							<div class="flex-row-fluid ml-sm-12">
+								<div class="row">
+									<div class="col-xxl-12">
+										<!--begin::Mixed Widget 13-->
+										<div class="card card-custom gutter-b">
+											<!--begin::Beader-->
+											<div class="card-header border-0 py-5">
+												<h3 class="card-title font-weight-bolder">Datos Generales</h3>
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body p-0 d-flex flex-column">
+												<!--begin::Stats-->
+												<div class="card-spacer pt-5 bg-white flex-grow-1">
+													<!--begin::Row-->
+													<div class="row row-paddingless">
+														<div class="col mr-8">
+															<div class="font-size-sm text-muted font-weight-bold">Número de Personas impactadas</div>
+															{% for item in collections.monitoreos %}
+																{% if loop.length==loop.index %}
+																	<div class="font-size-h4 font-weight-bolder" >{{loop.length}}</div>
+																{% endif %}
+															
+															{% endfor %}
+														</div>
+													</div>
+													<!--end::Row-->
+													{% for item in collections.resmon%}
+														
+														<div id="anos" style="display:none">{{item.data.resmon.Ano}}</div>
+														<div id="personas" style="display:none">{{item.data.resmon.monitoreo}}</div>
+														
+													{% endfor %}
+
+
+												</div>
+												<!--end::Stats-->
+												<!--begin::Chart-->
+												<div id="kt_mixed_widget_13_chart" class="card-rounded-bottom" style="height: 200px"></div>
+												<!--end::Chart-->
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Mixed Widget 13-->
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xxl-6">
+										
+										<!--begin::Mixed Widget 18-->
+										<div class="card card-custom gutter-b">
+											<!--begin::Header-->
+											<div class="card-header border-0 pt-5">
+												<div class="card-title font-weight-bolder">
+													<div class="card-label">Monitoreo por Género</div>
+												</div>
+												
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body">
+												{% for item in collections.monitoreos %}
+													
+												<div class="font-size-h4 font-weight-bolder" id="genero" style="display:none">{{item.data.monitoreos.Genero}}</div>
+													
+												{% endfor %}
+
+												<!--begin::Chart-->
+												<div id="piechart1" ></div>
+												<!--end::Chart-->
+												
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Mixed Widget 18-->
+									</div>
+									<div class="col-xxl-6">
+										<!--begin::Charts Widget 1-->
+										<div class="card card-custom gutter-b">
+											<!--begin::Header-->
+											<div class="card-header h-auto border-0">
+												<!--begin::Title-->
+												<div class="card-title py-5">
+													<h3 class="card-label">
+														<span class="d-block text-dark font-weight-bolder">Monitoreo por Edades</span>
+													</h3>
+												</div>
+												<!--end::Title-->
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body">
+												{% for item in collections.monitoreos %}
+
+													<div id="edad" style="display:none">{{item.data.monitoreos.Edad}}</div>
+
+												{% endfor %}
+												<!--begin::Chart-->
+												<div id="kt_charts_widget_1_chart2"></div>
+												<!--end::Chart-->
+												
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Charts Widget 1-->
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xxl-6">
+										
+										<!--begin::Mixed Widget 18-->
+										<div class="card card-custom gutter-b">
+											<!--begin::Header-->
+											<div class="card-header border-0 pt-5">
+												<div class="card-title font-weight-bolder">
+													<div class="card-label">Monitoreo por Nivel Académico</div>
+													
+												</div>
+												
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body">
+												{% for item in collections.monitoreos %}
+													
+												<div class="font-size-h4 font-weight-bolder" id="nivel" style="display:none">{{item.data.monitoreos.academico}}</div>
+													
+												{% endfor %}
+												<!--begin::Chart-->
+												<div id="piechart2" ></div>
+												<!--end::Chart-->
+												
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Mixed Widget 18-->
+									</div>
+									<div class="col-xxl-6">
+										
+										<!--begin::Mixed Widget 18-->
+										<div class="card card-custom gutter-b">
+											<!--begin::Header-->
+											<div class="card-header border-0 pt-5">
+												<div class="card-title font-weight-bolder">
+													<div class="card-label">Monitoreo por Sector</div>
+													
+												</div>
+												
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body">
+												{% for item in collections.monitoreos %}
+													
+												<div class="font-size-h4 font-weight-bolder" id="sector" style="display:none">{{item.data.monitoreos.sector}}</div>
+													
+												{% endfor %}
+												<!--begin::Chart-->
+												<div id="piechart3" ></div>
+												<!--end::Chart-->
+												
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Mixed Widget 18-->
+									</div>
+								</div>
+								<!--div class="row">
+									<div class="col-lg-12 col-md-12 col-xxl-12">
+										<begin::Advance Table Widget 3>
+										<div class="card card-custom gutter-b">
+											<begin::Header>
+											<div class="card-header border-0 py-5">
+												<h3 class="card-title align-items-start flex-column">
+													<span class="card-label font-weight-bolder text-dark">Monitoreo</span>
+													<span class="text-muted mt-3 font-weight-bold font-size-sm">Más de 400+ miembros</span>
+												</h3>
+											</div>
+											<end::Header>
+											<begin::Body>
+											<div class="card-body pt-0 pb-3">
+												<begin::Table>
+												<div class="table-responsive">
+													<table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
+														<thead>
+															<tr class="text-uppercase">
+																<th style="min-width: 250px" class="pl-7">
+																	<span class="text-dark-75">Proyecto</span>
+																</th>
+																<th style="min-width: 100px">Año</th>
+																<th style="min-width: 100px">Masculino</th>
+																<th style="min-width: 100px">Femenino</th>
+																<th style="min-width: 100px">Total</th>
+															</tr>
+														</thead>
+														<tbody>
+															{% for item in collections.monitoreos %}
+															<tr>
+																<td class="pl-0 py-8">
+																	<div class="d-flex align-items-center">
+																		<div class="symbol symbol-50 flex-shrink-0 mr-4">
+																			<div class="symbol-label" style="background-image: url('/assets/IMAGEN-RCt.png')"></div>
+																		</div>
+																		<div>
+																			<a href="#" class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">{{item.data.monitoreos.Proyecto}}</a>
+																			<span class="text-muted font-weight-bold d-block">{{item.data.monitoreos.Programa}}</span>
+																			<span class="text-muted font-weight-bold d-block">Sector: {{item.data.monitoreos.sector}}</span>
+																		</div>
+																	</div>
+																</td>
+																<td>
+																	<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Ano}}</span>
+																</td>
+																<td>
+																	<span id="hombres" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Genero}}</span>
+																</td>
+																<td>
+																	<span id="personas" class="text-dark-75 font-weight-bolder d-block font-size-lg">{{item.data.monitoreos.Estado}}</span>
+																</td>
+																
+															</tr>
+															{% endfor %}
+															
+														</tbody>
+													</table>
+												</div>
+												<end::Table>
+											</div>
+											<end::Body>
+										</div>
+										<end::Advance Table Widget 3>
+									</div>
+								</div-->
+							</div>
+							<!--end::Content-->
+						</div>
+						<!--end::Statistics-->
+					</div>
+					<!--end::Container-->
+				</div>
+				<!--end::Entry-->
 			</div>
-			<!--end::Page-->
+			<!--end::Content-->
 		</div>
 		<!--end::Main-->
 		

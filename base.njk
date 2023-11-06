@@ -60,33 +60,33 @@
                                 <!--begin::Item-->
                                 <li class="nav-item mr-3 subm">
                                     <!--data-target="#kt_header_tab_3"-->
-                                    <a href="" class="nav-link py-4 " >Estrategia 2022-2025</a>
+                                    <a href="" class="nav-link py-4 " >Institucional</a>
                                     <ul class="sub">
-                                        <li><a target="_blank" href="{% for est in collections.estrategia %} {{est.data.link}} {% endfor %}">Estrategia 2022-2025</a></li>
-                                        <li><a href="#">Programas</a></li>
-                                        <li><a href="/indicadores/index.html">Indicadores</a></li>
+                                        <li><a href="/adminis/index.html">Administración</a></li>
                                         <li><a href="/financiamiento/index.html">Financiamiento</a></li>
-                                        <li><a href="{% for reporte in collections.reporteanual %} {{reporte.url}} {% endfor %}">Reporte Anual</a></li>
-                                        <!--https://publicaciones.redciudadana.org/2021/Red%20Ciudadana%202021%20-%20Reporte%20Anual.pdf-->
                                     </ul>
                                 </li>
                                 <!--end::Item-->
                                 <!--begin::Item-->
                                 <li class="nav-item mr-3 subm">
                                     <!--data-target="#kt_header_tab_3"-->
-                                    <a href="" class="nav-link py-4 " >Operación</a>
+                                    <a href="" class="nav-link py-4 " >Implementacion</a>
                                     <ul class="sub">
+                                        <li><a target="_blank" href="{% for est in collections.estrategia %} {{est.data.link}} {% endfor %}">Estrategia 2022-2025</a></li>
+                                        <li><a href="#">Programas</a></li>
                                         <li><a href="/proyectos/index.html">Proyectos</a></li>
-                                        <li><a href="/monitoreo/index.html">Monitoreo</a></li>
+                                        <li><a href="/monitoreo/index.html">Monitoreo y Evaluación</a></li>
+                                        <li><a href="/financiamiento/index.html">Financiamiento</a></li>
                                         <li><a href="{% for analitica in collections.analiticas %} {{analitica.url}} {% endfor %}">Analíticas</a></li>
-                                        <li><a href="/voluntariado/index.html" >Voluntariado</a></li>
+                                        <li><a href="{% for reporte in collections.reporteanual %} {{reporte.url}} {% endfor %}">Reporte Anual</a></li>
+                                        <!--https://publicaciones.redciudadana.org/2021/Red%20Ciudadana%202021%20-%20Reporte%20Anual.pdf-->
                                     </ul>
                                 </li>
                                 <!--end::Item-->
                                <!--begin::Item-->
                                 <li class="nav-item mr-3">
                                     <!--data-target="#kt_header_tab_2"   data-toggle="tab" role="tab"-->
-                                    <a href="https://redciudadana.org/" target="_blank" class="nav-link py-4 " >Red Ciudadana</a>
+                                    <a href="#" target="_blank" class="nav-link py-4 " >Sistema RC</a>
                                 </li>
                                 <!--end::Item-->
                                 
