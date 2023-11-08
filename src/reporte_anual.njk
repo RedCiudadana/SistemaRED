@@ -12,7 +12,7 @@ permalink: "reporte_anual/index.html"
 
             <!--begin::Body-->
 			<!-- breadcrumb-area-start -->
-            <div class="breadcrumb-area pt-150 pb-155" style="background-image:url(/assets/newElements/SLIDER/er-39.png)">
+            <div class="breadcrumb-area pt-150 pb-155" style="background-image:url(/assets/newElements/repanual/er-31.png)">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -20,7 +20,6 @@ permalink: "reporte_anual/index.html"
 								<h2 class="text-white" style="font-weight:1000;font-size:5rem">Reporte Anual</h2>
                                 <br>
                                 <br>
-                                <a class="btn btn-sm btn-info font-weight-bolder text-uppercase" href="{{reporte}}" target="_blank">Descarga el Reporte Anual Aquí</a>
                             </div>
                         </div>
                     </div>
@@ -38,15 +37,21 @@ permalink: "reporte_anual/index.html"
 									<!--begin::Layout-->
 									<div class="flex-row-fluid ml-lg-8">
 
-                                        <div class="tab">
-                                            <button class="tablinks" onclick="openTab(event, 'London')">London</button>
-                                            <button class="tablinks" onclick="openTab(event, 'Paris')">Paris</button>
-                                            <button class="tablinks" onclick="openTab(event, 'Tokyo')">Tokyo</button>
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-12">
+                                                <div class="tab">
+                                                    {% for reporte in collections.reporteanual %}
+                                                    <button class="tablinks" onclick="openTab(event, '{{reporte.data.ano}}')">{{reporte.data.ano}}</button>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
                                         </div>
 
-                                        <div id="London" class="tabcontent">
+                                        {% for reporte in collections.reporteanual %}
+                                        <div id="{{reporte.data.ano}}" class="tabcontent">
 
-                                            <div class="row" style="margin-bottom:3rem;justify-content:center">
+                                            <div class="row my-4" style="margin-bottom:3rem;justify-content:center">
+                                                <a class="btn btn-sm btn-info font-weight-bolder text-uppercase" href="{{reporte.data.reporte}}" target="_blank">Descarga el Reporte Anual Aquí</a>
                                                 <!--begin: Title-->
                                                 <div class="col-lg-8 d-flex align-items-center justify-content-between flex-wrap">
                                                     <div class="mr-3"></div>
@@ -69,56 +74,55 @@ permalink: "reporte_anual/index.html"
                                                 </div>
                                                 <!--end: Title-->	
                                                 <div class="col-lg-8 d-flex">
-                                                    
-                                                    <div class="col-md-4 text-center" style="justify-content:center;align-items:center">
-                                                    
-                                                        <img class="circulo" src="/assets/ELEMENTOS/ICONOS/ra1.png">
-                                                        <h2>{{instituciones}} </h2>
-                                                        <p>Instituciones públicas con las que colaboramos</p>
-                                                    
-                                                    </div>
+                                                    <div class="row">
+                                                        
+                                                        <div class="col-md-4 my-4 text-center" style="justify-content:center;align-items:center">
+                                                        
+                                                            <img class="circulo" src="/assets/newElements/repanual/er-32.png">
+                                                            <h2>{{reporte.data.instituciones}} </h2>
+                                                            <p>Instituciones públicas con las que colaboramos</p>
+                                                        
+                                                        </div>
 
-                                                    <div class="col-md-4 text-center" style="justify-content:center;align-items:center">
-                                                    
-                                                        <img class="circulo" src="/assets/ELEMENTOS/ICONOS/ra2.png">
-                                                        <h2>{{organizaciones}}</h2>
-                                                        <p>Organizaciones con las que colaboramos</p>
-                                                    
-                                                    </div>
+                                                        <div class="col-md-4 my-4 text-center" style="justify-content:center;align-items:center">
+                                                        
+                                                            <img class="circulo" src="/assets/newElements/repanual/er-33.png">
+                                                            <h2>{{reporte.data.organizaciones}}</h2>
+                                                            <p>Organizaciones con las que colaboramos</p>
+                                                        
+                                                        </div>
 
-                                                    <div class="col-md-4 text-center" style="justify-content:center;align-items:center">
-                                                    
-                                                        <img class="circulo" src="/assets/ELEMENTOS/ICONOS/ra3.png">
-                                                        <h2>{{cursos}}</h2>
-                                                        <p>Cursos de Innovación</p>
-                                                    
-                                                    </div>
-                                                </div>
+                                                        <div class="col-md-4 my-4 text-center" style="justify-content:center;align-items:center">
+                                                        
+                                                            <img class="circulo" src="/assets/newElements/repanual/er-34.png">
+                                                            <h2>{{reporte.data.cursos}}</h2>
+                                                            <p>Cursos de Innovación</p>
+                                                        
+                                                        </div>
+                                                        
+                                                        <div class="col-md-4 my-4 text-center" style="justify-content:center;align-items:center">
+                                                        
+                                                            <img class="circulo" src="/assets/newElements/repanual/er-35.png">
+                                                            <h2>{{reporte.data.estudiantes}}</h2>
+                                                            <p>Estudiantes</p>
+                                                        
+                                                        </div>
 
-                                                <div class="col-lg-8 d-flex">
-                                                    
-                                                    <div class="col-md-4 text-center" style="justify-content:center;align-items:center">
-                                                    
-                                                        <img class="circulo" src="/assets/ELEMENTOS/ICONOS/ra4.png">
-                                                        <h2>{{estudiantes}}</h2>
-                                                        <p>Estudiantes</p>
-                                                    
-                                                    </div>
+                                                        <div class="col-md-4 my-4 text-center" style="justify-content:center;align-items:center">
+                                                        
+                                                            <img class="circulo" src="/assets/newElements/repanual/er-36.png">
+                                                            <h2>{{reporte.data.participantes}}</h2>
+                                                            <p>Participantes en procesos de Co-creación</p>
+                                                        
+                                                        </div>
 
-                                                    <div class="col-md-4 text-center" style="justify-content:center;align-items:center">
-                                                    
-                                                        <img class="circulo" src="/assets/ELEMENTOS/ICONOS/ra5.png">
-                                                        <h2>{{participantes}}</h2>
-                                                        <p>Participantes en procesos de Co-creación</p>
-                                                    
-                                                    </div>
-
-                                                    <div class="col-md-4 text-center" style="justify-content:center;align-items:center">
-                                                    
-                                                        <img class="circulo" src="/assets/ELEMENTOS/ICONOS/ra6.png">
-                                                        <h2>{{publicacionesyreportes}}</h2>
-                                                        <p>Publicaciones y Reportes</p>
-                                                    
+                                                        <div class="col-md-4 my-4 text-center" style="justify-content:center;align-items:center">
+                                                        
+                                                            <img class="circulo" src="/assets/newElements/repanual/er-37.png">
+                                                            <h2>{{reporte.data.publicacionesyreportes}}</h2>
+                                                            <p>Publicaciones y Reportes</p>
+                                                        
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 
@@ -155,7 +159,7 @@ permalink: "reporte_anual/index.html"
                                                         <!--end: Title-->	
 
                                                         {% for item in collections.proyecto %}	
-                                                        {% if item.data.proyecto.Ano == 2021%}
+                                                        {% if item.data.proyecto.Ano == reporte.data.ano%}
                                                         <div class="col-xl-4">
                                                             <!--begin::Card-->
                                                             <div class="card card-custom gutter-b card-stretch">
@@ -268,6 +272,7 @@ permalink: "reporte_anual/index.html"
                                             </div>
                                             <!--end::Entry-->
                                         </div>
+                                        {% endfor %}
 
 									</div>
 									<!--end::Layout-->
