@@ -397,6 +397,7 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Título" }
+      - { name: "ano", label: "Año" }
       - { name: "reporte", label: "Enlace al reporte" }
       - {
           name: "instituciones",
