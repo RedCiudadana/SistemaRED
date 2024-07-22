@@ -955,8 +955,13 @@ padding-left: 55px; }
 .cuadro_index h4{
   color: #3F4254!important;
   text-align: center;
+  transition: 0.5s all ease;
 }
 
+
+.cuadro_index:hover h4{
+  color: #000!important;
+}
 
 .cuadro_sistema{
   border-radius: 15px;

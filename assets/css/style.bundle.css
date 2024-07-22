@@ -29291,13 +29291,13 @@ h3 {
 }
 
 .bg-radial-gradient-danger {
-  background-color: #089380;
-  background-image: radial-gradient(circle, rgba(255, 226, 229, 0.4), #089380
+  background-color: #7fb4ea;
+  background-image: radial-gradient(circle, rgba(255, 226, 229, 0.4), #7fb4ea
   70%);
 }
 
 .bg-radial-gradient-danger2 {
-  background-color: #3699FF;
+  background-color: #7fb4ea;
   background-image: radial-gradient(circle, rgba(255, 226, 229, 0.4), #3699FF  70%);
 }
 
@@ -51244,7 +51244,7 @@ a.text-hover-info:hover .svg-icon svg:hover g [fill],
 }
 
 .text-warning {
-  color: #FFA800 !important;
+  color: #77c9b6 !important;
 }
 
 .text-inverse-warning {
