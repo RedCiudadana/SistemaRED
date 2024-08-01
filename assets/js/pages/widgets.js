@@ -6,7 +6,7 @@ var KTWidgets = function () {
 
     var monto = document.querySelectorAll("[id='monto']");
     
-    var a2014,a2015,a2016,a2017,a2018,a2019,a2020,a2021;
+    var a2014,a2015,a2016,a2017,a2018,a2019,a2020,a2021,a2022,a2023,a2024;
 
     for(var i=0;i<=monto.length;i++){
         if(i==0){
@@ -32,6 +32,15 @@ var KTWidgets = function () {
         }
         else if(i==7){
             a2021=parseInt(monto[i].innerHTML);
+        }
+        else if(i==8){
+            a2022=parseInt(monto[i].innerHTML);
+        }
+        else if(i==9){
+            a2023=parseInt(monto[i].innerHTML);
+        }
+        else if(i==10){
+            a2024=parseInt(monto[i].innerHTML);
         }
     }
 
@@ -2775,7 +2784,7 @@ var KTWidgets = function () {
                 data: []
             }, {
                 name: 'Monto',
-                data: [a2014,a2015,a2016,a2017,a2018,a2019,a2020,a2021]
+                data: [a2014,a2015,a2016,a2017,a2018,a2019,a2020,a2021,a2022,a2023,a2024]
             }],
             chart: {
                 type: 'bar',
@@ -2806,7 +2815,7 @@ var KTWidgets = function () {
                 colors: ['transparent']
             },
             xaxis: {
-                categories: ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+                categories: ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
                 axisBorder: {
                     show: false,
                 },
@@ -2823,7 +2832,7 @@ var KTWidgets = function () {
             },
             yaxis: {
                 min: 0,
-                max: 220000,
+                max: 453000,
                 labels: {
                     style: {
                         colors: KTApp.getSettings()['colors']['gray']['gray-500'],
